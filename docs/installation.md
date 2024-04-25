@@ -4,7 +4,7 @@ In order to install Methylator, you  have to clone the Methylator GitHub reposit
 
 If you're using the Jupyter Hub on IFB, you can open a **Terminal** by clicking on the corresponding icon. 
 
-<img src="Tuto_pictures/JupyterHub.png" alt="drawing" width="700"/>
+<img src="img/JupyterHub.png" alt="drawing" width="700"/>
 
 Before clonning Methylator, go to your project using the `cd` command.
 
@@ -33,7 +33,7 @@ Enter `Methylator` directory (`cd`) and look at the files using `tree` or `ls`.
 
 Methylator is launched as a python script named `main_cluster.py` which calls the workflow manager named [Snakemake](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html). Snakemake will execute rules that are defined in `workflow/xxx.rules` and distribute the corresponding jobs to the computing nodes via [SLURM](https://ifb-elixirfr.gitlab.io/cluster/doc/slurm_user_guide/). 
 
-<img src="Tuto_pictures/cluster_chart.pdf.png" alt="drawing" width="500"/>
+<img src="img/cluster_chart.pdf.png" alt="drawing" width="500"/>
 
 
  On the cluster, the main python script is launched via the shell script `Workflow.sh`, which basically contains only one command `python main_cluster.py` (+ loading of basic modules and information about the run).
