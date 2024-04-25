@@ -2,6 +2,8 @@
 
 <small>Maintained by [BiBs](mailto:bibsATparisepigenetics.com). Last update : 25/04/2024. Methylator v0.1. </small>  
 
+Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Methylator runs in a dedicated Apptainer image to allow for reproducibility and was optimized to compute effciently the data on HPC clusters such as the ones from the IFB and iPOP-UP networks. We aim to make those complex analyses do able by biologists with no or little bioinformatics background.
+
 !!! warning
     This is a BETA version of the workflow, and of this documentation! There is no guarantee!
 
