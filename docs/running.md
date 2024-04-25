@@ -9,7 +9,9 @@ When the configuration files are ready, you can start the run by `sbatch Workflo
 
 Please see below detailed explanation. 
 
-## FASTQ quality control (eventually after SRA data retrieval)
+## SRA data retrieval
+
+## FASTQ quality control
 
 Prerequisite:   
 - Using your own data: your FASTQ files are on the cluster, in our example in `/shared/projects/YourProjectName/Raw_fastq` (but you can name your folders as you want, as long as you adjust the `READSPATH` parameter in `config_main.yaml`). 
@@ -64,32 +66,7 @@ You can check if your job is running using squeue.
 [username@clust-slurm-client Methylator]$ squeue --me
 ```
 
-You should also check SLURM output files. See [Description of the log files](#description-of-the-log-files). 
-
-## FastQC results
-
-If everything goes fine, fastQC results will be in `results/EXAMPLE/fastqc/`. For every sample you will have something like:
-
-```
-[username@clust-slurm-client Methylator]$ ll results/EXAMPLE/fastqc
-total 38537
--rw-rw----+ 1 username username  640952 May 11 15:16 Sample1_forward_fastqc.html
--rw-rw----+ 1 username username  867795 May 11 15:06 Sample1_forward_fastqc.zip
--rw-rw----+ 1 username username  645532 May 11 15:16 Sample1_reverse_fastqc.html
--rw-rw----+ 1 username username  871080 May 11 15:16 Sample1_reverse_fastqc.zip
-```
-
-Those are individual fastQC reports. [MultiQC](https://multiqc.info/docs/) is called after FastQC, so you will also find `report_quality_control.html` that is a summary for all the samples. 
-You can copy those reports to your computer by typing (in a new local terminal):
-
-```
-You@YourComputer:~$ scp -pr username@core.cluster.france-bioinformatique.fr:/shared/projects/YourEXAMPLE/Methylator/results/EXAMPLE/fastqc PathTo/WhereYouWantToSave/
-```
-or look at them directly in the Jupyter Hub.  
-It's time to decide if how much trimming you need. Trimming is generally necessary with WGBS or RRBS data. 
-
-<span>{% include icon.liquid id='info-circle' %} <b>Satisfactory data quality? </b></span><br>In principle you can now run all the rest of the pipeline at once. To do so you have set SRA and QC to "no" and to configure the other parts of `config_main.yaml`.
-{: .ui.large.info.message}
+You should also check SLURM output files. See [Description of the log files](#description-of-the-log-files).
 
 
 ## Trimming
@@ -111,8 +88,8 @@ TRIM3: no # integer or "no", remove N bp from the 3' end of reads AFTER adapter/
 
 At this step you have to provide the path to your genome index as well as to a GTF annotation file and a BED file with CpG island coordinates. 
 
-<span>{% include icon.liquid id='info-circle' %} <b>Use common banks!</b></span><br>Some reference files are shared between cluster users. Before downloading a new reference, check what is available at `/shared/bank/` (IFB) or `/shared/banks/` (iPOP-UP).
-{: .ui.large.info.message}
+!!! info "Use common banks"
+Some reference files are shared between cluster users. Before downloading a new reference, check what is available at `/shared/bank/` (IFB) or `/shared/banks/` (iPOP-UP).
 
 ```bash
 [username@clust-slurm-client ~]$ tree -L 2 /shared/bank/homo_sapiens/
@@ -170,9 +147,8 @@ Similarly you can download them to the server using `wget`.
    | sort-bed - \
    > cpgIslandExt.hg38.bed
 ```
-
-<span>{% include icon.liquid id='info-circle' %} <b>Fill common banks!</b></span><br>Don't forget to give the links to the new references you made/downloaded to [IFB](https://community.france-bioinformatique.fr/) or to [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up) support so that they can add them to the common banks.
-{: .ui.info.message}
+!!! info "Fill common banks"
+Don't forget to give the links to the new references you made/downloaded to [IFB](https://community.france-bioinformatique.fr/) or to [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up) support so that they can add them to the common banks.
 
 Be sure you give the right path to those files and adjust the other settings to your need: 
 
