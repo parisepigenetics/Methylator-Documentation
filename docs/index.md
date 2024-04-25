@@ -5,14 +5,12 @@
 Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Methylator runs in a dedicated Apptainer image to allow for reproducibility and was optimized to compute effciently the data on HPC clusters. We aim to make those complex analyses do able by biologists with no or little bioinformatics background.
 
 !!! warning
-    This is a BETA version of the workflow, and of this documentation! There is no guarantee!
+    This is a BETA version of the workflow, and of this documentation ! There is no guarantee !   
     If you use this workflow to analyse your data, don't forget to **acknowledge BiBs** in all your communications ! 
 
-!!! quote "acknowledge BiBs example for EDC people"
-We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for bioinformatics support.
-
-!!! quote "acknowledge BiBs example for External users"
-We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for sharing their analysis workflows.
+!!! quote "Acknowledge BiBs example"
+For EDC people : We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for bioinformatics support.
+For External users : We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for sharing their analysis workflows.
 
 ## Pipeline scheme 
 ![Methylator Schema](img/poster_methylator.svg)
