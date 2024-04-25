@@ -4,9 +4,12 @@ nav:
   - Resources: resources.md
   - Before starting: before_start.md
   - Extra help !: extra_help.md
-theme:
-  name: readthedocs
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+theme:
+  name: readthedocs
+  icon:
+    admonition:
+      <type>: <icon> 
