@@ -10,4 +10,4 @@ For iPOP-UP:
 cp configs/cluster_config_ipop.yaml configs/cluster_config.yaml
 ```
 !!! warning 
-For other clusters, you have to edit the file yourself.
+For other clusters, you have to edit the file yourself
