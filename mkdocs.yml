@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Before starting: before_start.md
   - Installation and description: installation.md
+  - Adapt the workflow to cluster: adpat_cluster.md
   - Transfert your data: transfert_data.md
   - Running your analysis step by step: running.md
   - Extra help !: extra_help.md
