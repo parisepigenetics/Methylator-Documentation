@@ -37,7 +37,7 @@ You will be asked to enter your password, and then the transfer will begin. If i
 
 ## Check md5sum
 
-After the transfer, connect to the cluster ([IFB](#connect-to-ifb-core-cluster), [iPOP-UP](#connect-to-ipop-up-cluster)) and check the presence of the files in `Raw_fastq` using `ls` or `ll` command. 
+After the transfer, connect to the cluster ([IFB](#connect-to-ifb-core-cluster), [iPOP-UP](#connect-to-ipop-up-cluster)) and check the presence of the files in `Raw_fastq` using `ls` or `ll` command.  
 
 ```
 [username@clust-slurm-client YourProjectName]$ ll Raw_fastq
