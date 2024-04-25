@@ -6,8 +6,6 @@ nav:
   - Extra help !: extra_help.md
 markdown_extensions:
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
 theme:
   name: readthedocs
   icon:
