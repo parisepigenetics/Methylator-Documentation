@@ -1,6 +1,6 @@
 site_name: Methylator Documentation
 nav:
-  - Presentation: presentation.md
+  - Home: index.md
   - Resources: resources.md
   - Before starting: before_start.md
   - Extra help !: extra_help.md
