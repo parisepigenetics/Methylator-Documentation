@@ -2,7 +2,7 @@
 If you want to use your own data, you should transfer the FASTQ files into your project folder `/shared/projects/YourProjectName` before doing your analysis. Alternatively the workflow allows you to download data from [SRA](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/) simply giving the `SRRxxx` IDs, see below [metadata.tsv](#metadata-tsv). 
 
 ## FASTQ names
-{:.no_toc}
+
 The workflow is expecting **gzip-compressed FASTQ files** with names formatted as   
 - `SampleName_R1.fastq.gz` and `SampleName_R2.fastq.gz` for pair-end data, 
 - `SampleName.fastq.gz` for single-end data. 
@@ -10,7 +10,7 @@ The workflow is expecting **gzip-compressed FASTQ files** with names formatted a
 If your files are not fitting this format, please see [how to correct the names of a batch of FASTQ files](#quickly-change-fastq-names). 
 
 ## Generate md5sum
-{:.no_toc}
+
 It is highly recommended to check the [md5sum](https://en.wikipedia.org/wiki/Md5sum) for big files. If your raw FASTQ files are on your computer in `PathTo/MethylProject/Fastq/`, you type in a terminal: 
 
 ```
@@ -19,7 +19,7 @@ You@YourComputer:~/PathTo/MethylProject$ md5sum Fastq/* > Fastq/fastq.md5
 ```
 
 ## Copy to the cluster
-{:.no_toc}
+
 You can then copy the `Fastq` folder to the cluster using `rsync`, replacing `username` by your login: 
 
 ```
@@ -36,7 +36,7 @@ Feel free to name your folders as you want!
 You will be asked to enter your password, and then the transfer will begin. If it stops before the end, rerun the last command, it will only add the incomplete/missing files. 
 
 ## Check md5sum
-{:.no_toc}
+
 After the transfer, connect to the cluster ([IFB](#connect-to-ifb-core-cluster), [iPOP-UP](#connect-to-ipop-up-cluster)) and check the presence of the files in `Raw_fastq` using `ls` or `ll` command. 
 
 ```
