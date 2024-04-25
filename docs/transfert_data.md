@@ -4,7 +4,7 @@ If you want to use your own data, you should transfer the FASTQ files into your 
 ## FASTQ names
 
 The workflow is expecting **gzip-compressed FASTQ files** with names formatted as   
-- `SampleName_R1.fastq.gz` and `SampleName_R2.fastq.gz` for pair-end data, 
+- `SampleName_R1.fastq.gz` and `SampleName_R2.fastq.gz` for pair-end data,   
 - `SampleName.fastq.gz` for single-end data. 
 
 If your files are not fitting this format, please see [how to correct the names of a batch of FASTQ files](#quickly-change-fastq-names). 
