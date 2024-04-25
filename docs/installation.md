@@ -3,7 +3,7 @@
 In order to install Methylator, you  have to clone the Methylator GitHub repository to your cluster project. 
 If you're using the Jupyter Hub on IFB, you can open a **Terminal** by clicking on the corresponding icon. 
 
-![jupyterHub](img/jupyterHub.png)
+![jupyterHub](img/JupyterHub.png)
 
 Before clonning Methylator, go to your project using the `cd` command.
 
