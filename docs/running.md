@@ -89,7 +89,7 @@ TRIM3: no # integer or "no", remove N bp from the 3' end of reads AFTER adapter/
 At this step you have to provide the path to your genome index as well as to a GTF annotation file and a BED file with CpG island coordinates. 
 
 !!! info "Use common banks"
-Some reference files are shared between cluster users. Before downloading a new reference, check what is available at `/shared/bank/` (IFB) or `/shared/banks/` (iPOP-UP).
+    Some reference files are shared between cluster users. Before downloading a new reference, check what is available at `/shared/bank/` (IFB) or `/shared/banks/` (iPOP-UP).
 
 ```bash
 [username@clust-slurm-client ~]$ tree -L 2 /shared/bank/homo_sapiens/
@@ -148,7 +148,7 @@ Similarly you can download them to the server using `wget`.
    > cpgIslandExt.hg38.bed
 ```
 !!! info "Fill common banks"
-Don't forget to give the links to the new references you made/downloaded to [IFB](https://community.france-bioinformatique.fr/) or to [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up) support so that they can add them to the common banks.
+    Don't forget to give the links to the new references you made/downloaded to [IFB](https://community.france-bioinformatique.fr/) or to [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/      ipop-up) support so that they can add them to the common banks.
 
 Be sure you give the right path to those files and adjust the other settings to your need: 
 
