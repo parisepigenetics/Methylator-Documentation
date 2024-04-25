@@ -17,3 +17,6 @@
   - [MultiQC](https://multiqc.info/docs/)
   - [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
   - [Samtools](http://www.htslib.org/doc/samtools.html)
+  - [Bismark](https://www.bioinformatics.babraham.ac.uk/projects/bismark/)
+  - [Modbam2bed](https://github.com/epi2me-labs/modbam2bed)
+  - [Methylkit](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html)
