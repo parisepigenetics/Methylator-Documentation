@@ -1,6 +1,6 @@
-# Welcome to Methylator, a DNA methylation analysis workflow
+# Methylator, a DNA methylation analysis workflow
 
-<small>Maintained by [BiBs](mailto:bibsATparisepigenetics.com). Last update : 20/06/2023. Methylator v0.1. </small>  
+<small>Maintained by [BiBs](mailto:bibsATparisepigenetics.com). Last update : 25/04/2024. Methylator v0.1. </small>  
 
 !!! warning
     This is a BETA version of the workflow, and of this documentation! There is no guarantee!
