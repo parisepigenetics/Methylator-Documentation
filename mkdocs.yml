@@ -8,6 +8,7 @@ nav:
   - Running your analysis step by step: running.md
   - Results: results.md
   - Extra help !: extra_help.md
+  - Singularity: singularity_image.md
   - Resources: resources.md
 markdown_extensions:
   - admonition
