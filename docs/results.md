@@ -232,10 +232,10 @@ This folder contain :
 
 ```
 
-## Differential methylation (DMC/DMT) results
+## Differential methylation CpG or Tiles (DMC/DMT) results
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/{LEVEL}_mincov{MINCOV}/differential/`  
-This folder contain :  
+This folder contain :   
 - a HTML report file for each comparison (indicate in the config file)
 - a bed folder for each comparisons with :
 - - a bed file for all DMC/DMT
@@ -243,22 +243,21 @@ This folder contain :
 - - a bed file for hyper-methylated significants DMC or DMT
 - - a bed file for hypo-methylated significants DMCor DMT 
 
-Attention ! Chaque bed est généré pour chaque combinaisons de valeurs des listes LIST_DIFF et LIST_QV. Ainsi si la liste LIST_DIFF comporte 4 valeurs seuils et la LIST_QV 4 valeurs seuils, on va généré 16 x les fichiers bed pour chacune des conditions, soient 16x4x3 = 192 bedgraphes !!! 
-```
-???
-```
+
+!!! warning ""
+    Chaque bed est généré pour chaque combinaisons de valeurs des listes LIST_DIFF et LIST_QV. Ainsi si la liste LIST_DIFF comporte 4 valeurs seuils et la LIST_QV 4 valeurs seuils, on va généré 16 x les fichiers bed pour chacune des conditions, soient 16x4x3 = 192 bedgraphes !!! 
+
 
 ## Differential methylation (DMR only) results
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/LEVEL_mincovMINCOV/DMR/`  
-This folder contain for each comparaison a folder with : 
+This folder contain for each comparaison a folder with :   
 - a HTML report file  (indicate in the config file)
 - a CSV file with all DMRs detected
 - a CSV file with only significant DMRs
 - a CSV file with only significant DMRS associate with genes annotations 
 
-<br>
+!!! note ""
+    All this HTML files are included in the [final report](#final-report). 
 
-All this HTML files are included in the [final report](#final-report). 
 
-<br>
