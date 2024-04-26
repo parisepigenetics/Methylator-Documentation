@@ -6,6 +6,7 @@ nav:
   - Adapt the workflow to cluster: adapt_cluster.md
   - Transfert your data: transfert_data.md
   - Running your analysis step by step: running.md
+  - Results: results.md
   - Extra help !: extra_help.md
   - Resources: resources.md
 markdown_extensions:
