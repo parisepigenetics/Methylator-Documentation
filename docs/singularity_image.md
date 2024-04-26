@@ -1,10 +1,14 @@
-## Singularity image
+# Singularity image
 
-Methylator utilise une image Singularity pour s'exécuter sur les cluster HPC. 
-Singularity est une technologie qui permet de construire des environnements isolé du reste de votre machine,
-qui ne dependeront uniquement du noyaux linux de celle-çi. On appele ces environnements isolés des **containers**. 
-Une image est une photographie, une description exaustive et statique d'un container. Elle permet le partage,
-l'instanciation et l'exécution de containers. Methylator utilise cette technologie pour s'exécuter dans un 
-environnement isolé contenant l'intégralité des outils (avec les bonnes versions) nécessaire à son fonctionnement. L'objectif de cette démarche est d'améliorer la reproductibilitée des analyses conduite par le workflow et d'augmenter sa pérénité. 
+Methylator uses a Singularity image to run on HPC clusters. 
+Singularity is a technology that allows you to build environments isolated from the rest of your machine,
+that depend solely on the machine's Linux kernel. These isolated environments are called **containers**. 
+An image is a photograph, an exaustive and static description of a container. It enables sharing,
+instantiation and execution of containers. Methylator uses this technology to run in an isolated 
+isolated environment containing all the tools (with the right versions) required for its operation. The aim of this approach is to improve the reproducibility of analyses carried out by the workflow and increase its durability. 
 
 For more information you can look the Singularity container [documentation](https://docs.sylabs.io/guides/3.0/user-guide/quick_start.html).
+
+Scheme of a singularity container 
+
+![sheme_sing](img/sing1.png)
