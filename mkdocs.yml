@@ -2,7 +2,8 @@ site_name: Methylator Documentation
 nav:
   - Home: index.md
   - Before starting: before_start.md
-  - Installation and description: installation.md
+  - Installation: installation.md
+  - Descritption: description.md
   - Adapt the workflow to cluster: adapt_cluster.md
   - Transfert your data: transfert_data.md
   - Running your analysis step by step: running.md
