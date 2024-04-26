@@ -12,6 +12,10 @@ Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Me
     **For EDC people :** We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for bioinformatics support.   
     **For External users :** We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for sharing their analysis workflows.
 
+## Table of content 
+[extra Help](extra_help.md)
+[Resources](resources)
+
 ## Pipeline scheme 
 ![Methylator Schema](img/poster_methylator.svg)
 
