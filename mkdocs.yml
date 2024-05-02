@@ -31,6 +31,7 @@ markdown_extensions:
   - md_in_html
   
 theme:
+  logo: img/methylator_logo.png
   features:
     - content.code.copy
     - content.code.select
