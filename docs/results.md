@@ -263,7 +263,6 @@ This folder contain :
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/DMR/`  
 This folder contain for each comparison a folder with :    
-
 - a HTML report file  (indicate in the config file)    
 - a CSV file with all DMRs detected    
 - a CSV file with only significant DMRs    
@@ -272,12 +271,12 @@ This folder contain for each comparison a folder with :
 
 ## Over-representation analysis (ORA)
 
+![Dotplot example](img/ora_example.png){ align=rigth }
+
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
 This folder contain :   
-
 - A folder `log`
-And for each comparison :
-
+And for each comparison :    
 - A PDF file `barplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
 - A PDF file `dotplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
 
