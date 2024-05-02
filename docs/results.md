@@ -225,14 +225,14 @@ So, with the same samples, if you change this parameters to perform a new analys
 Exploratory methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/{LEVEL}_mincov{MINCOV}/exploratory/`
 This folder contain :
 - a HTML report file
-- a folder `Exploration_5mC_files/figure-html` avec toutes les ifigures généré par le rapport au format .PNG 
+- a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG 
 ```
 
 ```
 
 ## Differential methylation CpG or Tiles (DMC/DMT) results
 
-Differential methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/{LEVEL}_mincov{MINCOV}/differential/`  
+Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/differential/`  
 This folder contain :   
 - a HTML report file for each comparison (indicate in the config file)
 - a bed folder for each comparisons with :
@@ -248,14 +248,25 @@ This folder contain :
 
 ## Differential methylation (DMR only) results
 
-Differential methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/LEVEL_mincovMINCOV/DMR/`  
-This folder contain for each comparaison a folder with :   
+Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/DMR/`  
+This folder contain for each comparison a folder with :   
 - a HTML report file  (indicate in the config file)
 - a CSV file with all DMRs detected
 - a CSV file with only significant DMRs
-- a CSV file with only significant DMRS associate with genes annotations 
+- a CSV file with only significant DMRS associate with genes annotations
+
+
+## Over-representation analysis (ORA)
+
+ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
+This folder contain :   
+- A folder `log`   
+And for each comparison : 
+- A PDF file "barplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf"  
+- A PDF file "dotplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf"  
 
 !!! note ""
     All this HTML files are included in the [final report](#final-report). 
+
 
 
