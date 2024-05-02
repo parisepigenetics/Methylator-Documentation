@@ -244,6 +244,24 @@ LIST_SIGNIDIF et LIST_QVALUE sont utilisé pour la génération des bedgraphes. 
 Si DMR est YES, vous réalisez une analyse en DMR avec les mêmes pairs de comparaisons qu'en CpG ou Tiles. Attention, le package utilisé pour inféré les DMR a été conçu pour l'analyse WGBS. Si vous souhaitez réaliser une analyse en RRBS vous pouvez essayer de supprimer le smoothing, ou de modifier certains paramètres : ?? 
 The default parameters are designed to focus on local DMRs (regions), generally in the range of hundreds to thousands of bp. If you choose blocks , the range increase on the order of hundreds of thousands to millions of bp. In this case, it's advised to decrease the cutoff
 
+## ORA : Over-representation analysis
+
+Après l'analyse différentielle. Des fichiers contenant des listes de gènes pour chaque comparaisons ont été générés. 
+Il est fortement possible que certains gènes est été identifiés comme associées à des régions différentiellement méthylés (DMTs/DMRs).
+Dans le cas ou c'est fichiers ne sont pas vide, il est possible d'utiliser ces listes de gènes pour réaliser une ORA.
+
+Une ORA est une méthode statistique permettant de déterminer si dnas vos données un gène est sur-représenté par rapport à un dataset prédéfinis (GO, KEGG ...).
+Methylator utilise l'outils python [GSEApy](https://gseapy.readthedocs.io/en/latest/index.html) pour réaliser cette analyse. 
+
+Pour cela il faut fournir un ensembl dataset (dépend de l'organisme étudié) et une gene set library (en fonction des analyses que vous souhaitez réaliser).
+L'ensemble des gene set library à votre disposition sont disponible sur le site [Enrichr](https://maayanlab.cloud/Enrichr/#libraries). 
+
+``` yaml 
+# ORA : Over-representation analysis
+ORA: yes # if yes, perform a Over-representation analysis with genes who overlap with DMRs or tiles 
+GENE_SET: DisGeNET # gene set library (Enrichr)
+ENSEMBL_DATASET: hsapiens_gene_ensembl # dataset fo convert ensembl gene ID
+``
 
 ## Start the workflow
 
