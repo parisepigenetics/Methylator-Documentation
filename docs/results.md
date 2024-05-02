@@ -87,13 +87,11 @@ A compressed archive named `20210727T1030_report.tar.bz2` is also generated and 
 [username@clust-slurm-client Methylator]$ tree -L 2 Results/EXAMPLE/20210727T1030_report 
 
 
-
-
-
 ```
 
-<span>{% include icon.liquid id='lightbulb-outline' %} <b>Tip for Windows users</b></span><br> Unlike Linux and Mac, the `tar.bz2` format is not natively supported by Windows, but you can use the free [PeaZip](https://peazip.github.io/) or [7-zip](https://www.7-zip.org/) softwares to decompress the `xxx_report.tar.bz2` archive. 
-{:.ui.success.message}
+!!! tip "Tip for Windows users"
+    Unlike Linux and Mac, the `tar.bz2` format is not natively supported by Windows, but you can use the free [PeaZip](https://peazip.github.io/) or [7-zip](https://www.7-zip.org/) softwares to decompress the `xxx_report.tar.bz2` archive.
+    
 
 An example of report is visible [here](ADD A REPORT). 
 
