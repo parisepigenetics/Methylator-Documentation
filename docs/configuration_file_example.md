@@ -1,5 +1,5 @@
 
-## Configuration file for Bisuflite Sequencing (WGBS or RRBS) data
+### Configuration file for Bisuflite Sequencing (WGBS or RRBS) data
 
 ```yaml
 # ============================================================================= #
@@ -171,7 +171,7 @@ CUSTOM_ANNOT_PATH: my_bank/
 MERGE_WITH_BASICS_ANNOT: yes # yes or no
 ```
 
-## Configuration file for Nanopore Methylation Sequencing data (MS) (MS or RRMS) 
+### Configuration file for Nanopore Methylation Sequencing data (MS) (MS or RRMS) 
 
 ```  yaml
 # ============================================================================= #
