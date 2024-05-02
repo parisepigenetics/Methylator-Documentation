@@ -1,4 +1,5 @@
 site_name: Methylator Documentation
+
 nav:
   - Home: index.md
   - Before starting: before_start.md
@@ -11,10 +12,10 @@ nav:
   - Extra help !: extra_help.md
   - Singularity: singularity_image.md
   - Resources: resources.md
+
 markdown_extensions:
   - admonition
   - def_list
-  - mdx_truly_sane_lists
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
@@ -29,7 +30,9 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+    
   name: readthedocs
+  
   icon:
     admonition:
       <type>: <icon> 
