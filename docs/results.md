@@ -203,9 +203,10 @@ If not already done, you can specifically get the BigWig files on your computer 
 You@YourComputer:~$ scp -pr username@core.cluster.france-bioinformatique.fr:/shared/projects/YourProjectName/Methylator/??????, PathTo/WhereYouWantToSave/
 ```
 
-Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org/software/igv/home). TODO
+Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org/software/igv/home).
+Dans cette exemple l'échantillon coloré en vert correpond à un WT, celui en rouge à un simple KO de la dnmt1 et celui en bleu à un double KO de la dnmt3a/b
 
-<img src="Tuto_pictures/igv_WGBS.png" alt="drawing" width="600"/>
+![igv_bw](img/bigwig.png) 
 
 
 ## Mapping QC
