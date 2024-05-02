@@ -1,6 +1,6 @@
 # Workflow results
 
-The results are separated into two folders : 
+The results are separated into two folders :   
 - the big files : trimmed FASTQ, BAM files, RData objects are in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH`
 
 ```yaml
@@ -176,13 +176,15 @@ RUN STATISTICS FOR INPUT FILE: /shared/projects/wgbs_flow/Nanopore_data/ONT_data
 This information is summarized in the MultiQC report, see  below. 
 
 ### FastQC of trimmed reads
-After the trimming, fastQC is automatically run on the new FASTQ and the results are also in the folder `results/EXAMPLE/fastqc_trimming/`:
+After the trimming, fastQC is automatically run on the new FASTQ and the results are also in the folder `results/EXAMPLE/fastqc_trimming/`:   
 - Sample1_R1_trimmed_fastqc.html
 - Sample1_R1_trimmed_fastqc.zip
 - Sample1_R2_trimmed_fastqc.html
 - Sample1_R2_trimmed_fastqc.zip
 
-As previously **MultiQC** gives a summary for all the samples :  `results/EXAMPLE/fastqc_trimming/report_quality_control_after_trimming.html`. You'll find information from the trimming report (for instance you can rapidly see the % of trim reads for the different samples) as well as from fastQC. It is included in the final report (ie `????.html`). 
+As previously **MultiQC** gives a summary for all the samples :  `results/EXAMPLE/fastqc_trimming/report_quality_control_after_trimming.html`.   
+You'll find information from the trimming report (for instance you can rapidly see the % of trim reads for the different samples) as well as from fastQC.   
+It is included in the final report (ie `????.html`). 
 
 ## Mapped reads
 The mapped reads are stored as deduplicated, sorted bam in the data folder, in our example in `Big_Data/EXAMPLE/mapping_BOWTIE2/Deduplicate/`, together with their `.bai` index. They can be visualized using a genome browser such as [IGV](http://software.broadinstitute.org/software/igv/home) but this is not very convenient as the files are heavy. [BigWig](https://deeptools.readthedocs.io/en/develop/content/tools/bamCoverage.html) files, that summarize the information converting the individual read positions into a number of reads per bin of a given size, are more adapted. 
@@ -202,7 +204,7 @@ Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org
 
 
 ## Mapping QC
-[Qualimap](http://qualimap.bioinfo.cipf.es/) is used to check the mapping quality. You'll find qualimap reports in `Results/EXAMPLE/mapping_BOWTIE2/alignmentQC`. Those reports contain a lot of information:
+[Qualimap](http://qualimap.bioinfo.cipf.es/) is used to check the mapping quality. You'll find qualimap reports in `Results/EXAMPLE/mapping_BOWTIE2/alignmentQC`. Those reports contain a lot of information:   
 - information about the mapper
 - number and % of mapped reads/pairs
 - number of indels and mismatches
@@ -235,13 +237,13 @@ This folder contain :
 ## Differential methylation CpG or Tiles (DMC/DMT) results
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/differential/`  
-This folder contain :   
+This folder contain :    
 - a HTML report file for each comparison (indicate in the config file)
 - a bed folder for each comparisons with :
 - - a bed file for all DMC/DMT
 - - a bed file for significants DMC or DMT
 - - a bed file for hyper-methylated significants DMC or DMT
-- - a bed file for hypo-methylated significants DMCor DMT 
+- - a bed file for hypo-methylated significants DMCor DMT   
 
 
 !!! warning 
