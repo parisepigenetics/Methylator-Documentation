@@ -271,7 +271,12 @@ This folder contain for each comparison a folder with :
 
 ## Over-representation analysis (ORA)
 
-![Dotplot example](img/ora_example.png){: style="height:300px;width:450px"}{: align="right"}
+ `  ![Dotplot example](img/ora_example.png){: style="height:300px;width:450px"}{: align="right"} `
+ 
+<figure markdown="span">
+  ![Dotplot example](img/ora_example.png){ align=right width=450 height=300 }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
 This folder contain :   
