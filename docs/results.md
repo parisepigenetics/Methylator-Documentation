@@ -1,6 +1,7 @@
 # Workflow results
 
 The results are separated into two folders :   
+
 - the big files : trimmed FASTQ, BAM files, RData objects are in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH`
 
 ```yaml
@@ -101,6 +102,7 @@ Detailed description of all the outputs of the workflow is included below.
 After trimming, the FASTQ are stored in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH:`.   
 In this examples the trim FASTQ files will be stored in `/shared/projects/YourProjectName/Methylator/data/EXAMPLE/trim/`.   
 They are named :   
+
 - Sample1_R1_val_1.fq   
 - Sample1_R2_val_2.fq   
 
@@ -177,6 +179,7 @@ This information is summarized in the MultiQC report, see  below.
 
 ### FastQC of trimmed reads
 After the trimming, fastQC is automatically run on the new FASTQ and the results are also in the folder `results/EXAMPLE/fastqc_trimming/`:   
+
 - Sample1_R1_trimmed_fastqc.html    
 - Sample1_R1_trimmed_fastqc.zip    
 - Sample1_R2_trimmed_fastqc.html    
@@ -205,6 +208,7 @@ Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org
 
 ## Mapping QC
 [Qualimap](http://qualimap.bioinfo.cipf.es/) is used to check the mapping quality. You'll find qualimap reports in `Results/EXAMPLE/mapping_BOWTIE2/alignmentQC`. Those reports contain a lot of information:   
+
 - information about the mapper    
 - number and % of mapped reads/pairs    
 - number of indels and mismatches    
@@ -227,7 +231,8 @@ And **MINCOV** corresponding at the minimum of coverage choose for retain CpG.
 ## Exploratory methylation analysis results
 
 Exploratory methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/exploratory/`
-This folder contain :
+This folder contain :    
+
 - a HTML report file    
 - a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG     
 ```
@@ -238,8 +243,10 @@ This folder contain :
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/differential/`  
 This folder contain :    
+
 - a HTML report file for each comparison (indicate in the config file)    
-- a bed folder for each comparisons with :    
+- a bed folder for each comparisons with :
+  
 - - a bed file for all DMC/DMT    
 - - a bed file for significants DMC or DMT    
 - - a bed file for hyper-methylated significants DMC or DMT    
@@ -254,6 +261,7 @@ This folder contain :
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/DMR/`  
 This folder contain for each comparison a folder with :    
+
 - a HTML report file  (indicate in the config file)    
 - a CSV file with all DMRs detected    
 - a CSV file with only significant DMRs    
@@ -264,8 +272,10 @@ This folder contain for each comparison a folder with :
 
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
 This folder contain :   
+
 - A folder `log`
-And for each comparison :   
+And for each comparison :
+
 - A PDF file `barplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
 - A PDF file `dotplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
 
