@@ -8,6 +8,7 @@ nav:
   - Adapt the workflow to cluster: adapt_cluster.md
   - Transfert your data: transfert_data.md
   - Configuration files examples : configuration_file_example.md
+  - Metadata examples : metadata_example.md
   - Running your analysis step by step: running.md
   - Results: results.md
   - Extra help !: extra_help.md
