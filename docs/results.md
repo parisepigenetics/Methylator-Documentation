@@ -274,15 +274,15 @@ This folder contain for each comparison a folder with :
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
 
 <figure markdown="span">
-  ![Dotplot example](img/ora_example.png){ align=right width=450 height=300 }    
+  ![Dotplot example](img/ora_example.png){ align=right width=350 height=200 } 
+</figure> 
     
 This folder contain :   
 - A folder `log`       
 And for each comparison :    
 - A PDF file `barplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`   
 - A PDF file `dotplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`
-
-</figure>          
+     
 
 !!! note
     All this HTML files are included in the [final report](#final-report). 
