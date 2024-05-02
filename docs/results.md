@@ -1,8 +1,8 @@
 # Workflow results
 
-The results are separated into two folders :   
+The results are separated into two folders :
 
-- the big files : trimmed FASTQ, BAM files, RData objects are in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH`
+* the big files : trimmed FASTQ, BAM files, RData objects are in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH`
 
 ```yaml
 ## paths for intermediate and final results
@@ -36,7 +36,9 @@ Big_Data/EXAMPLE/
     ...
 ```
 
-- the small files: QC reports, BigWig, Analysis reports, etc. are in the final result folder defined in `configs/config_main.yaml` at `RESULTPATH`
+* the small files: QC reports, BigWig, Analysis reports, etc. are in the final result folder defined in `configs/config_main.yaml` at `RESULTPATH`
+
+
 
 ```yaml
 RESULTPATH: /shared/projects/YourProjectName/Methylator/Results
@@ -101,10 +103,10 @@ Detailed description of all the outputs of the workflow is included below.
 ## Trimmed reads
 After trimming, the FASTQ are stored in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH:`.   
 In this examples the trim FASTQ files will be stored in `/shared/projects/YourProjectName/Methylator/data/EXAMPLE/trim/`.   
-They are named :   
+They are named :
 
-- Sample1_R1_val_1.fq   
-- Sample1_R2_val_2.fq   
+* Sample1_R1_val_1.fq
+* Sample1_R2_val_2.fq   
 
 ### Trimming report
 In `results/EXAMPLE/trimming` you'll find trimming reports such as `Sample1_forward.fastq.gz_trimming_report.txt` for each samples. You'll find information about the tools and parameters, as well as trimming statistics:
