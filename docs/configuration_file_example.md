@@ -1,5 +1,5 @@
 
-## Configuration file for Bisuflite Sequencing (BS) data (WGBS or RRBS) 
+## Configuration file for Bisuflite Sequencing (WGBS or RRBS) data
 
 ```yaml
 # ============================================================================= #
@@ -173,7 +173,7 @@ MERGE_WITH_BASICS_ANNOT: yes # yes or no
 
 ## Configuration file for Nanopore Methylation Sequencing data (MS) (MS or RRMS) 
 
-``` yaml
+```  yaml
 # ============================================================================= #
 # ========= Methylator Workflow configuration file (Nanopore data) ============ #
 # ============================================================================= #
@@ -282,7 +282,7 @@ BEDPATH: TestDataset/my_bank/cpgIslandExt.mm39_mini.bed
 CUSTOM_ANNOT: no 
 METAFILE_ANNOT: configs/metadata_annot.tsv
 CUSTOM_ANNOT_PATH: "/shared/projects/wgbs_flow/Elouan/Custom_tracks/"
-``
+```
 
 
 
