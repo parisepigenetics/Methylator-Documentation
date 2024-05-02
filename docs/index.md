@@ -5,7 +5,7 @@
 Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Methylator runs in a dedicated Apptainer image to allow for reproducibility and was optimized to compute effciently the data on HPC clusters. We aim to make those complex analyses do able by biologists with no or little bioinformatics background. Implemented by [BiBs-EDC](https://parisepigenetics.github.io/bibs/), this pipeline runs effectively on both IFB and iPOP-UP clusters. If you encounter troubles or need additional tools or features, you can create an issue on the [GitHub repository](https://github.com/parisepigenetics/Methylator/issues) or email directly [BiBs](mailto:bibsATparisepigenetics.com).
 
 ## Pipeline scheme 
-![Methylator Schema](img/methylator_sheme.png){: width: 600px }
+![Methylator Schema](img/methylator_sheme_2.png){: width=600px }
 
 !!! warning
     This is a BETA version of the workflow, and of this documentation ! There is no guarantee !   
