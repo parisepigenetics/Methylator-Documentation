@@ -14,6 +14,8 @@ nav:
 markdown_extensions:
   - admonition
   - def_list
+  - toc:
+      permalink: false
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
