@@ -1,3 +1,7 @@
+
+## Configuration file for Bisuflite Sequencing (BS) data (WGBS or RRBS) 
+
+```yaml
 # ============================================================================= #
 # =========== Methylator Workflow configuration file (BS-seq data) ============= #
 # ============================================================================= #
@@ -165,4 +169,125 @@ CUSTOM_ANNOT: no
 METAFILE_ANNOT: configs/metadata_annot.tsv
 CUSTOM_ANNOT_PATH: my_bank/
 MERGE_WITH_BASICS_ANNOT: yes # yes or no
+```
+
+## Configuration file for Nanopore Methylation Sequencing data (MS) (MS or RRMS) 
+
+``` yaml
+# ============================================================================= #
+# ========= Methylator Workflow configuration file (Nanopore data) ============ #
+# ============================================================================= #
+
+# Please check the parameters, and adjust them according to your circumstance
+
+# Project name
+PROJECT: Test_nanopore
+
+## paths for intermediate final results
+BIGDATAPATH: Big_Data # for big files
+RESULTPATH: Results
+
+## genome files
+GENOMEPATH: TestDataset/my_bank/mm39_chr19_mini.fa  # path to the reference genome's folder 
+
+## genome
+ASSEMBLY: mm39 # mm10 name of the assembly used for the analysis (now use mm39, new version)
+
+
+# ========================= Control of the workflow ========================= #
+# =========================================================================== #
+
+## Do you want to do the globale exploration ?
+EXPLORATION: yes # "yes" or "no"
+
+## Do you need to do differentially methylation analysis ?
+DIFFERENTIAL: yes # "yes" or "no"
+
+## Do you need a final report ?
+REPORT: no # "yes" or "no"
+
+# ===================== Configuration for Nanopore data ==================== #
+# ========================================================================== #
+DATATYPE: NANOPORE # do not touch!
+METAFILE: TestDataset/configs/metadata_nano2.tsv
+NANO_BAM_PATH: TestDataset/bam_nanopore
+COMPARISON: [["WT","NP95"]]    # [["WT","TKO"], ["WT","WT2"], ["WT2","TKO"]]
+# Did you select specific regions during sequencing? 
+RRMS: yes 
+# If yes, put the path to the BED file used for selection below
+BED_RRMS: TestDataset/my_bank/rrms_mm39_mini.bed
+# if you have basecalled FAST5 files including 5hmC detection, you can explore this mark
+5HMC: yes
+
+
+# # ===================== Configuration for process BAM files  ================== #
+# =========================================================================== #
+
+STARTFROMBED: no # put no if you start from BAM files, if you already have BED files from modbam2bed you can put the path to the folder containing them. The BED should be named Sample_Merged.cpg.bed. 
+
+
+# =================== Configuration for Statistical Analysis ================ #
+# =========================================================================== #
+
+
+LEVEL: Tiles # "CpG" or "Tiles" study by Tiles or by CpG 
+
+# if Tiles was selected, define tile size, step size, and minimal number of CpG /tile
+TILESIZE: 250 
+STEPSIZE: 1  # Tiles relative step size
+NB_CPG_TILES: 1 # minimal number of CpG to keep a tile in the analysis
+
+# if CpG was selected, your can choose to merge the reads from both strands
+DESTRAND: yes # if yes, reads on both strands of a CpG dinucleotide will be merged. This provides better coverage, but only advised when looking at CpG methylation (for CpH methylation this will cause wrong results in subsequent analyses). This have no effect working on Tiles. 
+
+# If CpG was selected, it is possible to perform a differential methylation analysis by region 
+# To use dmrseq, you need to have at least 2 samples in each condition
+DMR: yes
+
+## params (only DMR)
+DMR_TYPE: blocks  # regions or blocks, by default regions 
+MIN_CPG: 3  # minimum number of CpGs to consider for a candidate DMR, by default 5, minimum 3
+MAX_GAP: 6000 # maximum number of bp in between neighboring CpGs to be included in the same DMR, by default 1000 (for blocks : 5e3) 
+CUTOFF: 0.05 # cutoff of the single CpG coefficient (methylation difference) that is used to discover candidate DMR. by default 0.1
+FDR: 0.05 # QVALUE for select significant DMR
+
+
+# ===== Exploratory analysis ===== #
+## params 
+MINCOV: 20  # int, minimum coverage depth for the analysis
+COV.PERC: 99.9 # to the coverage filter, choose the percentile for remove top ..% (MKit_diff_bed.R and MKit_Exploration.Rmd)
+MINQUALI: 20  # int, minimum quality to keep a CpG for the analysis
+UNITE: all # 'all' or 'one' (at least one per group)
+MIN_PER_GROUP: 3 
+
+# ===== Differential analysis ===== #
+## params
+LIST_SIGNIDIF: [10, 20, 25, 30] # SigDiffMeth en %, used in MKit_diff_bed.R
+LIST_QVALUE : [0.001, 0.01, 0.05]  # used in MKit_diff_bed.R
+QVALUE: 0.05  # QValue (used in Mkit_differential.Rmd)
+SIGNIDIF: 10
+
+
+# ======================= Configuration for annotations ===================== # 
+# =========================================================================== #
+
+# ===== Standard annotations  ===== #
+## GTF 
+GTFPATH: TestDataset/my_bank/gencode.vM27.annotation_chr19_mini.gtf
+
+## CPG Bed 
+BEDPATH: TestDataset/my_bank/cpgIslandExt.mm39_mini.bed
+
+# ===== Customs Annotations ===== #
+CUSTOM_ANNOT: no 
+METAFILE_ANNOT: configs/metadata_annot.tsv
+CUSTOM_ANNOT_PATH: "/shared/projects/wgbs_flow/Elouan/Custom_tracks/"
+``
+
+
+
+
+
+
+
 
