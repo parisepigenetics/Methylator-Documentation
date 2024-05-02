@@ -177,10 +177,10 @@ This information is summarized in the MultiQC report, see  below.
 
 ### FastQC of trimmed reads
 After the trimming, fastQC is automatically run on the new FASTQ and the results are also in the folder `results/EXAMPLE/fastqc_trimming/`:   
-- Sample1_R1_trimmed_fastqc.html
-- Sample1_R1_trimmed_fastqc.zip
-- Sample1_R2_trimmed_fastqc.html
-- Sample1_R2_trimmed_fastqc.zip
+- Sample1_R1_trimmed_fastqc.html    
+- Sample1_R1_trimmed_fastqc.zip    
+- Sample1_R2_trimmed_fastqc.html    
+- Sample1_R2_trimmed_fastqc.zip    
 
 As previously **MultiQC** gives a summary for all the samples :  `results/EXAMPLE/fastqc_trimming/report_quality_control_after_trimming.html`.   
 You'll find information from the trimming report (for instance you can rapidly see the % of trim reads for the different samples) as well as from fastQC.   
@@ -205,11 +205,11 @@ Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org
 
 ## Mapping QC
 [Qualimap](http://qualimap.bioinfo.cipf.es/) is used to check the mapping quality. You'll find qualimap reports in `Results/EXAMPLE/mapping_BOWTIE2/alignmentQC`. Those reports contain a lot of information:   
-- information about the mapper
-- number and % of mapped reads/pairs
-- number of indels and mismatches
-- coverage per chromosome
-- insert size histogram
+- information about the mapper    
+- number and % of mapped reads/pairs    
+- number of indels and mismatches    
+- coverage per chromosome    
+- insert size histogram    
 - ...  
 
 Once again **MultiQC** aggregates the results of all the samples and you can have a quick overview by looking at `Results/EXAMPLE/mapping_BOWTIE2/multiqc/report_mapping_bismark.html` or in the final report (ie `????_report.html`). 
@@ -228,8 +228,8 @@ And **MINCOV** corresponding at the minimum of coverage choose for retain CpG.
 
 Exploratory methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/exploratory/`
 This folder contain :
-- a HTML report file
-- a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG 
+- a HTML report file    
+- a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG     
 ```
 
 ```
@@ -238,12 +238,12 @@ This folder contain :
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/differential/`  
 This folder contain :    
-- a HTML report file for each comparison (indicate in the config file)
-- a bed folder for each comparisons with :
-- - a bed file for all DMC/DMT
-- - a bed file for significants DMC or DMT
-- - a bed file for hyper-methylated significants DMC or DMT
-- - a bed file for hypo-methylated significants DMCor DMT   
+- a HTML report file for each comparison (indicate in the config file)    
+- a bed folder for each comparisons with :    
+- - a bed file for all DMC/DMT    
+- - a bed file for significants DMC or DMT    
+- - a bed file for hyper-methylated significants DMC or DMT    
+- - a bed file for hypo-methylated significants DMCor DMT       
 
 
 !!! warning 
@@ -253,11 +253,11 @@ This folder contain :
 ## Differential methylation (DMR only) results
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/DMR/`  
-This folder contain for each comparison a folder with :   
-- a HTML report file  (indicate in the config file)   
-- a CSV file with all DMRs detected   
-- a CSV file with only significant DMRs   
-- a CSV file with only significant DMRS associate with genes annotations   
+This folder contain for each comparison a folder with :    
+- a HTML report file  (indicate in the config file)    
+- a CSV file with all DMRs detected    
+- a CSV file with only significant DMRs    
+- a CSV file with only significant DMRS associate with genes annotations    
 
 
 ## Over-representation analysis (ORA)
