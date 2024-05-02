@@ -14,9 +14,7 @@ nav:
 markdown_extensions:
   - admonition
   - def_list
-  - toc:
-      permalink: True
-      separator: "_"
+  - mdx_truly_sane_lists
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
@@ -26,8 +24,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - toc:
-      toc_depth: 3
+  
 theme:
   features:
     - content.code.copy
