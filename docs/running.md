@@ -9,7 +9,6 @@ When the configuration files are ready, you can start the run by `sbatch Workflo
 
 Please see below detailed explanation. 
 
-## SRA data retrieval
 
 ## FASTQ quality control
 
@@ -142,11 +141,9 @@ Similarly you can download them to the server using `wget`.
 
 ```sh
  wget -qO- http://hgdownload.cse.ucsc.edu/goldenpath/hg38/database/cpgIslandExt.txt.gz \
-   | gunzip -c \
-   | awk 'BEGIN{ OFS="\t"; }{ print $2, $3, $4, $5$6, $7, $8, $9, $10, $11, $12 }' \
-   | sort-bed - \
-   > cpgIslandExt.hg38.bed
+   | gunzip -c  > cpgIslandExt.hg38.txt
 ```
+
 !!! info "Fill common banks"
     Don't forget to give the links to the new references you made/downloaded to [IFB](https://community.france-bioinformatique.fr/) or to [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/      ipop-up) support so that they can add them to the common banks.
 
@@ -160,7 +157,6 @@ Be sure you give the right path to those files and adjust the other settings to 
 ```
 
 For an easy visualisation on a genome browser, BigWig files are generated. 
-
 
 
 As at the moment the default project quota in 250 Go you might be exceeding the space you have (and may or may not get error messages...). So if the mapping fails, try removing files to get more space, or ask to increase your quota on [IFB Community support](https://community.cluster.france-bioinformatique.fr) or [iPOP-UP Community support](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up). To see the space you have you can run:
