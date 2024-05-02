@@ -98,11 +98,11 @@ An example of report is visible [here](ADD A REPORT).
 Detailed description of all the outputs of the workflow is included below. 
 
 ## Trimmed reads
-After trimming, the FASTQ are stored in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH:`. 
-
-In this examples the trim FASTQ files will be stored in `/shared/projects/YourProjectName/Methylator/data/EXAMPLE/trim/`. They are named
-- Sample1_R1_val_1.fq
-- Sample1_R2_val_2.fq
+After trimming, the FASTQ are stored in the data folder defined in `configs/config_main.yaml` at `BIGDATAPATH:`.   
+In this examples the trim FASTQ files will be stored in `/shared/projects/YourProjectName/Methylator/data/EXAMPLE/trim/`.   
+They are named :   
+- Sample1_R1_val_1.fq   
+- Sample1_R2_val_2.fq   
 
 ### Trimming report
 In `results/EXAMPLE/trimming` you'll find trimming reports such as `Sample1_forward.fastq.gz_trimming_report.txt` for each samples. You'll find information about the tools and parameters, as well as trimming statistics:
@@ -215,9 +215,9 @@ Once again **MultiQC** aggregates the results of all the samples and you can hav
 # Statisical analysis results 
 
 All files of the staticticals analysis are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/`  
-DATATYPE corresponding to the type of data ( : WGBS, RRBS or NANOPORE).  
-LEVEL corresponding to the level of analysis (per base or tiles).
-And MINCOV corresponding at the minimum of coverage choose for retain CpG.   
+**DATATYPE** corresponding to the type of data ( : WGBS, RRBS or NANOPORE).     
+**LEVEL** corresponding to the level of analysis (per base or tiles).   
+And **MINCOV** corresponding at the minimum of coverage choose for retain CpG.      
 
 !!! note 
     So, with the same samples, if you change this parameters to perform a new analysis a new folder is created for don't overwrite laste files. 
@@ -244,7 +244,7 @@ This folder contain :
 - - a bed file for hypo-methylated significants DMCor DMT 
 
 
-!!! warning ""
+!!! warning 
     Chaque bed est généré pour chaque combinaisons de valeurs des listes LIST_DIFF et LIST_QV. Ainsi si la liste LIST_DIFF comporte 4 valeurs seuils et la LIST_QV 4 valeurs seuils, on va généré 16 x les fichiers bed pour chacune des conditions, soient 16x4x3 = 192 bedgraphes !!! 
 
 
@@ -252,10 +252,10 @@ This folder contain :
 
 Differential methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/DMR/`  
 This folder contain for each comparison a folder with :   
-- a HTML report file  (indicate in the config file)
-- a CSV file with all DMRs detected
-- a CSV file with only significant DMRs
-- a CSV file with only significant DMRS associate with genes annotations
+- a HTML report file  (indicate in the config file)   
+- a CSV file with all DMRs detected   
+- a CSV file with only significant DMRs   
+- a CSV file with only significant DMRS associate with genes annotations   
 
 
 ## Over-representation analysis (ORA)
@@ -263,12 +263,11 @@ This folder contain for each comparison a folder with :
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
 This folder contain :   
 - A folder `log`
-
 And for each comparison :   
-- A PDF file "barplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf"  
-- A PDF file "dotplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf"  
+- A PDF file `barplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
+- A PDF file `dotplot_{LEVEL}_{COMPARISON}_{5mc or 5hmc}.pdf`   
 
-!!! note ""
+!!! note
     All this HTML files are included in the [final report](#final-report). 
 
 
