@@ -214,15 +214,17 @@ Once again **MultiQC** aggregates the results of all the samples and you can hav
 
 # Statisical analysis results 
 
-All files of the staticticals analysis are in `Results/EXAMPLE/Methylator_DATATYPE/LEVEL_mincovMINCOV/`  
+All files of the staticticals analysis are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/`  
 DATATYPE corresponding to the type of data ( : WGBS, RRBS or NANOPORE).  
 LEVEL corresponding to the level of analysis (per base or tiles).
-And MINCOV corresponding at the minimum of coverage choose for retain CpG.
-So, with the same samples, if you change this parameters to perform a new analysis a new folder is created for don't overwrite laste files. 
+And MINCOV corresponding at the minimum of coverage choose for retain CpG.   
+
+!!! note 
+    So, with the same samples, if you change this parameters to perform a new analysis a new folder is created for don't overwrite laste files. 
 
 ## Exploratory methylation analysis results
 
-Exploratory methylation results are in `Results/EXAMPLE/Methylator_DATATYPE/{LEVEL}_mincov{MINCOV}/exploratory/`
+Exploratory methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/exploratory/`
 This folder contain :
 - a HTML report file
 - a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG 
