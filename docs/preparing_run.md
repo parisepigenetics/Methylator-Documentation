@@ -13,7 +13,7 @@ To modify the text files from the terminal you can use **vi** or **nano** on iPO
 
 You can also work on your computer and copy the files to the cluster using the `scp` command or the graphic interface FileZilla. 
 
-!!! warning 
+!!! danger 
     Never use word processor (like Microsoft Word or LibreOffice Writer) to modify your code and never copy/past code to/from those softwares. Use only **text editors** and **UTF-8 encoding**.
 
 You can find useful help to manage your data on [IFB core documentation](https://ifb-elixirfr.gitlab.io/cluster/doc/data/). 
@@ -36,11 +36,9 @@ SRR11806588	1KO
 SRR11806589	DKO
 ```   
 
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> The columns have to be **tab-separated** and the header to remain unchanged.
-{:.ui.large.warning.message}
-
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> Please, don't name groups with and underscore
-{:.ui.large.warning.message}
+!!! danger
+    The columns have to be **tab-separated** and the header to remain unchanged.
+    Please, don't name groups and samples with and underscore
 
 On Jupyter Hub:  
 
@@ -48,15 +46,16 @@ On Jupyter Hub:
 
 The first column contains the **sample** names that have to **correspond to the FASTQ names** (for instance here D197-D192T27_R1.fastq.gz). The second column describes the **group** the sample belongs to and will be used for differential expression analysis. You can rename or move that file, as long as you adapt the `METAFILE` entry in `config_main.yaml` (see below).  
 
-<span>{% include icon.liquid id='lightbulb-outline' %} <b>Tip</b></span><br> It is also possible to download and use directly SRA data! That's easy, just enter the SRRxxxx IDs in the first column instead of the sample names! 
-{:.ui.success.message}
+!!! tip 
+    It is also possible to download and use directly SRA data! That's easy, just enter the SRRxxxx IDs in the first column instead of the sample names! 
 
 ## config_wgbs.yaml
  
 The configuration of the workflow for BSseq (WGBS or RRBS) data (see [step by step description](#running-your-analysis-step-by-step) below) is done in `config/config_wgbs.yaml`.
 
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
-{:.ui.large.warning.message}
+!!! warning
+    The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
+
 
 This configuration file contains 3 parts:  
 
@@ -85,8 +84,9 @@ Here you define where the FASTQ files are stored, where is the file describing t
 - the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`  
 Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis. 
 
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> For differentially methylation analysis, you need to give the comparison(s) you want to do. If multiple comparisons, specify each pair (CONTROL & TREAT) in order respectively.
-{:.ui.warning.message}
+!!! warning
+    For differentially methylation analysis, you need to give the comparison(s) you want to do. If multiple comparisons, specify each pair (CONTROL & TREAT) in order respectively.
+
 
 ### 2) Steps of the workflow you want to run
 
@@ -117,12 +117,11 @@ DIFFERENTIAL: yes # "yes" or "no"
 REPORT: no # "yes" or "no"
 ```
 
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> if `QC` or `SRA` is set to `yes`, the workflow will stop after the QC to let you decide whether you want to trim your raw data or not. In order to run the rest of the workflow, you have to set both `QC` and `SRA` to `no`.
-{:.ui.large.warning.message}
+!!! warning 
+    If `QC` or `SRA` is set to `yes`, the workflow will stop after the QC to let you decide whether you want to trim your raw data or not. In order to run the rest of the workflow, you have to set both `QC` and `SRA` to `no`.
 
-<span>{% include icon.liquid id='lightbulb-outline' %} <b>Tip</b></span><br>
-Nous conseillons de réaliser l'exploration globale avant de lancer l'analyse différentielle. L'exploration permet de s'assurer que les échantillons soient suffisemment distinct pour qu'une analyse différentielle soit utile. De plus, elle permet d'affiner le choix de certains paramètres approprié à vos données (minimum de couverture, unification ... ). 
-{:.ui.success.message}
+!!! Tip
+    Nous conseillons de réaliser l'exploration globale avant de lancer l'analyse différentielle. L'exploration permet de s'assurer que les échantillons soient suffisemment distinct pour qu'une analyse différentielle soit utile. De plus, elle permet d'affiner le choix de certains paramètres approprié à vos données (minimum de couverture, unification ... ).
 
 
 ### 3) Configuration of the specific tools  
@@ -172,7 +171,8 @@ BED_RRMS: /shared/projects/edc_nanopore/rrms_mm39_v2_corr_end.bed
 !!! warning
     if you have perform a RRMS (selection of specific regions during the sequencing), don't forget to put the path to the BED file used for selection below. 
 
-Contrairement au séquencage BSseq, en nanopore il est possible de faire la distinction entre le méthylation 5mc et 5hmc. If you have basecalled FAST5 files including 5hmC detection, you can explore this mark. 
+!!! success
+    Contrairement au séquencage BSseq, en nanopore il est possible de faire la distinction entre le méthylation 5mc et 5hmc. If you have basecalled FAST5 files including 5hmC detection, you can explore this mark. 
 
 ### 2) Steps of the workflow you want to run
 
