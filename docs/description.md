@@ -3,6 +3,18 @@
 
 ## Utilisation 
 
+Methylator permet d'analyser les données de méthylation de l'ADN depuis deux sources principales :  
+- Les données BS-seq (après traitement au Bisulfite de Sodium). Soit en Whole Genome (WGBS), soit en régions enrichie en GC (RRBS). 
+- Les données de séquencage nanopore. Soit en Whole Genome, soit
+
+Pour le moment Methylator n'est pas compatible avec les données de puces. 
+
+Dans le cas des données BSseq, le workflow démarre avec les fichiers au format FATSQ. Il réalise l'ensemble des étapes classques permettant d'obtenir
+les tables de comptes de méthylation. (Voir analyses step by steps). Dans le cas des données nanopore, le workflow démarre avec les fichiers .BAM
+issue du basecalling. La seconde partie du workflow, qui se concentre sur l'analyses de la méthylation est commune aux deux type de données. 
+
+Ceci fait de Methylator un outil de choix lorsque l'on souhaite comparer ces deux méthodes. 
+
 
 
 ## Folders organisation 
