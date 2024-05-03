@@ -239,9 +239,9 @@ MAX_GAP: 1000 # maximum number of bp in between neighboring CpGs to be included 
 CUTOFF: 0.1 # cutoff of the single CpG methylation difference that is used to discover candidate DMR. by default 0.1
 FDR: 0.05 # QVALUE for select significant DMR
 ```
-LIST_SIGNIDIF and LIST_QVALUE are used for generating bedgraphs. For each threshold of differences and for each threshold of q-value, a bedgraph is generated.
+**LIST_SIGNIDIF** and **LIST_QVALUE** are used for generating bedgraphs. For each threshold of differences and for each threshold of q-value, a bedgraph is generated.
 
-If DMR is set to "YES", you perform a DMR analysis with the same comparison pairs as in CpG or Tiles analysis. Please note that the package used to infer the DMRs was designed for WGBS analysis. If you want to perform an analysis in RRBS, you can try removing the smoothing or modifying certain parameters: ??
+If **DMR** is set to "YES", you perform a DMR analysis with the same comparison pairs as in CpG or Tiles analysis. Please note that the package used to infer the DMRs was designed for WGBS analysis. If you want to perform an analysis in RRBS, you can try removing the smoothing or modifying certain parameters: ??
 
 The default parameters are optimized to focus on local DMRs (regions), typically in the range of hundreds to thousands of base pairs. If you choose blocks, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
