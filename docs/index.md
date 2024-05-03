@@ -19,7 +19,23 @@ Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Me
 - [Before starting](before_start.md)
 - [Installation](installation.md)
 - [Description](description.md)
-- [Adapt cluster](adapt_cluster.md)
+- [Adapt the workflow to cluster](adapt_cluster.md)
+- [Configuration files examples](configuration_example.md)
+- [Metadata examples](metadata_example.md)
+- [Running your analysis step by step](running.md)
+- [Results](results.md)
 - [Extra Help !](extra_help.md)
 - [Singularity](singularity_image.md)
 - [Resources](resources.md)
+
+
+
+
+
+
+
+
+
+
+
+
