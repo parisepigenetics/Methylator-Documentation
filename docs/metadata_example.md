@@ -9,8 +9,8 @@
 | SRR11806588_sub500000_chr19 |       1KO       |
 | SRR11806589_sub500000_chr19 |       DKO       |
 
-Ici le nom des échantilons correspond à leur numéro SRR.
-Il est possible d'utiliser la fonctionalité SRA du worklfow (voir ...) 
+Here, the name of the samples corresponds to their SRR number.
+It is possible to use the SRA function of the worklfow (see [here](runing.md) )
 
 
 ### Metadata for custom annotation 
@@ -21,11 +21,11 @@ Il est possible d'utiliser la fonctionalité SRA du worklfow (voir ...)
 | hg19.nestedRepeats.txt | repeat | nested_repeat |
 | hg19.atacseq.txt       |  atac  |      atac     |
 
-Ce est nécessaire uniquement si vous sélectionner la fonctionnalité "customs annotations" 
-dans le fichier de configuration. Dans ce cas le worklfow produira en plus des figures liées
-aux annotations par défaults les mêmes figures mais pour des annotations personnelles fournis 
-par l'utilisateur. `annotation_tracks`correspond aux noms des fichiers contenant les annotations, 
-`group` aux différentes catégories d'annotations et `name` aux noms qui sera données aux annotations dans les rapports. 
+This is necessary only if you select the 'customs annotations' feature in the configuration file. 
+In this case, the workflow will produce, in addition to the figures linked to default annotations, 
+the same figures but for user-provided personal annotations. 'Annotation_tracks' corresponds to 
+the names of the files containing the annotations, 'group' to the different annotation categories, 
+and 'name' to the names that will be given to the annotations in the reports.
 
 ``` yaml 
 # ===== Customs Annotations ===== #
@@ -34,18 +34,17 @@ METAFILE_ANNOT: configs/metadata_annot.tsv
 CUSTOM_ANNOT_PATH: my_bank/
 MERGE_WITH_BASICS_ANNOT: yes # yes or no
 ```
-Il faut également indiquer le chemin vers le dossier contenant les fichiers d'annotations et le chemin vers le metadata. 
+Additionally, you need to specify the path to the folder containing the annotation files and the path to the metadata
 
-Attention , le format des fichiers attendu pour réaliser les annotations customs est le suivant :
-
-|  chr | start |  end  |                                 metadata                                   |
-| ---- | ----- | ----- | -------------------------------------------------------------------------- |
-| chr1 | 10000 | 10468 | trf	6	77.2	6	95	3	789	33	51	0	15	1.43	TAACCC                        | 
-| chr1 | 10627 | 10800 | trf	29	6	29	100	0	346	13	38	47	0	1.43	AGGCGCGCCGCGCCGGCGCAGGCGCAGAG | 
-| chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGCGCGCC    | 
-| chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC         | 
-
-Avec toujours les coordonnées chromosmiques (chromsomes | start | end) plus d'éventuelles métadata. 
+!!! warning
+    The expected file format for creating custom annotations is as follows : 
+    |  chr | start |  end  |                                 metadata                                   |
+    | ---- | ----- | ----- | -------------------------------------------------------------------------- |
+    | chr1 | 10000 | 10468 | trf	6	77.2	6	95	3	789	33	51	0	15	1.43	TAACCC                        | 
+    | chr1 | 10627 | 10800 | trf	29	6	29	100	0	346	13	38	47	0	1.43	AGGCGCGCCGCGCCGGCGCAGGCGCAGAG | 
+    | chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGCGCGCC    | 
+    | chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC         | 
+    With chromosomal coordinates (chromosomes | start | end) along with any potential metadata
 
 
 
