@@ -1,7 +1,8 @@
 
 # Description 
 
-Les dossiers sont organisés de la manière suivante : 
+## Folders organisation 
+
 ![folders_organisation](img/folder_organisation_worklfow.png)
 
 Le dossier `configs`contient l'ensemble des fichiers de configurations.  
