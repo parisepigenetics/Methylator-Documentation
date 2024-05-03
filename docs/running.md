@@ -239,29 +239,27 @@ MAX_GAP: 1000 # maximum number of bp in between neighboring CpGs to be included 
 CUTOFF: 0.1 # cutoff of the single CpG methylation difference that is used to discover candidate DMR. by default 0.1
 FDR: 0.05 # QVALUE for select significant DMR
 ```
-LIST_SIGNIDIF et LIST_QVALUE sont utilisé pour la génération des bedgraphes. Pour chaque seuil de différences et pour chaque seuil de q-value un bedgraph est généré. 
+LIST_SIGNIDIF and LIST_QVALUE are used for generating bedgraphs. For each threshold of differences and for each threshold of q-value, a bedgraph is generated.
 
-Si DMR est YES, vous réalisez une analyse en DMR avec les mêmes pairs de comparaisons qu'en CpG ou Tiles. Attention, le package utilisé pour inféré les DMR a été conçu pour l'analyse WGBS. Si vous souhaitez réaliser une analyse en RRBS vous pouvez essayer de supprimer le smoothing, ou de modifier certains paramètres : ?? 
-The default parameters are designed to focus on local DMRs (regions), generally in the range of hundreds to thousands of bp. If you choose blocks , the range increase on the order of hundreds of thousands to millions of bp. In this case, it's advised to decrease the cutoff
+If DMR is set to "YES", you perform a DMR analysis with the same comparison pairs as in CpG or Tiles analysis. Please note that the package used to infer the DMRs was designed for WGBS analysis. If you want to perform an analysis in RRBS, you can try removing the smoothing or modifying certain parameters: ??
+
+The default parameters are optimized to focus on local DMRs (regions), typically in the range of hundreds to thousands of base pairs. If you choose blocks, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
+
 
 ## ORA : Over-representation analysis
 
-Après l'analyse différentielle. Des fichiers contenant des listes de gènes pour chaque comparaisons ont été générés. 
-Il est fortement possible que certains gènes est été identifiés comme associées à des régions différentiellement méthylés (DMTs/DMRs).
-Dans le cas ou c'est fichiers ne sont pas vide, il est possible d'utiliser ces listes de gènes pour réaliser une ORA.
+After the differential analysis, files containing lists of genes for each comparison are generated. If certain genes have been identified as associated with differentially methylated regions (DMTs/DMRs), it is possible to use these gene lists to perform an Over-representation analysis.
 
-Une ORA est une méthode statistique permettant de déterminer si dnas vos données un gène est sur-représenté par rapport à un dataset prédéfinis (GO, KEGG ...).
-Methylator utilise l'outils python [GSEApy](https://gseapy.readthedocs.io/en/latest/index.html) pour réaliser cette analyse. 
+ORA, or Over-Representation Analysis, is a statistical method used to determine if a gene in your data is over-represented compared to a predefined dataset (such as GO, KEGG, etc.). Methylator utilizes the Python tool [GSEApy](https://gseapy.readthedocs.io/en/latest/index.html)  to conduct this analysis.
 
-Pour cela il faut fournir un ensembl dataset (dépend de l'organisme étudié) et une gene set library (en fonction des analyses que vous souhaitez réaliser).
-L'ensemble des gene set library à votre disposition sont disponible sur le site [Enrichr](https://maayanlab.cloud/Enrichr/#libraries). 
+To do this, you need to provide an Ensembl dataset (depending on the organism under study) and a gene set library (depending on the analyses you wish to perform). All available gene set libraries are accessible on the [Enrichr](https://maayanlab.cloud/Enrichr/#libraries) website.
 
 ``` yaml 
 # ORA : Over-representation analysis
 ORA: yes # if yes, perform a Over-representation analysis with genes who overlap with DMRs or tiles 
 GENE_SET: DisGeNET # gene set library (Enrichr)
 ENSEMBL_DATASET: hsapiens_gene_ensembl # dataset fo convert ensembl gene ID
-``
+```
 
 ## Start the workflow
 
