@@ -195,8 +195,21 @@ It is included in the final report (ie `????.html`).
 The mapped reads are stored as deduplicated, sorted bam in the data folder, in our example in `Big_Data/EXAMPLE/mapping_BOWTIE2/Deduplicate/`, together with their `.bai` index. They can be visualized using a genome browser such as [IGV](http://software.broadinstitute.org/software/igv/home) but this is not very convenient as the files are heavy. [BigWig](https://deeptools.readthedocs.io/en/develop/content/tools/bamCoverage.html) files, that summarize the information converting the individual read positions into a number of reads per bin of a given size, are more adapted. 
 
 ## BigWig
-To facilitate visualization on a genome browser, [BigWig](https://deeptools.readthedocs.io/en/develop/content/tools/bamCoverage.html) files are generated (window size of xx ?? bp). There are in `???? `. 
+To facilitate visualization on a genome browser, [BigWig](https://deeptools.readthedocs.io/en/develop/content/tools/bamCoverage.html) files are generated.
+Pour chaque échantillon un bigwig de couverture et de pourcentage de méthylation est crée :
 
+- {SAMPLE_NAME}_5mC_MethCov.bw
+- {SAMPLE_NAME}_5mC_MethPerc.bw
+
+Les filtres utilisés pour générer les BigWig sont ceux du fichier de configuration :
+
+```ymal
+# ===== Exploratory analysis ===== #
+## params 
+MINCOV: 5  # int, minimum coverage depth for the analysis
+COV.PERC: 99.9 # to the coverage filter, choose the percentile for remove top ..% (MKit_diff_bed.R and MKit_Exploration.Rmd)
+MINQUALI: 20  # int, minimum quality to keep a CPG for the analysis
+```
 If not already done, you can specifically get the BigWig files on your computer running:
 
 ```
