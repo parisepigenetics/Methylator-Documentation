@@ -17,7 +17,7 @@ Le dossier ` worklfow ` contient l'ensemble des scripts Snakemake ".rules".
 
 Le dossier ` TestDataset ` contient l'ensemble des fichiers nécessaire pour tester le workflow avec un petit jeu de données.   
 
-Le dossier ` my_bank ` est un dossier vide. Il permet de stocker des génomes de références et des fichiers d'annotations (FASTA, GTF, BED ...) pour différentes espèces lorsque les fichiers en question ne sont pas disponibles dans les banques présentes sur votr cluster. Il existe un scipt search_bank.sh qui lorsqu'il est exécuté télécharge automatiquement (lorsque c'est possible) tous les fichiers d'annotations nécessaire pour le lancement du workflow. Il prend comme argument le nom du génome de référence de l'espèce en question. par exemple :  
+Le dossier ` my_bank ` est un dossier vide. Il permet de stocker des génomes de références et des fichiers d'annotations (FASTA, GTF, BED ...) pour différentes espèces lorsque les fichiers en question ne sont pas disponibles dans les banques présentes sur votr cluster. Il existe un scipt search_bank.sh qui lorsqu'il est exécuté télécharge automatiquement (lorsque c'est possible) tous les fichiers d'annotations nécessaire pour le lancement du workflow from UCSC Golden Path. Il prend comme argument le nom du génome de référence de l'espèce en question. par exemple :  
 
 ``` sh
 srun scripts/search_bank.sh mm39 
