@@ -1,6 +1,6 @@
 # Workflow results
 
-!!! note 
+!!! example
     All the figures and graphs shown as examples were obtained by running Methylator with the test [dataset](quick_start.md). The parameters used to produce the results are the default settings in the configuration file. All analysis reports in HTML format are available here.
 
 
