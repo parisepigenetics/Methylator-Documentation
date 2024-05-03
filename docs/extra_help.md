@@ -153,7 +153,7 @@ If you are sure that no other instances of snakemake are running on this directo
 In order to remove the lock, run:
 
 ```
-[username@clust-slurm-client Methylator]$ sbatch Unlock.sh
+[username@clust-slurm-client Methylator]$ sbatch scripts/Unlock.sh
 ```
 
 Then you can restart your workflow. 
@@ -175,8 +175,6 @@ In principle it should raise an error, but sometimes it doesn't and it's hard to
 
 
 ## Juggling with several projects
-
-TODO : rename image to methylator.simg ????
 
 If you work on several projects [as defined by cluster documentation], you can either
 - have one independant installation of Methylator / project with its own Singularity Image (2 Go). To do that, git clone Methylator repository in each project. 
