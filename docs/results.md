@@ -1,10 +1,8 @@
 # Workflow results
 
-
 !!! note 
-    Toutes les figures et graphiques présentées comme exemple pour les résultats ont été obtenues en lançant Methylator avec le jeu de données test ...
-    ce jeu de données correspond à ... Les paramètres utilisées pour produire les résultats sont ceux par défauts dans le fichier de configuration. 
-    L'ensemble des rapports d'analyses au format HTML sont disponible ici. 
+    All the figures and graphs shown as examples were obtained by running Methylator with the test [dataset](quick_start.md). The parameters used to produce the results are the default settings in the configuration file. All analysis reports in HTML format are available here.
+
 
 The results are separated into two folders :
 
