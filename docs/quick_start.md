@@ -18,7 +18,8 @@ You can now move on with your own data, or run the rest of the workflow on the t
 ```
 Detailed explanation of the outputs are available in [Results](results.md). 
 
-!!! note
+!!! info
+
     The test dataset is taken from the publication: [Genome-wide analysis in the mouse embryo reveals the importance of DNA methylation for transcription integrity](https://www.nature.com/articles/s41467-020-16919-w). This study investigates the impact of methyltransferase depletion on the mouse methylome. 
     The three biological conditions (WGBS) :
     - WT
