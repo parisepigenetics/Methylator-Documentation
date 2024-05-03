@@ -38,13 +38,15 @@ Additionally, you need to specify the path to the folder containing the annotati
 
 !!! warning
     The expected file format for creating custom annotations is as follows : 
-    |  chr | start |  end  |                                 metadata                                   |
-    | ---- | ----- | ----- | -------------------------------------------------------------------------- |
-    | chr1 | 10000 | 10468 | trf	6	77.2	6	95	3	789	33	51	0	15	1.43	TAACCC                        | 
-    | chr1 | 10627 | 10800 | trf	29	6	29	100	0	346	13	38	47	0	1.43	AGGCGCGCCGCGCCGGCGCAGGCGCAGAG | 
-    | chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGCGCGCC    | 
-    | chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC         | 
-    With chromosomal coordinates (chromosomes | start | end) along with any potential metadata
+    
+|  chr | start |  end  |                                 metadata                                   |
+| ---- | ----- | ----- | -------------------------------------------------------------------------- |
+| chr1 | 10000 | 10468 | trf	6	77.2	6	95	3	789	33	51	0	15	1.43	TAACCC          | 
+| chr1 | 10627 | 10800 | trf	29	6	29	100	0	346	13	38	47	0	1.43	AGGCGCGCCGCGCCGGCGC | 
+| chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGC | 
+| chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC       | 
+
+With chromosomal coordinates (chromosomes | start | end) along with any potential metadata
 
 
 
