@@ -21,7 +21,10 @@ Le dossier ` my_bank ` est un dossier vide. Il permet de stocker des génomes de
 
 ``` sh
 srun scripts/search_bank.sh mm39 
-``` 
+```
+![search_banks](img/search_banks_example.png)
+
+
 ## Main scripts 
 
 Methylator is launched as a python script named `main_cluster.py` which calls the workflow manager named [Snakemake](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html). 
