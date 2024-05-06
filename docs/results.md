@@ -86,14 +86,12 @@ and the huge files will stay on the server. You can of course download them as w
 
 ## Final report
 
-A report named as `20210727T1030_report.html` summarizes your experiment and your results. You'll find links to fastQC results, to mapping quality report, to exploratory analysis of all the samples and finally to pairwise differential expression analyses. Interactive plots are included in the report. They are very helpful to dig into the results. 
+A report named as `20210727T1030_report.html` summarizes your experiment and your results. You'll find links to fastQC results, to mapping quality report, to exploratory analysis of all the samples, to pairwise differential methylation analyses and finally to ORA analyses. They are very helpful to dig into the results. 
 
 A compressed archive named `20210727T1030_report.tar.bz2` is also generated and contains the report and the targets of the different links, excluding big files to make it small enough to be sent to your collaborators. 
 
 ```bash
 [username@clust-slurm-client Methylator]$ tree -L 2 Results/EXAMPLE/20210727T1030_report 
-
-
 ```
 
 !!! tip "Tip for Windows users"
