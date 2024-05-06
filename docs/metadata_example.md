@@ -47,7 +47,7 @@ Additionally, you need to specify the path to the folder containing the annotati
 | chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGC | 
 | chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC       | 
 
-With chromosomal coordinates (chromosomes | start | end) along with any potential metadata
+With chromosomal coordinates (chromosomes | start | end) along with any potential supplementary columns. 
 
 
 
