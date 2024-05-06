@@ -27,5 +27,5 @@ Detailed explanation of the outputs are available in [Results](results.md).
 
     
 <figure markdown="span">
-    ![dnmt](img/dnmt.png){ align=right width=350 height=200 } 
+    ![dnmt](img/dnmt.png){ align=right width=325 height=175 } 
 </figure> 
