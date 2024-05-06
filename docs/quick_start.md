@@ -19,13 +19,14 @@ You can now move on with your own data, or run the rest of the workflow on the t
 Detailed explanation of the outputs are available in [Results](results.md). 
 
 !!! info inline
-    The test dataset is taken from the publication: [Genome-wide analysis in the mouse embryo reveals the importance of DNA methylation for transcription integrity](https://www.nature.com/articles/s41467-020-16919-w). This study investigates (by WGBS) the impact of DNA methyltransferases depletion on the mouse methylome. The three biological conditions are :                                    
+    The test dataset is taken from the publication:   
+    [Genome-wide analysis in the mouse embryo reveals the importance of DNA methylation for transcription integrity](https://www.nature.com/articles/s41467-020-16919-w).   
+    This study investigates (by WGBS) the impact of DNA methyltransferases depletion on the mouse methylome. The three biological conditions are :                                 
     - WT  (Wild Type)    
     - 1KO (simple Knock-Out of DNMT1)    
     - DKO (double Knock-Out of DNMT3A/B)   
     The dataset was reduced to a portion of chromsome 19.    
 
-    
 <figure markdown="span">
     ![dnmt](img/dnmt.png){ align=right width=325 height=175 } 
 </figure> 
