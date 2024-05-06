@@ -1,6 +1,6 @@
-# Quick start with the test dataset
+# Quick start with the Tutorial Data Set
 
-Before running your analyses you can use the test dataset to make and check your installation. 
+Before running your analyses you can use the the Tutorial Data Set to make and check your installation. 
 First copy the configuration file corresponding to the test.
 
 ```sh
@@ -22,7 +22,7 @@ You can now move on with your own data, or run the rest of the workflow on the t
 Detailed explanation of the outputs are available in [Results](results.md).
 
 !!! info inline
-    The test dataset is taken from the publication:   
+    The Tutorial Data Set is taken from the publication:   
     [Genome-wide analysis in the mouse embryo reveals the importance of DNA methylation for transcription integrity](https://www.nature.com/articles/s41467-020-16919-w).   
     This study investigates (by WGBS) the impact of DNA methyltransferases depletion on the mouse methylome. The three biological conditions are :    
     - WT  (Wild Type)    
