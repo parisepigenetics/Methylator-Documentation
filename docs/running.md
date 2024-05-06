@@ -247,6 +247,23 @@ If **DMR** is turn to "YES", you perform a DMR analysis with the same comparison
 
 The default parameters are optimized to focus on local DMRs (**regions**), typically in the range of hundreds to thousands of base pairs. If you choose **blocks**, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
+#### BedGraphe 
+
+En plus de rapport HTML, pour chaque comparaison des fichiers .bed sont générés. Pour chaque seuil de différence de méthylation dans LIST_SIGNIDIF et pour chaque QVALUE dans LIST_QVALUE un bedgraphe est généré dans le dossier : . Dans le cas ou l'on choisit des tiles qui s'overlappe, la conversion des bedgraphes en Bigwig est délicate. Pour permettre la conversion npus avons utiliser la méthode suivante :  
+
+``` 
+module load bedopts 
+bedops --chop 500 PBS_EtOH_5mC_MethDiffperc.bedGraph > test.bed
+bedtools intersect -a PBS_EtOH_5mC_MethDiffperc.bedGraph -b test.bed > result.bed
+bedtools sort -i result.bed > result_sort.bed
+bedtools merge -i result_sort.bed -d -1 -c 4 -o mean > final.bed
+```
+
+bedops --chop 500 merge l'ensemble des tiles qui s'overlapent puis découpe la régions en fragments de tailles identiques (500 pb)
+bedtools intersect permet d'intersecter l'ensemble des tiles avec les fragments de 500 pb créé par bedops --chop 500
+Enfin, bedtools merge -c 4 -o mean permet de merger les tiles qui intersects avec les fragments de 500pb et de faire la moyenne des % de méthylation. Le -d -1 permet d'éviter que les fragments adjacents soient merger, il s'inifie qu'il faut un overlap d'au moins 1 pb pour qu'il soient fusionnés.
+
+
 
 ## ORA : Over-representation analysis
 
