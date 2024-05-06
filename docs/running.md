@@ -174,7 +174,7 @@ and
 
 ##  Process BAM to BED (only for nanopore)
 
-Si vous lancer le workflow avec des données nanopores la première étape consiste à convertir les fichiers BAM en BED à l'aide de l'outil modbam2bed conseillé par oxford nanopore technologie (ONT). Si vous avez déjà réalisé cette étape mettre à yes. If you already have BED files from modbam2bed you can put the path to the folder containing them. The BED should be named Sample_Merged.cpg.bed. 
+If you launch the workflow with nanopore data, the first step is to convert the BAM files to BED using the modbam2bed tool recommended by Oxford Nanopore Technology (ONT). If you have already completed this step, set it to yes. If you already have BED files from modbam2bed, you can specify the path to the folder containing them. The BED files should be named {Sample}_Merged.cpg.bed.
 
 ```yaml
 # # ===================== Configuration for process BAM files  ================== #
@@ -186,7 +186,7 @@ STARTFROMBED: no # put no if you start from BAM files
 
 ## Statistical analysis
 
-A cette étape vous devez sélectionner les paramètres globaux de l'analysis statistique. 
+At this stage, you need to select the global parameters for the statistical analysis.
 
 ```yaml
 LEVEL: CpG # "CpG" or "Tiles" study by Tiles or by CpG 
@@ -194,8 +194,8 @@ TILESIZE: 250
 STEPSIZE: 1  # Tiles relative step size
 NB_CPG_TILES: 1 # minimal number of CpG to keep a tile in the analysis
 ```
-If Tiles was selected, define tile size, step size, and minimal number of CpG by tile. 
-STEPSIZE correspond à la taille relative de l'écart entre deux tiles. Si il est à 1 les tiles sont non-chevauchantes , si il est à 0.5 les tiles se chevauchent à la moitiées ... 
+If **Tiles** was selected, define tile size, step size, and minimal number of CpG by tile. 
+**STEPSIZE** corresponds to the relative size of the gap between two tiles. If it is set to 1, the tiles are non-overlapping, if it is set to 0.5, the tiles overlap by half.
 
 ### Exploratory analysis 
 
@@ -205,12 +205,14 @@ STEPSIZE correspond à la taille relative de l'écart entre deux tiles. Si il es
 MINCOV: 5  # int, minimum coverage depth for the analysis
 COV.PERC: 99.9 # to the coverage filter, choose the percentile for remove top ..% 
 MINQUALI: 20  # int, minimum quality to keep a CPG for the analysis
-DESTRAND: yes # combine information from F et R reads
+DESTRAND: yes # combine information from F and R strands reads
 UNITE: all # 'all' or 'one' (at least one per group)
 ```
-COV.PERC correspond au pourcentage des CpG ou tiles les plus couvertes à conserver. Par exemple si COV.PERC = 99.9, seule les 1% les plus couvertes sont supprimées. Ce paramètres permet d'élliminer les biais du séquencage illumina dans les régions répétées (a revoir?). Attention, dans le cas du RRBS, mettre cette argument a 100 pour éviter de supprimer les régions volontairements enrichies. 
+**COV.PERC** corresponds to the percentage of the most covered CpGs or tiles to retain. For example, if COV.PERC = 99.9, only the top 1% most covered are removed. This parameter helps eliminate biases of mapping, for example in repetitive regions. Please note, in the case of RRBS, set this argument to 100 to avoid removing intentionally enriched regions.
 
-UNITE permet de choisir la manière dont vous souhaiter unifier vos réplicats. Par défaul (all), il est nécessaire qu'un CpG soit présent dans chacun des réplicats pour qu'il soit pris en considération. Sinon préciser le nombre minimale de fois qu'il doit apparaire pour être conservé. Par exemple si vous avez trois réplicats par condition et que vous sélectionné 2, il suffit qu'un CpG soit présent dans deux des trois réplicats pour qu'il soit conservé. 
+**DESTRAND**  if TRUE, reads covering both strands of a CpG dinucleotide will be merged, do not set to TRUE if not only interested in CpGs (default: FALSE). If the methylRawList object contains regions rather than bases setting destrand to TRUE will have no effect. Setting DESTRAND to "true" can be useful for "artificially" increasing the coverage of your data in the case of low-covered samples. Indeed, with this parameter, the coverage per site is doubled.
+
+**UNITE** allows you to choose how you want to unify your replicates. Minimum number of samples per replicate needed to cover a region/base. By default only regions/bases that are covered in all samples are united as methylBase object, however by supplying an integer for this argument users can control how many samples needed to cover region/base to be united as methylBase object. For example, if min.per.group set to 2 and there are 3 replicates per condition, the bases/regions that are covered in at least 2 replicates will be united and missing data for uncovered bases/regions will appear as NAs. 
 
 ### Differential methylation analysis
 
@@ -241,7 +243,7 @@ FDR: 0.05 # QVALUE for select significant DMR
 ```
 **LIST_SIGNIDIF** and **LIST_QVALUE** are used for generating bedgraphs. For each threshold of differences and for each threshold of q-value, a bedgraph is generated.
 
-If **DMR** is set to "YES", you perform a DMR analysis with the same comparison pairs as in CpG or Tiles analysis. Please note that the package used to infer the DMRs was designed for WGBS analysis. If you want to perform an analysis in RRBS, you can try removing the smoothing or modifying certain parameters: ??
+If **DMR** is turn to "YES", you perform a DMR analysis with the same comparison pairs as in CpG or Tiles analysis. Please note that the package used to infer the DMRs was designed for WGBS analysis. If you want to perform an analysis in RRBS, you can try removing the smoothing or modifying certain parameters: ??
 
 The default parameters are optimized to focus on local DMRs (regions), typically in the range of hundreds to thousands of base pairs. If you choose blocks, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
