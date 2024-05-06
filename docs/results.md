@@ -288,10 +288,6 @@ This folder contain for each comparison a folder with :
 ## Over-representation analysis (ORA)
 
 ORA results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{LEVEL}_mincov{MINCOV}/ORA/`   
-
-<figure markdown="span">
-  ![Dotplot example](img/ora_example.png){ align=right width=350 height=200 } 
-</figure> 
     
 This folder contain :   
 
@@ -301,7 +297,9 @@ And for each comparaison :
 
 - a file `barplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`   
 - a file `dotplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`
-     
+
+**Examle of ORA figures**
+![Dotplot example](img/ora_example.png)
 
 !!! note
     All this HTML files are included in the [final report](#final-report). 
