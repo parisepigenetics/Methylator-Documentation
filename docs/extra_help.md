@@ -169,6 +169,12 @@ Sometimes you may reach the quota you have for your project. To check the quota,
 
 In principle it should raise an error, but sometimes it doesn't and it's hard to find out what is the problem. So if a task fails with no error (typically during mapping), try to make more space (or ask for more space on [IFB Community support](https://community.cluster.france-bioinformatique.fr) or [iPOP-UP Community support](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up)) before trying again. 
 
+## Paired-end or single-end ?
+
+When downloading FASTQ files with the SRA option, errors in the data description are often encountered. The most common one is a confusion between paired-end and single-end data. It frequently happens that sequencing is announced as single-end on SRA but is actually paired-end. In such cases, the "Per Base Sequence Content" graph in the FASTQC file looks like this:
+
+![paire_single_end](img/erreur_single_pairend.png)
+
 
 
 ## Good practice
@@ -257,23 +263,6 @@ D192T31_R2.fastq.gz
 D192T32_R1.fastq.gz  
 D192T32_R2.fastq.gz  
 ```
-
-### Paired-end or single-end ?
-
-When downloading FASTQ files with the SRA option, errors in the data description are often encountered. The most common one is a confusion between paired-end and single-end data. It frequently happens that sequencing is announced as single-end on SRA but is actually paired-end. In such cases, the "Per Base Sequence Content" graph in the FASTQC file looks like this:
-
-![paire_single_end](img/erreur_single_pairend.png)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
