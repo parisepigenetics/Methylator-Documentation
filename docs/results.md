@@ -125,8 +125,8 @@ A compressed archive named `20210727T1030_report.tar.bz2` is also generated and 
     
 The final report look like this : 
 
-![final_report1](img/final_report_1.png)
-![final_report2](img/final_report_2.png)
+![final_report1](img/final_report_1.png){ width="300" height="1000" }
+![final_report2](img/final_report_2.png){ width="300" height="1000" }
 
 Detailed description of all the outputs of the workflow is included below. 
 
