@@ -5,8 +5,9 @@ Epigenetic marks regulate gene transcription, as well as genome replication, and
 essential for normal development and is associated with a number of key processes including genomic imprinting, X-chromosome inactivation, repression of
 transposable elements, aging, and carcinogenesis.
 
+![meth_cancer](img/meth_cancer.jpg)
 In cancer cells, global hypomethylation at repetitive sequences might cause genetic instability, whereas site-speciﬁc CpG island
-promoter hypermethylation could lead to silencing of TSGs. 
+promoter hypermethylation could lead to silencing of TSGs
 
 ## Proﬁling genome-wide DNA methylation
 
