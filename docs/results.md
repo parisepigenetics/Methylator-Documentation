@@ -337,8 +337,8 @@ And for each comparaison :
 - a file `barplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`   
 - a file `dotplot_{LEVEL}_{COMPARISON}_{5mc/5hmc}.pdf`
 
-**Examle of ORA figures**
-![Dotplot example](img/ora_example.png)
+**Example of ORA figures**
+![Dotplot example](img/ora_example.png){ width = 400 heigth = 400 }
 
 !!! note
     All this HTML files are included in the [final report](#final-report). 
