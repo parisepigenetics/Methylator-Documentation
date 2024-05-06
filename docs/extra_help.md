@@ -139,6 +139,7 @@ trim:
 ```
 
 If the rule that failed is not listed here, you can add it respecting the format. And restart your workflow. 
+Pour les qui règles qui peuvent demander beaucoup de ressources, si la règle échoue elle est automatiquement relancé en augmentant la mémoire. Ceci permet d'éviter de relancer le workflow. Dans ce cas les fichiers logs affiche des messages d'erreurs à chaque fois que la règle échoue, même s'il est réussi avec la mémoire suffisante. 
 
 ### Folder locked
 
@@ -256,3 +257,24 @@ D192T31_R2.fastq.gz
 D192T32_R1.fastq.gz  
 D192T32_R2.fastq.gz  
 ```
+
+### Paired-end or single-end ?
+
+Lorsque vous télécharger des FASTQ avec l'option SRA il arrive souvent qu'il y est des erreurs dans la description des données. La plus fréquenque est une confusion entre paire et single-end. 
+Il arrive souvent que le séquencage soit annoncé en single-end sur SRA mais qu'il soit en réalité en pair-end. Dans ce cas, l'aspect le graphique "Per Base Sequence Content" dans le fichier FASTQC ressemble à ceci : 
+[paire_single_end](erreur_single_pairend.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
