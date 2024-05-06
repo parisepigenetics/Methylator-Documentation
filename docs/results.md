@@ -91,7 +91,33 @@ A report named as `20210727T1030_report.html` summarizes your experiment and you
 A compressed archive named `20210727T1030_report.tar.bz2` is also generated and contains the report and the targets of the different links, excluding big files to make it small enough to be sent to your collaborators. 
 
 ```bash
-[username@clust-slurm-client Methylator]$ tree -L 2 Results/EXAMPLE/20210727T1030_report 
+[username@clust-slurm-client Methylator]$ tree -L 2 Results/EXAMPLE/20210727T1030_project_name_report
+
+20240506T1451_project_name_report
+├── 1KO_DKO_5mC.html
+├── 1KO_DKO_DMR.html
+├── bismark_summary_report.html
+├── Exploration_5mC.html
+├── final_report_Test_WGBS.html
+├── report_mapping_bismark.html
+├── report_quality_control_after_trimming.html
+├── SRR11806587_sub500000_chr19_R1_clean_fastqc.html
+├── SRR11806587_sub500000_chr19_R2_clean_fastqc.html
+├── SRR11806588_sub500000_chr19_R1_clean_fastqc.html
+├── SRR11806588_sub500000_chr19_R2_clean_fastqc.html
+├── SRR11806589_sub500000_chr19_R1_clean_fastqc.html
+├── SRR11806589_sub500000_chr19_R2_clean_fastqc.html
+├── SRR9016926_sub500000_chr19_R1_clean_fastqc.html
+├── SRR9016926_sub500000_chr19_R2_clean_fastqc.html
+├── SRR9016927_sub500000_chr19_R1_clean_fastqc.html
+├── SRR9016927_sub500000_chr19_R2_clean_fastqc.html
+├── SRR9016928_sub500000_chr19_R1_clean_fastqc.html
+├── SRR9016928_sub500000_chr19_R2_clean_fastqc.html
+├── WT_1KO_5mC.html
+├── WT_1KO_DMR.html
+├── WT_DKO_5mC.html
+└── WT_DKO_DMR.html
+
 ```
 
 !!! tip "Tip for Windows users"
