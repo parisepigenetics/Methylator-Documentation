@@ -25,5 +25,7 @@ Detailed explanation of the outputs are available in [Results](results.md).
     - DKO (double Knock-Out of DNMT3A/B)   
     The dataset was reduced to a portion of chromsome 19. 
 
-**Scheme of DNMT1 and DNMT3A/3 biological functions** 
-![dnmt](img/dnmt.png)
+<figure markdown="span">
+    **Scheme of DNMT1 and DNMT3A/3 biological functions**
+    ![dnmt](img/dnmt.png){ align=left width=350 height=200 } 
+</figure> 
