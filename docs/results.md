@@ -320,6 +320,9 @@ This folder contain for each comparison a folder with :
 - a CSV file with only significant DMRs    
 - a CSV file with only significant DMRS associate with genes annotations    
 
+For the 10 most significant DMRs, you will find this type of figures in the report. This includes information such as the chromosomal position of the DMR, its size, its FDR, and associated annotations (genes and CpG islands, shores, shelves).
+
+![dmr](img/dmr.png)
 
 ## Over-representation analysis (ORA)
 
