@@ -9,6 +9,7 @@
 | SRR11806588_sub500000_chr19 |       1KO       |
 | SRR11806589_sub500000_chr19 |       DKO       |
 
+The "sample" column corresponds to the names of your samples, and the "group" column corresponds to the biological conditions.
 Here, the name of the samples corresponds to their SRR number.
 It is possible to use the SRA function of the worklfow (see [here](runing.md) )
 
