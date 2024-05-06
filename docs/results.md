@@ -281,7 +281,12 @@ This folder contain :
 - a HTML report file    
 - a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG
 
+Examples of figures that you may see in the exploratory analysis report : 
 
+![pca](img/pca.png)
+![min_cov](img/min_cov.png)
+
+Most of the figures allow for identifying whether the biological samples are sufficiently distinct to decide on conducting a differential analysis (e.g., PCA), and in this case, to choose the appropriate parameters (e.g., min cov).
 
 ## Differential methylation CpG or Tiles (DMC/DMT) results
 
