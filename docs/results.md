@@ -256,10 +256,9 @@ Exploratory methylation results are in `Results/EXAMPLE/Methylator_{DATATYPE}/{L
 This folder contain :    
 
 - a HTML report file    
-- a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG     
-```
+- a folder `Exploration_5mC_files/figure-html` avec toutes les figures généré par le rapport au format .PNG
 
-```
+
 
 ## Differential methylation CpG or Tiles (DMC/DMT) results
 
@@ -272,7 +271,7 @@ This folder contain :
 - - a bed file for all DMC/DMT    
 - - a bed file for significants DMC or DMT    
 - - a bed file for hyper-methylated significants DMC or DMT    
-- - a bed file for hypo-methylated significants DMCor DMT       
+- - a bed file for hypo-methylated significants DMC or DMT       
 
 
 !!! warning 
