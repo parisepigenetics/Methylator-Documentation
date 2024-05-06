@@ -10,6 +10,6 @@ Aberrant DNA Methylation in Esophageal Squamous Cell Carcinoma:
 Biological and Clinical Implications. Frontiers in Oncology (2020)
 4. https://nanoporetech.com
 5. https://github.com/parisepigenetics/Methylator
-6. Dahlet, T., Argüeso Lleida, A., Al Adhami, H. et al. Genome-wide
+6. [Dahlet, T., Argüeso Lleida, A., Al Adhami, H. et al. Genome-wide
 analysis in the mouse embryo reveals the importance of DNA methylation
-tfor transcription integrity. Nat Commun 11, 3153 (2020)
+tfor transcription integrity. Nat Commun 11, 3153 (2020)](https://www.nature.com/articles/s41467-020-16919-w)
