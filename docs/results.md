@@ -219,9 +219,7 @@ You@YourComputer:~$ scp -pr username@core.cluster.france-bioinformatique.fr:/sha
 ```
 
 Snapshot of BigWig tracks visualized on [IGV](http://software.broadinstitute.org/software/igv/home).
-Ce snapshot à été obtenu au cours d'une réanalyse par Methylator de données issues de la publication : 
-Il s'agit d'une déplétion des méthyltransférase. 
-Dans cette exemple l'échantillon coloré en vert correpond à un WT, celui en bleu à un simple KO de la **dnmt1** et celui en rouge à un double KO de la **dnmt3a/b**
+In this example, green sample correpond to the WT condition, blue sample to the simple KO and red to the double KO. 
 
 ![igv_bw](img/bigwig.png) 
 
