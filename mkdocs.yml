@@ -2,6 +2,7 @@ site_name: Methylator Documentation
 
 nav:
   - Home: index.md
+  - Biological context :  biological_context.md
   - Before starting: before_start.md
   - Installation: installation.md
   - Description: description.md
