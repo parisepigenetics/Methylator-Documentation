@@ -123,12 +123,10 @@ A compressed archive named `20210727T1030_report.tar.bz2` is also generated and 
 !!! tip "Tip for Windows users"
     Unlike Linux and Mac, the `tar.bz2` format is not natively supported by Windows, but you can use the free [PeaZip](https://peazip.github.io/) or [7-zip](https://www.7-zip.org/) softwares to decompress the `xxx_report.tar.bz2` archive.
     
-The final report look like thise : 
+The final report look like this : 
 
-<div style="display: flex; justify-content: center;">
-    <img src="img/final_report_1.png" alt="Image 1" style="width: 45%; margin-right: 5px;">
-    <img src="img/final_report_2.png" alt="Image 2" style="width: 45%; margin-left: 5px;">
-</div>
+![final_report1](img/final_report_1.png)
+![final_report2](img/final_report_2.png)
 
 Detailed description of all the outputs of the workflow is included below. 
 
