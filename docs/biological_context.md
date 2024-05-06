@@ -5,9 +5,9 @@
 
 1. https://planet-vie.ens.fr/thematiques/sante/pathologies/epigenetique-et-cancer
 2. https://www.wikiwand.com/en/DNA_methylation
-3. Lin Lehang, Cheng Xu, Yin Dong.
+3. [Lin Lehang, Cheng Xu, Yin Dong.
 Aberrant DNA Methylation in Esophageal Squamous Cell Carcinoma:
-Biological and Clinical Implications. Frontiers in Oncology (2020)
+Biological and Clinical Implications. Frontiers in Oncology (2020)](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.549850/full)
 4. https://nanoporetech.com
 5. https://github.com/parisepigenetics/Methylator
 6. [Dahlet, T., Argüeso Lleida, A., Al Adhami, H. et al. Genome-wide
