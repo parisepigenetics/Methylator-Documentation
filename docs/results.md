@@ -284,7 +284,7 @@ This folder contain :
 Examples of figures that you may see in the exploratory analysis report : 
 
 ![pca](img/pca.png)
-![min_cov](img/min_cov.png)
+![min_cov](img/min_cov_value.png)
 
 Most of the figures allow for identifying whether the biological samples are sufficiently distinct to decide on conducting a differential analysis (e.g., PCA), and in this case, to choose the appropriate parameters (e.g., min cov).
 
