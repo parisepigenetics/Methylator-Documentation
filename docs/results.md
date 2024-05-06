@@ -305,6 +305,10 @@ This folder contain :
 !!! warning 
     Chaque bed est généré pour chaque combinaisons de valeurs des listes LIST_DIFF et LIST_QV. Ainsi si la liste LIST_DIFF comporte 4 valeurs seuils et la LIST_QV 4 valeurs seuils, on va généré 16 x les fichiers bed pour chacune des conditions, soient 16x4x3 = 192 bedgraphes !!! 
 
+**Examples of figures that you may see in the differentialy analysis report:**
+
+![dm_violin](img/dm_violin.png)
+
 
 ## Differential methylation (DMR only) results
 
