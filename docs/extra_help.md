@@ -55,7 +55,7 @@ To quickly check if everything went fine, you have to check the main log. If eve
 ```
 ########################################
 Date: 2024-05-06T14:51:26+0200
-User: bethuel
+User: username
 Host: cpu-node141
 Job Name: WGBSflow
 Job Id: 32076364
@@ -72,7 +72,7 @@ snakemake
 7.25.0
 -------------------------
 PATH:
-/shared/software/conda/envs/snakemake-7.25.0/bin:/shared/software/conda/bin/:/opt/status_bars/status_bars:/opt/conda/bin:/opt/conda/condabin:/opt/status_bars/status_bars:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/shared/home/bethuel/.local/bin:/shared/home/bethuel/bin
+/shared/software/conda/envs/snakemake-7.25.0/bin:/shared/software/conda/bin/:/opt/status_bars/status_bars:/opt/conda/bin:/opt/conda/condabin:/opt/status_bars/status_bars:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/shared/home/username/.local/bin:/shared/home/username/bin
 ########################################
 type of data:
 wgbs
