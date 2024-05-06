@@ -58,7 +58,6 @@ To quickly check if everything went fine, you have to check the main log. If eve
 
 If not, you'll see a summary of the errors: 
 ```
-??????
 ```
 
 And you can check the problem looking as the specific log file, here `logs/20231104T0921_mapping.txt` 
@@ -136,6 +135,23 @@ trim:
   name: trimming
   cpus: 8
 ...  
+```
+
+For help you define an adequate reservation of resources (cores and memory).You can use the « Slurm job efficiency report » (seff) that reports on the efficiency of a job’s CPU and memory utilization. Launch the command below, once the execution of the job is complete
+
+```bash
+(base) [username@ipop-up WGBSflow]$ seff 32076366
+Job ID: 32076366
+Cluster: production
+User/Group: bethuel/umr7216
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:55
+CPU Efficiency: 24.12% of 00:03:48 core-walltime
+Job Wall-clock time: 00:00:57
+Memory Utilized: 1.31 GB
+Memory Efficiency: 1.12% of 117.19 GB
 ```
 
 If the rule that failed is not listed here, you can add it respecting the format. And restart your workflow. 
