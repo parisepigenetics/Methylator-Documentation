@@ -53,7 +53,67 @@ Nota: when snakemake is working on a folder, this folder is locked so that you c
 To quickly check if everything went fine, you have to check the main log. If everything went fine you'll have :
 
 ```
-???
+########################################
+Date: 2024-05-06T14:51:26+0200
+User: bethuel
+Host: cpu-node141
+Job Name: WGBSflow
+Job Id: 32076364
+Directory: /shared/projects/wgbs_flow/Elouan/WGBSflow
+########################################
+WGBS version: v0.1
+-------------------------
+Main module versions:
+Loaded modules : snakemake/7.25.0
+conda 23.3.1
+Python 3.11.3
+apptainer version 1.2.2-1.el7
+snakemake
+7.25.0
+-------------------------
+PATH:
+/shared/software/conda/envs/snakemake-7.25.0/bin:/shared/software/conda/bin/:/opt/status_bars/status_bars:/opt/conda/bin:/opt/conda/condabin:/opt/status_bars/status_bars:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/shared/home/bethuel/.local/bin:/shared/home/bethuel/bin
+########################################
+type of data:
+wgbs
+configs/config_wgbs.yaml
+-------------------------
+| RUN ID : 20240506T1451 |
+-------------------------
+Starting WGBS workflow on project: Test_WGBS
+Free disk is measured for the cluster project (folder): wgbs_flow
+-------------------------
+Workflow summary
+Is FASTQ quality control required ?  no
+Is trimming required ?  yes
+Is mapping required ?  yes
+Do you want to do the globale exploration ?  yes
+Do you need to do differentially methylation analysis ?  yes
+-------------------------
+Workflow running....
+Starting Trimming...
+Nothing to be done (all requested files are present and up to date).
+
+Starting Mapping...
+Nothing to be done (all requested files are present and up to date).
+
+Starting exploratory analysis...
+Exploratory analysis is done! (0:01:31)
+
+Starting differential analysis...
+Differential analysis is done! (0:02:25)
+
+snakemake --profile=configs/  --config time_string=20240506T1451 
+Starting final report...
+The final report is done! (0:00:41)
+
+Exiting...
+########################################
+---- Errors ----
+There were no errors ! It's time to look at your results, enjoy!
+########################################
+Job finished 2024-05-06T14:56:12+0200
+---- Total runtime 286 s ; 4 min ----
 ```
 
 If not, you'll see a summary of the errors: 
