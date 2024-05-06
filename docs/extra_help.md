@@ -260,8 +260,8 @@ D192T32_R2.fastq.gz
 
 ### Paired-end or single-end ?
 
-Lorsque vous télécharger des FASTQ avec l'option SRA il arrive souvent qu'il y est des erreurs dans la description des données. La plus fréquenque est une confusion entre paire et single-end. 
-Il arrive souvent que le séquencage soit annoncé en single-end sur SRA mais qu'il soit en réalité en pair-end. Dans ce cas, l'aspect le graphique "Per Base Sequence Content" dans le fichier FASTQC ressemble à ceci : 
+When downloading FASTQ files with the SRA option, errors in the data description are often encountered. The most common one is a confusion between paired-end and single-end data. It frequently happens that sequencing is announced as single-end on SRA but is actually paired-end. In such cases, the "Per Base Sequence Content" graph in the FASTQC file looks like this:
+
 ![paire_single_end](img/erreur_single_pairend.png)
 
 
