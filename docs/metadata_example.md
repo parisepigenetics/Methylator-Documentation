@@ -9,8 +9,11 @@ Pour réaliser ces figures, Methylator construit ses propres annotations à l'ai
 **Schema de la partie du workflow en charge de construire les annotations**
 ![annotations_scheme](img/part_annotation_workflow.png)
 
-Ces annotations sont appelés "standards annotations". 
-Pour construire ces annotations Methylator s'appuie sur le package genomicrange de Bioconductor. 
+Ces annotations sont appelés "standards annotations". C'est le script R `Annotatr.R` . 
+Pour construire ces annotations Methylator s'appuie sur les package
+[annotar](https://www.bioconductor.org/packages/devel/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html), 
+[GenomicRanges](https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html)
+et [GenomicFeatures](https://kasperdanielhansen.github.io/genbioconductor/html/GenomicFeatures.html). 
 
 Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser les bases de données d'annotations pour
 éviter d'être dépendent de celle-çi mais également pour s'assurer que les annotations sont toujours construites de manière identique. 
