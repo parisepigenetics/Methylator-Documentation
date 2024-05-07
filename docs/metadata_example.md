@@ -7,7 +7,7 @@ Pour réaliser ces figures, Methylator construit ses propres annotations à l'ai
 - un fichier au format .txt contenant des informations sur les ilôts CpG
 
 **Schema de la partie du workflow en charge de construire les annotations**
-[annotations_scheme](img/part_annotation_workflow.png)
+![annotations_scheme](img/part_annotation_workflow.png)
 
 Ces annotations sont appelés "standards annotations". 
 Pour construire ces annotations Methylator s'appuie sur le package genomicrange de Bioconductor. 
