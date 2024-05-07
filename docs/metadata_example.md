@@ -84,6 +84,7 @@ CUSTOM_ANNOT_PATH: my_bank/
 MERGE_WITH_BASICS_ANNOT: yes # yes or no
 ```
 Additionally, you need to specify the path to the folder containing the annotation files and the path to the metadata
+Vous pouvez également choisir de merger les annotations customs aux annotations standards pour avoir un unique plot à chaque fois.
 
 !!! warning
     The expected file format for creating custom annotations is as follows : 
