@@ -127,16 +127,13 @@ REPORT: no # "yes" or "no"
 ### 3) Configuration of the specific tools  
 Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](#running-your-analysis-step-by-step).
 
-```yaml
-
-```
 
 ## config_nanopore.yaml
 
 The configuration of the workflow for nanopore data. 
 
-<span>{% include icon.liquid id='exclamation-triangle' %} <b>Important</b></span><br> The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
-{:.ui.large.warning.message}
+!!! warning 
+    The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
 
 Like the `config_wgbs` this configuration file contains 3 parts:  
 
@@ -191,7 +188,6 @@ Avec les données nanopores les premièrs étapes du workflow ne sont pas néces
 
 ### 3) Configuration of the specific tools 
 
-```yaml
-```
+Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](#running-your-analysis-step-by-step).
 
 
