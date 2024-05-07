@@ -24,7 +24,11 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 **Intergenic**    
 **Introns**    
 **Exons**    
-**Promoters**    
+**Promoters**   
+
+![genes](img/gene.jpeg)
+
+
 **Cpg islands**    
 **CpG Shores**    
 **CpG Shelves**    
