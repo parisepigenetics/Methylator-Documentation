@@ -2,8 +2,8 @@
 ## Annotations
 
 Au cours de l'analyse de la méthylation par Methylator, de nombreuses figures s'appuie sur l'annotation du génome. 
-Pour réaliser ces figures, Methylator construit ses propres annotations à l'aide de deux fichiers : 
-- un fichier au format GTF pour les annotations génomiques classiques (genes, intergéniques, TSS ...)
+Pour réaliser ces figures, Methylator construit ses propres annotations à l'aide de deux fichiers :    
+- un fichier au format GTF pour les annotations génomiques classiques (genes, intergéniques, TSS ...)    
 - un fichier au format .txt contenant des informations sur les ilôts CpG
 
 **Schema de la partie du workflow en charge de construire les annotations**
@@ -20,15 +20,15 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 
 ### Construction des annotations 
 
-**Genes**
-**Intergenic**
-**Introns**
-**Exons**
-**Promoters**
-**Cpg islands**
-**CpG Shores**
-**CpG Shelves**
-**TSS**
+**Genes**    
+**Intergenic**    
+**Introns**    
+**Exons**    
+**Promoters**    
+**Cpg islands**    
+**CpG Shores**    
+**CpG Shelves**    
+**TSS**    
 
 L'un des avantages de cette approche elle qu'elle permet à un utilisateur avertie et à l'aise avec le language de programmation R de modifier ou d'ajouter des annotations à sa convenance. 
 
