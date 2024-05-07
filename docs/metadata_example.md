@@ -24,7 +24,9 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 **Intergenic**    
 **Introns**    
 **Exons**    
-**Promoters**   
+**Promoters**
+**TSS**
+**Near TSS**
 
 ![genes](img/gene.jpeg)
 
