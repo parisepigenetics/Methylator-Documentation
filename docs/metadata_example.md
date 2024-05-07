@@ -1,3 +1,38 @@
+
+## Annotations
+
+Au cours de l'analyse de la méthylation par Methylator, de nombreuses figures s'appuie sur l'annotation du génome. 
+Pour réaliser ces figures, Methylator construit ses propres annotations à l'aide de deux fichiers : 
+- un fichier au format GTF pour les annotations génomiques classiques (genes, intergéniques, TSS ...)
+- un fichier au format .txt contenant des informations sur les ilôts CpG
+
+Ces annotations sont appelés "standards annotations". 
+Pour construire ces annotations Methylator s'appuie sur le package genomicrange de Bioconductor. 
+
+Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser les bases de données d'annotations pour
+éviter d'être dépendent de celle-çi mais également pour s'assurer que les annotations sont toujours construites de manière identique. 
+
+### Construction des annotations 
+
+**Genes**
+**Intergenic**
+**Introns**
+**Exons**
+**Promoters**
+**Cpg islands**
+**CpG Shores**
+**CpG Shelves**
+**TSS**
+
+L'un des avantages de cette approche elle qu'elle permet à un utilisateur avertie et à l'aise avec le language de programmation R de modifier ou d'ajouter des annotations à sa convenance. 
+
+!!! warning
+    Lorsque l'on annotate les CpG, DMC/DMT/DMR avec les annotations. Chaque fois qu'un de ces éléments overlappe avec une annotation elle est associée à cette annotation. 
+    De ce fait, un même CpG peut par exemple être annoté comme étant localisé dans un gène, un îlot CpG et un intron. Ce qui explique pourquoi dans les figures de compte
+    des annotations certaines catégories ont beaucoup d'éléments que d'autres. C'est pour cette raison que les figures en compte relatifs sont en générales plus informatives.
+
+
+
 ### Metadata
 
 |           sample            |      group      |
