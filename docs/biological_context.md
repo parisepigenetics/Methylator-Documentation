@@ -39,7 +39,7 @@ The Reduced Representation Bisulfite Sequencing (RRBS) method is similar to WGBS
 
 ### Nanopore Sequencing 
 
-Nanopore sequencing relies on a set of pores, typically a few nanometers in diameter, integrated into a membrane subjected to an electric current. When a DNA fragment passes through a pore, each base disrupts the current in its own way. This disruption is then captured by electrodes and recorded as an electrical signal. Algorithms, known as "basecallers," based on neural networks, are then used to decode the signal and reconstruct the DNA fragment sequence in real-time. Some of these algorithms are also capable of distinguishing modified bases, including 5mC, enabling methylation quantification without the need for bisulfite treatment
+Nanopore sequencing relies on a set of pores, typically a few nanometers in diameter, integrated into a membrane subjected to an electric current. When a DNA fragment passes through a pore, each base disrupts the current in its own way. This disruption is then captured by electrodes and recorded as an electrical signal. Algorithms, known as "basecallers," based on neural networks, are then used to decode the signal and reconstruct the DNA fragment sequence in real-time. Some of these algorithms are also capable of distinguishing modified bases, including 5mC and 5hmC, enabling methylation quantification without the need for bisulfite treatment
 
 **Reduced-Representation Methylation Sequencing**
 
