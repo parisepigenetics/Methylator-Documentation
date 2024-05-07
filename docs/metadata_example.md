@@ -28,7 +28,9 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 **Cpg islands**    
 **CpG Shores**    
 **CpG Shelves**    
-**TSS**    
+
+![cpg](img/cpg_annot.jpeg)
+
 
 L'un des avantages de cette approche elle qu'elle permet à un utilisateur avertie et à l'aise avec le language de programmation R de modifier ou d'ajouter des annotations à sa convenance. 
 
@@ -36,6 +38,7 @@ L'un des avantages de cette approche elle qu'elle permet à un utilisateur avert
     Lorsque l'on annotate les CpG, DMC/DMT/DMR avec les annotations. Chaque fois qu'un de ces éléments overlappe avec une annotation elle est associée à cette annotation. 
     De ce fait, un même CpG peut par exemple être annoté comme étant localisé dans un gène, un îlot CpG et un intron. Ce qui explique pourquoi dans les figures de compte
     des annotations certaines catégories ont beaucoup d'éléments que d'autres. C'est pour cette raison que les figures en compte relatifs sont en générales plus informatives.
+
 
 
 
