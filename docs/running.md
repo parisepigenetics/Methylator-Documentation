@@ -247,6 +247,10 @@ If **DMR** is turn to "YES", you perform a DMR analysis with the same comparison
 
 The default parameters are optimized to focus on local DMRs (**regions**), typically in the range of hundreds to thousands of base pairs. If you choose **blocks**, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
+!!! warning 
+    L'analyse en DMR s'appuie sur l'analyse en DMC. Il n'est pas possible de réaliser l'analyse en DMR sans avoir au préalable fait tourner le workflow avec le LEVEL "CpG". 
+    Dans le cas ou vous choissisez de réaliser une analyse en "Tiles" et en DMR, ceci ne génèrera pas de message d'erreur mais seul l'analyse en DMT sera réalisé. 
+
 #### BedGraphe 
 
 En plus de rapport HTML, pour chaque comparaison des fichiers .bed sont générés. Pour chaque seuil de différence de méthylation dans LIST_SIGNIDIF et pour chaque QVALUE dans LIST_QVALUE un bedgraphe est généré dans le dossier : . Dans le cas ou l'on choisit des tiles qui s'overlappe, la conversion des bedgraphes en Bigwig est délicate. Pour permettre la conversion npus avons utiliser la méthode suivante :  
