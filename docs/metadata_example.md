@@ -20,20 +20,41 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 
 ### Construction des annotations 
 
-**Genes**    
-**Intergenic**    
+**Genes**
+
+**Intergenic**   
+Intersection de l'ensemble des annotations avec les annotations génomiques.
+Tous ce qui n'est pas annoté comme étant un gène est automatiquement annoté comme étant intergenetic. 
+
 **Introns**    
+
 **Exons**    
+
 **Promoters**
+-2000 paires de bases en amonts du Start et + 2000 paires de bases en aval du Start.    
+
 **TSS**
+```R
+tss_gr = IRanges::promoters(genic_gr, upstream = 0, downstream = 1)
+GenomicRanges::mcols(tss_gr)$type = sprintf('%s_tss', ORG)
+``` 
 **Near TSS**
+```R
+near_tss_gr = IRanges::promoters(genic_gr, upstream = 5000, downstream = 500)
+GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
+``` 
 
 ![genes](img/gene.jpeg)
 
 
 **Cpg islands**    
+
 **CpG Shores**    
++ 2kb en amont et en aval des  CpG Islands
+
 **CpG Shelves**    
++ 4kb en amont et en aval des CpG Islands
+
 
 ![cpg](img/cpg_annot.jpeg)
 
