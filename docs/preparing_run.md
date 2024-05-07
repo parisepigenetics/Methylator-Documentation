@@ -1,4 +1,4 @@
- Preparing the run
+# Preparing the run
 
 There are **2 files that you have to modify** before running your analysis, `metadata.tsv` and the config yaml file associate withe your sequencing technologies (`config_wgbs.yaml` or `config_nanopore.yaml` in the `configs` folder). The config yaml file is the most important file. It controls the workflow and many tool parameters.
 
