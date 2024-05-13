@@ -20,7 +20,7 @@ In the case of BS-seq data, the workflow begins with files in FASTQ format. It p
 
 ![folders_organisation](img/folder_organisation_worklfow.png)
 
-Le dossier `configs`contient l'ensemble des fichiers de configurations.  
+The `configs` folder contains all th configurations fils. 
 ```bash
 .
 ├── cluster_config_ifb.yaml
@@ -33,7 +33,7 @@ Le dossier `configs`contient l'ensemble des fichiers de configurations.
 └── metadata.tsv
 ```
 
-Le dossier ` scripts ` contient l'ensemble des scripts nécessaire au fonctionnement du worklow, à l'execption des script Snakemake.  
+The `scripts` folder contains all the scripts necessary for the workflow's operation, except for the Snakemake scripts.    
 
 ```bash
 .
@@ -95,7 +95,7 @@ Le dossier ` worklfow ` contient l'ensemble des scripts Snakemake ".rules".
 └── wgbsflow.yaml
 ```
 
-Le dossier ` TestDataset ` contient l'ensemble des fichiers nécessaire pour tester le workflow avec un petit jeu de données.   
+The  ` TestDataset `  folder contains all the files necessary to test the workflow with a small dataset.    
 
 ```bash
 .
