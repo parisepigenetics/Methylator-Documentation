@@ -35,7 +35,10 @@ Tous ce qui n'est pas annoté comme étant un gène est automatiquement annoté 
 
 
 **Exons**    
-Utilise la fonction GenomicFeatures::exonsBy(txdb, by = 'gene')
+Utilise la fonction exonsBy de genomicFeatures
+```R
+GenomicFeatures::exonsBy(txdb, by = 'gene')
+```   
 
 **Promoters**
 -2000 paires de bases en amonts du Start et + 2000 paires de bases en aval du Start.    
