@@ -72,9 +72,7 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 L'un des avantages de cette approche elle qu'elle permet à un utilisateur avertie et à l'aise avec le language de programmation R de modifier ou d'ajouter des annotations à sa convenance. 
 
 !!! warning
-    Lorsque l'on annotate les CpG, DMC, DMT ou DMR, chaque fois qu'un de ces éléments overlappe avec une annotation elle est associée à cette annotation. 
-    De ce fait, un même CpG peut par exemple être annoté comme étant localisé dans un gène, un îlot CpG et un intron à la fois. Ce qui explique pourquoi dans les figures de compte
-    des annotations certaines catégories plus d'éléments que d'autres. (exemple : gènes). C'est pour cette raison qu'il est intéressant de regarder également les figures en compte relatif. 
+    When annotating CpGs, DMCs, DMTs, or DMRs, whenever one of these elements overlaps with an annotation, it is associated with that annotation. As a result, the same CpG can be annotated as being located in a gene, a CpG island, and an intron simultaneously. This explains why in the annotation count figures, some categories have more elements than others (e.g., genes). That's why it's also interesting to look at the figures in relative count.
 
 ### Methylation status in absolut count
 ![meth_stat_abs](img/methylation_status_absolut.png)
