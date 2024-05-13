@@ -24,7 +24,8 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 Utilise la fonction genes de Genomicfeatures
 ```R
 GenomicFeatures::genes(txdb)
-``
+```
+
 
 **Intergenic**   
 Intersection de l'ensemble des annotations avec les annotations génomiques.
