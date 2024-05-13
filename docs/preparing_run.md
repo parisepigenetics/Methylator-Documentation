@@ -51,7 +51,7 @@ The first column contains the **sample** names that have to **correspond to the 
 
 ## config_wgbs.yaml
  
-The configuration of the workflow for BSseq (WGBS or RRBS) data (see [step by step description](#running-your-analysis-step-by-step) below) is done in `config/config_wgbs.yaml`.
+The configuration of the workflow for BSseq (WGBS or RRBS) data (see [step by step description](running.md) below) is done in `config/config_wgbs.yaml`.
 
 !!! warning
     The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
@@ -79,7 +79,7 @@ READSPATH: /shared/projects/YourProjectName/fastq # the path to fastq files
 COMPARISON: [["WT","1KO"], ["WT","DKO"], ["1KO","DKO"]]
 ```
 
-Here you define where the FASTQ files are stored, where is the file describing the experimental set up, the name and localization of the folders where the results will be saved. The results (detailed in [Workflow results](#workflow-results)) are separated into two folders:    
+Here you define where the FASTQ files are stored, where is the file describing the experimental set up, the name and localization of the folders where the results will be saved. The results (detailed in [results](results.md)) are separated into two folders:    
 - the **big files**: trimmed FASTQ, bam files are in an specific folder defined at `BIGDATAPATH`    
 - the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`    
 Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis.    
@@ -125,7 +125,7 @@ REPORT: no # "yes" or "no"
 
 
 ### 3) Configuration of the specific tools  
-Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](#running-your-analysis-step-by-step).
+Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](running.md).
 
 
 ## config_nanopore.yaml
@@ -188,6 +188,6 @@ With nanopore data, the initial steps of the workflow are not necessary. Only th
 
 ### 3) Configuration of the specific tools 
 
-Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](#running-your-analysis-step-by-step).
+Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](running.md).
 
 
