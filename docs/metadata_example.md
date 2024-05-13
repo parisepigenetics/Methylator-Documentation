@@ -20,8 +20,11 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 
 ### Construction des annotations 
 
-**Genes**
-Utilise la fonction GenomicFeatures::genes(txdb).
+**Genes**    
+Utilise la fonction genes de Genomicfeatures
+```R
+GenomicFeatures::genes(txdb)
+``
 
 **Intergenic**   
 Intersection de l'ensemble des annotations avec les annotations génomiques.
