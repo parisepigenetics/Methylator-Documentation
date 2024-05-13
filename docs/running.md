@@ -248,13 +248,15 @@ If **DMR** is turn to "YES", you perform a DMR analysis with the same comparison
 The default parameters are optimized to focus on local DMRs (**regions**), typically in the range of hundreds to thousands of base pairs. If you choose **blocks**, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
 !!! warning 
-    L'analyse en DMR s'appuie sur l'analyse en DMC. Il n'est pas possible de réaliser l'analyse en DMR sans avoir au préalable fait tourner le workflow avec le LEVEL "CpG". 
-    Dans le cas ou vous choissisez de réaliser une analyse en "Tiles" et en DMR, ceci ne génèrera pas de message d'erreur mais seul l'analyse en DMT sera réalisé. 
+    The DMR analysis relies on the DMC analysis. It is not possible to perform the DMR analysis without first running the workflow with the "CpG" LEVEL. In the case where you choose to perform an analysis in "Tiles" and in DMR, this will not generate an error message, but only the DMT analysis will be performed.. 
 
 #### BedGraphe 
 
-En plus de rapport HTML, pour chaque comparaison des fichiers .bed sont générés. Pour chaque seuil de différence de méthylation dans LIST_SIGNIDIF et pour chaque QVALUE dans LIST_QVALUE un bedgraphe est généré dans le dossier : . Dans le cas ou l'on choisit des tiles qui s'overlappe, la conversion des bedgraphes en Bigwig est délicate. Pour permettre la conversion npus avons utiliser la méthode suivante :  
+In addition to the HTML report, for each comparison, .bed files are generated. For each methylation difference threshold in LIST_SIGNIDIF and for each QVALUE in LIST_QVALUE, a bedgraph is generated in the folder: . 
 
+!!! warning
+    In the case where overlapping tiles are chosen, the conversion of bedgraphs to Bigwig is delicate. To enable the conversion, we have used the following method:
+    
 ``` 
 module load bedopts 
 bedops --chop 500 PBS_EtOH_5mC_MethDiffperc.bedGraph > test.bed
@@ -263,10 +265,9 @@ bedtools sort -i result.bed > result_sort.bed
 bedtools merge -i result_sort.bed -d -1 -c 4 -o mean > final.bed
 ```
 
-bedops --chop 500 merge l'ensemble des tiles qui s'overlapent puis découpe la régions en fragments de tailles identiques (500 pb)
-bedtools intersect permet d'intersecter l'ensemble des tiles avec les fragments de 500 pb créé par bedops --chop 500
-Enfin, bedtools merge -c 4 -o mean permet de merger les tiles qui intersects avec les fragments de 500pb et de faire la moyenne des % de méthylation. Le -d -1 permet d'éviter que les fragments adjacents soient merger, il s'inifie qu'il faut un overlap d'au moins 1 pb pour qu'il soient fusionnés.
-
+bedops --chop 500 merges all overlapping tiles and then splits the region into fragments of identical sizes (500 bp).    
+bedtools intersect is used to intersect all tiles with the 500 bp fragments created by bedops --chop 500.    
+Finally, bedtools merge -c 4 -o mean merges the intersecting tiles with the 500 bp fragments and calculates the average methylation percentage. The -d -1 prevents adjacent fragments from being merged, meaning that there must be at least a 1 bp overlap for them to be merged.
 
 
 ## ORA : Over-representation analysis
