@@ -66,7 +66,11 @@ L'un des avantages de cette approche elle qu'elle permet à un utilisateur avert
     De ce fait, un même CpG peut par exemple être annoté comme étant localisé dans un gène, un îlot CpG et un intron. Ce qui explique pourquoi dans les figures de compte
     des annotations certaines catégories ont beaucoup d'éléments que d'autres. C'est pour cette raison que les figures en compte relatifs sont en générales plus informatives.
 
+**Methylation status in absolut count**
+![meth_stat_abs](img/methylation_status_absolut.png)
 
+**Methylation status in relative count**
+![meth_stat_rel](img/methylation_status_relative.png)
 
 
 ### Metadata
