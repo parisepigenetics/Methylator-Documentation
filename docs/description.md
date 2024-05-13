@@ -129,9 +129,10 @@ Le dossier ` TestDataset ` contient l'ensemble des fichiers nécessaire pour tes
     ├── gencode.vM27.annotation_chr19_mini.gtf
     ├── mm39_chr19_mini.fa
     └── rrms_mm39_mini.bed
-``` 
+```
 
-Le dossier ` my_bank ` est un dossier vide. Il permet de stocker des génomes de références et des fichiers d'annotations (FASTA, GTF, BED ...) pour différentes espèces lorsque les fichiers en question ne sont pas disponibles dans les banques présentes sur votr cluster (voir annotation). 
+
+The `my_bank` folder is an empty directory. It is used to store reference genomes and annotation files (FASTA, GTF, BED, etc.) for different species when the required files are not available in the banks present on your cluster (refer to [annotation](annotation.md).    
 
 
 ## Main scripts 
