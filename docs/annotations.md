@@ -116,17 +116,17 @@ Vous pouvez également choisir de merger les annotations customs aux annotations
 | chr1 | 10757 | 10997 | trf	76	3.2	76	95	2	434	17	30	45	6	1.73	GGCGCAGGCGCAGAGAGGC | 
 | chr1 | 11225 | 11447 | trf	117	1.9	121	80	14	273	12	32	33	20	1.9	CGCCCCCTGCTGGCGAC       | 
 
-With chromosomal coordinates (chromosomes | start | end) along with any potential supplementary columns. 
+With chromosomal coordinates (chromosomes | start | end) along with any potential supplementary columns.    
 
 
-Il existe un scipt search_bank.sh qui lorsqu'il est exécuté télécharge automatiquement (lorsque c'est possible) tous les fichiers d'annotations nécessaire pour le lancement du workflow from UCSC Golden Path. Il prend comme argument le nom du génome de référence de l'espèce en question. par exemple :  
+There is a script called search_bank.sh which, when executed, automatically downloads (when possible) all the necessary annotation files for launching the workflow from UCSC Golden Path. It takes as an argument the name of the reference genome of the species in question. For example:
 
 ``` sh
 srun scripts/search_bank.sh mm39 
 ```
 ![search_banks](img/search_banks_example.png)
 
-L'ensembles des fichiers d'annotations sont alors téléchargé dans le dossier  `my_bank`  pourvue à cet effet. 
+All annotation files are then downloaded into the folder `my_bank` provided for this purpose.
 
 
 
