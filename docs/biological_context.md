@@ -5,13 +5,13 @@ essential for normal development and is associated with a number of key processe
 transposable elements, aging, and carcinogenesis. At the molecular level, DNA methylation has been identified as directly repressing transcription by inhibiting the binding of specific transcription factors, and/or indirectly, by recruiting methyl-CpG binding proteins, which themselves interact with corepressors. Thus, in gene promoter regions, demethylated CpG islands are generally associated with transcriptional activity, while methylated CpG islands silence gene expression. DNA methylation has also been associated with genome stability by repressing the activity of transposable elements.  
 
 ##  DNA Methylation 
-DNA methylation is a reversible epigenetic modification involving the addition of a methyl group to the fifth carbon of cytosine, forming 5-methylcytosine (5mC) as illustrated in Figure 1. In mammals, methylation is primarily observed in a CpG dinucleotide context. Non-CG methylation (CHG or CHH) is more commonly observed among plants and fungi.  
+DNA methylation is a reversible epigenetic modification involving the addition of a methyl group to the fifth carbon of cytosine, forming 5-methylcytosine (5mC). In mammals, methylation is primarily observed in a CpG dinucleotide context. Non-CG methylation (CHG or CHH) is more commonly observed among plants and fungi.  
   
 ![5mc](img/5mc.png)  
 
 
 ## Enzymatic actors
-DNA methylation is carried out by DNA methyltransferases (Figure 1), a family of enzymes among which we find Dnmt1, primarily involved in maintaining methylation during genome replication, and Dnmt3a/b, which plays a major role in de novo methylation acquisition, particularly during embryonic development.
+DNA methylation is carried out by DNA methyltransferases, a family of enzymes among which we find Dnmt1, primarily involved in maintaining methylation during genome replication, and Dnmt3a/b, which plays a major role in de novo methylation acquisition, particularly during embryonic development.
 
 ## Localisation 
 DNA methylation is a genome-wide phenomenon, except for certain regions that are CpG-rich (CpG islands or CGIs). These regions, averaging about 1kb and composed of over 50% CpG sites, are generally demethylated, especially when associated with active gene promoters. It's noteworthy that in humans, 70% of gene proximal promoters are associated with a CpG island.  
