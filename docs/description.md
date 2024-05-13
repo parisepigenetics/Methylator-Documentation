@@ -74,10 +74,62 @@ Le dossier ` scripts ` contient l'ensemble des scripts nécessaire au fonctionne
 └── test_bam.R
 ```
 
-
 Le dossier ` worklfow ` contient l'ensemble des scripts Snakemake ".rules".   
 
+```bash
+.
+├── config_main_schema.yaml
+├── config_mapping_schema.yaml
+├── config_methylator_schema.yaml
+├── config_QC_schema.yaml
+├── config_trim_schema.yaml
+├── differential.rules
+├── exploration.rules
+├── fastq_dump_QC.rules
+├── mapping.rules
+├── nanopore.yml
+├── report.rules
+├── samples.schema.yaml
+├── Singularity_ncbi
+├── trim.rules
+└── wgbsflow.yaml
+```
+
 Le dossier ` TestDataset ` contient l'ensemble des fichiers nécessaire pour tester le workflow avec un petit jeu de données.   
+
+```bash
+.
+├── bam_nanopore
+│   ├── RRMS_2marks_NP95
+│   └── RRMS_2marks_WT
+├── configs
+│   ├── config_nanopore.yaml
+│   ├── config_wgbs.yaml
+│   ├── metadata_nano2.tsv
+│   ├── metadata_nano.tsv
+│   └── metadata_wgbs.tsv
+├── fastq
+│   ├── select_sam.sh
+│   ├── SRR11806587_sub500000_chr19_R1.fastq.gz
+│   ├── SRR11806587_sub500000_chr19_R2.fastq.gz
+│   ├── SRR11806588_sub500000_chr19_R1.fastq.gz
+│   ├── SRR11806588_sub500000_chr19_R2.fastq.gz
+│   ├── SRR11806589_sub500000_chr19_R1.fastq.gz
+│   ├── SRR11806589_sub500000_chr19_R2.fastq.gz
+│   ├── SRR9016926_sub500000_chr19_R1.fastq.gz
+│   ├── SRR9016926_sub500000_chr19_R2.fastq.gz
+│   ├── SRR9016927_sub500000_chr19_R1.fastq.gz
+│   ├── SRR9016927_sub500000_chr19_R2.fastq.gz
+│   ├── SRR9016928_sub500000_chr19_R1.fastq.gz
+│   └── SRR9016928_sub500000_chr19_R2.fastq.gz
+└── my_bank
+    ├── cpgIslandExt.mm39.bed
+    ├── cpgIslandExt.mm39_mini.bed
+    ├── gencode.vM27.annotation_chr19.gtf
+    ├── gencode.vM27.annotation_chr19_mini.gtf
+    ├── mm39_chr19_mini.fa
+    └── rrms_mm39_mini.bed
+``` 
 
 Le dossier ` my_bank ` est un dossier vide. Il permet de stocker des génomes de références et des fichiers d'annotations (FASTA, GTF, BED ...) pour différentes espèces lorsque les fichiers en question ne sont pas disponibles dans les banques présentes sur votr cluster. Il existe un scipt search_bank.sh qui lorsqu'il est exécuté télécharge automatiquement (lorsque c'est possible) tous les fichiers d'annotations nécessaire pour le lancement du workflow from UCSC Golden Path. Il prend comme argument le nom du génome de référence de l'espèce en question. par exemple :  
 
