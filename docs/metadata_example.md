@@ -21,6 +21,7 @@ Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser l
 ### Construction des annotations 
 
 **Genes**
+Utilise la fonction GenomicFeatures::genes(txdb).
 
 **Intergenic**   
 Intersection de l'ensemble des annotations avec les annotations génomiques.
@@ -28,7 +29,9 @@ Tous ce qui n'est pas annoté comme étant un gène est automatiquement annoté 
 
 **Introns**    
 
+
 **Exons**    
+Utilise la fonction GenomicFeatures::exonsBy(txdb, by = 'gene')
 
 **Promoters**
 -2000 paires de bases en amonts du Start et + 2000 paires de bases en aval du Start.    
