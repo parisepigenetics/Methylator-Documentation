@@ -74,7 +74,7 @@ The `scripts` folder contains all the scripts necessary for the workflow's opera
 └── test_bam.R
 ```
 
-Le dossier ` worklfow ` contient l'ensemble des scripts Snakemake ".rules".   
+The  `workflow ` folder contains all the Snakemake scripts ".rules".
 
 ```bash
 .
