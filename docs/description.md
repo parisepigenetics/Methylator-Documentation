@@ -132,7 +132,7 @@ Le dossier ` TestDataset ` contient l'ensemble des fichiers nécessaire pour tes
 ```
 
 
-The `my_bank` folder is an empty directory. It is used to store reference genomes and annotation files (FASTA, GTF, BED, etc.) for different species when the required files are not available in the banks present on your cluster (refer to [annotation](annotation.md).    
+The `my_bank` folder is an empty directory. It is used to store reference genomes and annotation files (FASTA, GTF, BED, etc.) for different species when the required files are not available in the banks present on your cluster (refer to [annotation](annotations.md) ).  
 
 
 ## Main scripts 
