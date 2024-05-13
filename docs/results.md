@@ -302,8 +302,8 @@ This folder contain :
 - - a bed file for hypo-methylated significants DMC or DMT       
 
 
-!!! warning 
-    Chaque bed est généré pour chaque combinaisons de valeurs des listes LIST_DIFF et LIST_QV. Ainsi si la liste LIST_DIFF comporte 4 valeurs seuils et la LIST_QV 4 valeurs seuils, on va généré 16 x les fichiers bed pour chacune des conditions, soient 16x4x3 = 192 bedgraphes !!! 
+!!! warning
+    Each BED file is generated for every combination of values from the LIST_DIFF and LIST_QV lists. So, if LIST_DIFF has 4 threshold values and LIST_QV has 4 threshold values, we will generate 16 times the BED files for each condition, resulting in 16x4x3 = 192 bedgraphs
 
 **Examples of figures that you may see in the differentialy analysis report:**
 
