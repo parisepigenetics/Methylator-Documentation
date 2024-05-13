@@ -119,9 +119,14 @@ Vous pouvez également choisir de merger les annotations customs aux annotations
 With chromosomal coordinates (chromosomes | start | end) along with any potential supplementary columns. 
 
 
+Il existe un scipt search_bank.sh qui lorsqu'il est exécuté télécharge automatiquement (lorsque c'est possible) tous les fichiers d'annotations nécessaire pour le lancement du workflow from UCSC Golden Path. Il prend comme argument le nom du génome de référence de l'espèce en question. par exemple :  
 
+``` sh
+srun scripts/search_bank.sh mm39 
+```
+![search_banks](img/search_banks_example.png)
 
-
+L'ensembles des fichiers d'annotations sont alors téléchargé dans le dossier  `my_bank`  pourvue à cet effet. 
 
 
 
