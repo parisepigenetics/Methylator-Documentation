@@ -79,10 +79,10 @@ READSPATH: /shared/projects/YourProjectName/fastq # the path to fastq files
 COMPARISON: [["WT","1KO"], ["WT","DKO"], ["1KO","DKO"]]
 ```
 
-Here you define where the FASTQ files are stored, where is the file describing the experimental set up, the name and localization of the folders where the results will be saved. The results (detailed in [Workflow results](#workflow-results)) are separated into two folders:  
-- the **big files**: trimmed FASTQ, bam files are in an specific folder defined at `BIGDATAPATH`
-- the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`  
-Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis. 
+Here you define where the FASTQ files are stored, where is the file describing the experimental set up, the name and localization of the folders where the results will be saved. The results (detailed in [Workflow results](#workflow-results)) are separated into two folders:    
+- the **big files**: trimmed FASTQ, bam files are in an specific folder defined at `BIGDATAPATH`    
+- the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`    
+Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis.    
 
 !!! warning
     For differentially methylation analysis, you need to give the comparison(s) you want to do. If multiple comparisons, specify each pair (CONTROL & TREAT) in order respectively.
@@ -121,7 +121,7 @@ REPORT: no # "yes" or "no"
     If `QC` or `SRA` is set to `yes`, the workflow will stop after the QC to let you decide whether you want to trim your raw data or not. In order to run the rest of the workflow, you have to set both `QC` and `SRA` to `no`.
 
 !!! Tip
-    Nous conseillons de réaliser l'exploration globale avant de lancer l'analyse différentielle. L'exploration permet de s'assurer que les échantillons soient suffisemment distinct pour qu'une analyse différentielle soit utile. De plus, elle permet d'affiner le choix de certains paramètres approprié à vos données (minimum de couverture, unification ... ).
+    We recommend conducting global exploration before launching the differential analysis. Exploration ensures that the samples are sufficiently distinct for a differential analysis to be useful. Additionally, it allows for refining the selection of certain parameters appropriate for your data (minimum coverage, normalization, etc.).
 
 
 ### 3) Configuration of the specific tools  
@@ -169,7 +169,7 @@ BED_RRMS: /shared/projects/edc_nanopore/rrms_mm39_v2_corr_end.bed
     if you have perform a RRMS (selection of specific regions during the sequencing), don't forget to put the path to the BED file used for selection below. 
 
 !!! success
-    Contrairement au séquencage BSseq, en nanopore il est possible de faire la distinction entre le méthylation 5mc et 5hmc. If you have basecalled FAST5 files including 5hmC detection, you can explore this mark. 
+    Unlike BS-seq sequencing, in nanopore sequencing, it is possible to distinguish between 5mc methylation and 5hmc methylation. If you have basecalled FAST5 files including 5hmC detection, you can explore this mark.
 
 ### 2) Steps of the workflow you want to run
 
@@ -184,7 +184,7 @@ EXPLORATION: yes # "yes" or "no"
 DIFFERENTIAL: yes # "yes" or "no"
 ```
 
-Avec les données nanopores les premièrs étapes du workflow ne sont pas nécessaire. Seule l'analyse statistique est commune au deux. 
+With nanopore data, the initial steps of the workflow are not necessary. Only the statistical analysis is common to both methods.    
 
 ### 3) Configuration of the specific tools 
 
