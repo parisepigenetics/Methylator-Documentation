@@ -21,8 +21,59 @@ In the case of BS-seq data, the workflow begins with files in FASTQ format. It p
 ![folders_organisation](img/folder_organisation_worklfow.png)
 
 Le dossier `configs`contient l'ensemble des fichiers de configurations.  
+```bash
+.
+├── cluster_config_ifb.yaml
+├── cluster_config_ipop.yaml
+├── cluster_config.yaml
+├── config_nanopore.yaml
+├── config_wgbs.yaml
+├── config.yaml
+├── metadata_annot.tsv
+└── metadata.tsv
+```
 
 Le dossier ` scripts ` contient l'ensemble des scripts nécessaire au fonctionnement du worklow, à l'execption des script Snakemake.  
+
+```bash
+.
+├── Annotatr.R
+├── build_DAG_graphes.sh
+├── check_config_path.py
+├── colors.yaml
+├── DMR.Rmd
+├── DMR_RRBS.Rmd
+├── edc_workflows.py
+├── final_report_comp.Rmd
+├── final_report.Rmd
+├── getquota2.sh
+├── images
+│   ├── bibs_logo_.png
+│   ├── cpg_annot.jpeg
+│   └── gene.jpeg
+├── main_cluster.py
+├── MKit_BedgraphDiff.R
+├── MKit_Bedgraph.R
+├── MKit_BSMAP.R
+├── MKit_diff_bed.R
+├── Mkit_differential.Rmd
+├── MKit_diff_fig.R
+├── MKit_Exploration_all.Rmd
+├── MKit_Exploration.Rmd
+├── MKit_prep_differential.R
+├── MKit_prep_nanopore.R
+├── MKit_prep_WGBS.R
+├── ORA.py
+├── parse_yaml.sh
+├── parsinglog_flow.py
+├── parsinglog.py
+├── prep_array.R
+├── reporting.py
+├── run_rule.sh
+├── search_bank.sh
+└── test_bam.R
+```
+
 
 Le dossier ` worklfow ` contient l'ensemble des scripts Snakemake ".rules".   
 
