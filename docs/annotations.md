@@ -1,22 +1,23 @@
 
 ## Annotations
 
-Au cours de l'analyse de la méthylation par Methylator, de nombreuses figures s'appuie sur l'annotation du génome. 
-Pour réaliser ces figures, Methylator construit ses propres annotations à l'aide de deux fichiers :    
-- un fichier au format GTF pour les annotations génomiques classiques (genes, intergéniques, TSS ...)    
-- un fichier au format .txt contenant des informations sur les ilôts CpG
+During the analysis of methylation by Methylator, many figures rely on genome annotation. To create these figures, Methylator builds its own annotations using two files:    
+- a file in GTF format for classical genomic annotations (genes, intergenic regions, TSS, etc.)    
+- a .txt file containing information about CpG islands.
 
-**Schema de la partie du workflow en charge de construire les annotations**
+
+**Scheme of the workflow section responsible for building annotations**
 ![annotations_scheme](img/part_annotation_workflow.png)
 
-Ces annotations sont appelés "standards annotations". C'est le script R `Annotatr.R` . 
-Pour construire ces annotations Methylator s'appuie sur les package
-[annotar](https://www.bioconductor.org/packages/devel/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html), 
-[GenomicRanges](https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html)
-et [GenomicFeatures](https://kasperdanielhansen.github.io/genbioconductor/html/GenomicFeatures.html). 
 
-Nous avons fait le choix de reconstuire les annotations plutôt que d'utiliser les bases de données d'annotations pour
-éviter d'être dépendent de celle-çi mais également pour s'assurer que les annotations sont toujours construites de manière identique. 
+
+The R script Annotatr.R is responsible for building the annotations.    
+To construct these annotations, Methylator relies on several packages:    
+- [annotar](https://www.bioconductor.org/packages/devel/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html)    
+- [GenomicRanges](https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html)    
+- [GenomicFeatures](https://kasperdanielhansen.github.io/genbioconductor/html/GenomicFeatures.html)    
+
+We have chosen to reconstruct the annotations rather than using annotation databases to avoid dependency on them and to ensure that the annotations are consistently built.    
 
 ### Construction des annotations 
 
