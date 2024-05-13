@@ -134,6 +134,12 @@ The  ` TestDataset `  folder contains all the files necessary to test the workfl
 
 The `my_bank` folder is an empty directory. It is used to store reference genomes and annotation files (FASTA, GTF, BED, etc.) for different species when the required files are not available in the banks present on your cluster (refer to [annotation](annotations.md) ).  
 
+Après avoir lancer le workflow, de nouveaux dossiers sont créés. 
+Un dossier pour les résultats facilement exploitable. 
+Un dossier pour les résultats 'lourds'
+Un dossier log.
+Un dossier slurm_output. 
+
 
 ## Main scripts 
 
