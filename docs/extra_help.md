@@ -245,6 +245,27 @@ Sometimes you may reach the quota you have for your project. To check the quota,
 
 In principle it should raise an error, but sometimes it doesn't and it's hard to find out what is the problem. So if a task fails with no error (typically during mapping), try to make more space (or ask for more space on [IFB Community support](https://community.cluster.france-bioinformatique.fr) or [iPOP-UP Community support](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up)) before trying again. 
 
+
+### Metadata line break
+
+Lorsque vous compléter le metadat il est possible que des suats de lignes, des erreurs d'indentations ou autre entraine un message d erreur comme celui-çi : 
+
+```
+---- Errors ----
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path Results/MUSCLE_SK_PIG//fastqc/SRA.log contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R2_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	:MissingInputException in rule summaryReport in file /shared/projects/wgbs_flow/Elouan/WGBSflow_1/workflow/fastq_dump_QC.rules, line 111:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-Missing input files for rule summaryReport:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    output: Results/MUSCLE_SK_PIG/fastqc/report_quality_control.html, Results/MUSCLE_SK_PIG/fastqc/report_quality_control_data
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    affected files:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-        Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html
+```
+
+
 ## Paired-end or single-end ?
 
 When downloading FASTQ files with the SRA option, errors in the data description are often encountered. The most common one is a confusion between paired-end and single-end data. It frequently happens that sequencing is announced as single-end on SRA but is actually paired-end. In such cases, the "Per Base Sequence Content" graph in the FASTQC file looks like this:
@@ -339,39 +360,6 @@ D192T31_R2.fastq.gz
 D192T32_R1.fastq.gz  
 D192T32_R2.fastq.gz  
 ```
-
-
-
-```
----- Errors ----
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path Results/MUSCLE_SK_PIG//fastqc/SRA.log contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R2_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	:MissingInputException in rule summaryReport in file /shared/projects/wgbs_flow/Elouan/WGBSflow_1/workflow/fastq_dump_QC.rules, line 111:
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-Missing input files for rule summaryReport:
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    output: Results/MUSCLE_SK_PIG/fastqc/report_quality_control.html, Results/MUSCLE_SK_PIG/fastqc/report_quality_control_data
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    affected files:
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-        Results/MUSCLE_SK_PIG/fastqc/	
-Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html
-```
-
-problème indentation dans le fichier metadata. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
