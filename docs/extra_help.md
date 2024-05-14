@@ -342,4 +342,41 @@ D192T32_R2.fastq.gz
 
 
 
+```
+---- Errors ----
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path Results/MUSCLE_SK_PIG//fastqc/SRA.log contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-File path 'Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R2_fastqc.html' contains line break. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	:MissingInputException in rule summaryReport in file /shared/projects/wgbs_flow/Elouan/WGBSflow_1/workflow/fastq_dump_QC.rules, line 111:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-Missing input files for rule summaryReport:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    output: Results/MUSCLE_SK_PIG/fastqc/report_quality_control.html, Results/MUSCLE_SK_PIG/fastqc/report_quality_control_data
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-    affected files:
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-        Results/MUSCLE_SK_PIG/fastqc/	
+Results/MUSCLE_SK_PIG/logs/20240514T1517_fastq_dump_QC.txt	-SRR7812212_R1_fastqc.html
+```
+
+problème indentation dans le fichier metadata. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
