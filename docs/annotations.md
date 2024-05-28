@@ -27,7 +27,7 @@ Utilise la fonction genes de Genomicfeatures
 GenomicFeatures::genes(txdb)
 ```
 
-**Intergenic** 
+**Intergenic**        
 Intersection of all annotations with genomic annotations. Anything not annotated as a gene is automatically annotated as intergenetic. 
 
 
