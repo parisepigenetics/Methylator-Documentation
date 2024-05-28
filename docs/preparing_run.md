@@ -21,7 +21,7 @@ You can find useful help to manage your data on [IFB core documentation](https:/
 If you're using the IFB Jupyter Hub, it's **easier** as text and table editors are included, you just have to double click on the file you want to edit, modify and save it using the menu File/Save or Ctrl+S. 
 
 
-## metadata.tsv
+## metadata.tsv {#metadata-tsv}
 
 The experimental description is set up in `config/metadata.tsv`: 
 
