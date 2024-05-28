@@ -12,7 +12,7 @@ Then start the workflow.
 [username@clust-slurm-client Methylator]$ sbatch Workflow.sh wgbs
 ```
 
-This will run the quality control of the raw FASTQ. See [FASTQ quality control](extra_help.md#fastq-quality-control) for detailed explanations. If everything goes find you will see the results in `TestDataset/results/Test1/fastqc`. See also [how to follow your jobs](extra_help.md#how-to-follow-your-jobs) to know how to check that the run went fine.  
+This will run the quality control of the raw FASTQ. See [FASTQ quality control](running.md#fastq-quality-control) for detailed explanations. If everything goes find you will see the results in `TestDataset/results/Test1/fastqc`. See also [how to follow your jobs](extra_help.md#how-to-follow-your-jobs) to know how to check that the run went fine.  
 You can now move on with your own data, or run the rest of the workflow on the test dataset. To do so you have to modify `configs/config_main.yaml` turning `QC` entry from "yes" to "no". If you don't know how to do that, see [Preparing the run](preparing_run.md). Then restart the workflow. 
 
 ```sh 
