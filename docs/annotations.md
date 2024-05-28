@@ -19,10 +19,10 @@ To construct these annotations, Methylator relies on several packages:
 
 We have chosen to reconstruct the annotations rather than using annotation databases to avoid dependency on them and to ensure that the annotations are consistently built.    
 
-### Construction des annotations 
+### Building annotations
 
 **Genes**    
-Utilise la fonction genes de Genomicfeatures
+Use Genomicfeatures genes function
 ```R
 GenomicFeatures::genes(txdb)
 ```
@@ -32,13 +32,13 @@ Intersection of all annotations with genomic annotations. Anything not annotated
 
 
 **Exons**    
-Utilise la fonction exonsBy de genomicFeatures
+Uses genomicFeatures exonsBy function
 ```R
 GenomicFeatures::exonsBy(txdb, by = 'gene')
 ```
 
 **Introns**    
-Ce base sur les exons construit précedemment. Considère les gap entre les exons comme étant des introns. 
+Based on the exons built previously. Considers gaps between exons as introns. 
 
 **Promoters**        
 Uses the gene annotations constructed above. 
