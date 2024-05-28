@@ -5,11 +5,11 @@ There are **2 files that you have to modify** before running your analysis, `met
 To modify the text files from the terminal you can use **vi** or **nano** on iPOP-UP cluster,  plus **emacs** and **gedit** (the last one being easier to use) on IFB. 
 
 !!! warning 
-    In order to use **gedit**, be sure that you included `-X` when connecting to the IFB cluster (`-X` option is necessary to run graphical applications remotely). See [common errors](#error-starting-gedit-on-ifb).
+    In order to use **gedit**, be sure that you included `-X` when connecting to the IFB cluster (`-X` option is necessary to run graphical applications remotely). See [common errors](extra_help.md).
 
 
 !!! tip 
-    In order to navigate easily in your files with your regular file manager, you can mount your project folder as a disk on your local system. Please follow the instructions for [Windows]({{site.baseurl}}/cluster/tips/mounting_win) or [Linux]({{site.baseurl}}/cluster/tips/mounting_linux). This way, you can modify your files directly using any local text editor.
+    In order to navigate easily in your files with your regular file manager, you can mount your project folder as a disk on your local system. Please follow the instructions for [Windows](https://parisepigenetics.github.io/bibs/cluster/tips/mounting_win/) or [Linux](https://parisepigenetics.github.io/bibs/cluster/tips/mounting_linux/). This way, you can modify your files directly using any local text editor.
 
 You can also work on your computer and copy the files to the cluster using the `scp` command or the graphic interface FileZilla. 
 
