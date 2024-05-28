@@ -12,6 +12,10 @@ If you launch the workflow with nanopore data, the first step is to convert the 
 STARTFROMBED: no # put no if you start from BAM files
 ```
 
+## Start the workflow 
+
+You can start the workflow by running:
+
 ```sh
 sbatch WGBSflow.sh nanopore
 ```
