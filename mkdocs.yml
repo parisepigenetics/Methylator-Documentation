@@ -13,6 +13,9 @@ nav:
   - Annotations : annotations.md
   - Quick start with the test dataset : quick_start.md
   - Running your analysis step by step: running.md
+  - Running your BS-seq pre-processing step by step: runnning_bs.md
+  - Running your nanopore pre-processing step by step: runnning_nano.md
+  - Running your statistical analysis step by step: runnning_stat.md
   - Results: results.md
   - Extra help !: extra_help.md
   - Singularity: singularity_image.md
