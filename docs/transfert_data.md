@@ -1,5 +1,5 @@
 # Transfer your data
-If you want to use your own data, you should transfer the FASTQ files into your project folder `/shared/projects/YourProjectName` before doing your analysis. Alternatively the workflow allows you to download data from [SRA](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/) simply giving the `SRRxxx` IDs, see below [metadata.tsv](#metadata-tsv). 
+If you want to use your own data, you should transfer the FASTQ files into your project folder `/shared/projects/YourProjectName` before doing your analysis. Alternatively the workflow allows you to download data from [SRA](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/) simply giving the `SRRxxx` IDs, see below [metadata.tsv](preparing_run.md##metadata-tsv). 
 
 ## FASTQ names
 
@@ -7,7 +7,7 @@ The workflow is expecting **gzip-compressed FASTQ files** with names formatted a
 - `SampleName_R1.fastq.gz` and `SampleName_R2.fastq.gz` for pair-end data,   
 - `SampleName.fastq.gz` for single-end data. 
 
-If your files are not fitting this format, please see [how to correct the names of a batch of FASTQ files](#quickly-change-fastq-names). 
+If your files are not fitting this format, please see [how to correct the names of a batch of FASTQ files](extra_help.md##quickly-change-fastq-names). 
 
 ## Generate md5sum
 
