@@ -3,9 +3,9 @@
 
 ## Utilisation 
 
-Methylator allows the analysis of DNA methylation data from two types of sources:  
-- Sequencing data processed with Sodium Bisulfite treatment: BS-seq (WGBS and RRBS)
-- Nanopore sequencing data.    
+Methylator allows the analysis of DNA methylation data from two types of sources:    
+- Sequencing data processed with Sodium Bisulfite treatment: BS-seq (WGBS and RRBS)    
+- Nanopore sequencing data.      
 
 !!! note
     Currently, Methylator is not compatible with microarray data.
