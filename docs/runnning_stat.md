@@ -1,5 +1,5 @@
 
-# Running your Statistical analysis steps by steps 
+# Running your statistical analysis step by step
 
 At this stage, you need to select the global parameters for the statistical analysis.
 
