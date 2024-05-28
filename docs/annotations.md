@@ -44,8 +44,7 @@ Based on the exons built previously. Considers gaps between exons as introns.
 Uses the gene annotations constructed above. 
 Considers a promoter to be + or - 2000 base pairs upstream and downstream of the gene start.    
 
-**TSS**
-
+**TSS**    
 Create the transcription start sites annotation 
 
 ```R
@@ -53,8 +52,7 @@ tss_gr = IRanges::promoters(genic_gr, upstream = 0, downstream = 1)
 GenomicRanges::mcols(tss_gr)$type = sprintf('%s_tss', ORG)
 ```
 
-**Near TSS**
-
+**Near TSS**    
 Create the near transcription start sites annotation
 5000 paire de base en amont du tss et 500 paires de bases en aval
 
@@ -67,15 +65,14 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 
 
 **Cpg islands**    
+Utilise un fichier d'annotation au format .BED fournit par l'utilisateur. 
 
 
 **CpG Shores**    
-+ 2kb en amont et en aval des  CpG Islands
-
++/- 2kb upstream and downstream of CpG Islands
 
 **CpG Shelves**    
-+ 4kb en amont et en aval des CpG Islands
-
++/- 4kb upstream and downstream of CpG Islands
 
 ![cpg](img/cpg_annot.jpeg)
 
