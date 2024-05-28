@@ -41,8 +41,8 @@ GenomicFeatures::exonsBy(txdb, by = 'gene')
 Ce base sur les exons construit précedemment. Considère les gap entre les exons comme étant des introns. 
 
 **Promoters**        
-Utilise les annotations des gènes construite précedemment. 
-Considère un promoteur comme + ou - 2000 paires de bases en amonts et en aval du début (start) du gène.    
+Uses the gene annotations constructed above. 
+Considers a promoter to be + or - 2000 base pairs upstream and downstream of the gene start.    
 
 **TSS**
 
