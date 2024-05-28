@@ -80,9 +80,7 @@ bedtools sort -i result.bed > result_sort.bed
 bedtools merge -i result_sort.bed -d -1 -c 4 -o mean > final.bed
 ```
 
-bedops --chop 500 merges all overlapping tiles and then splits the region into fragments of identical sizes (500 bp).    
-bedtools intersect is used to intersect all tiles with the 500 bp fragments created by bedops --chop 500.    
-Finally, bedtools merge -c 4 -o mean merges the intersecting tiles with the 500 bp fragments and calculates the average methylation percentage. The -d -1 prevents adjacent fragments from being merged, meaning that there must be at least a 1 bp overlap for them to be merged.
+bedops --chop 500 merges all overlapping tiles and then splits the region into fragments of identical sizes (500 bp). bedtools intersect is used to intersect all tiles with the 500 bp fragments created by bedops --chop 500.Finally, bedtools merge -c 4 -o mean merges the intersecting tiles with the 500 bp fragments and calculates the average methylation percentage. The -d -1 prevents adjacent fragments from being merged, meaning that there must be at least a 1 bp overlap for them to be merged.
 
 
 ## ORA : Over-representation analysis
