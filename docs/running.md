@@ -65,7 +65,7 @@ You can check if your job is running using squeue.
 [username@clust-slurm-client Methylator]$ squeue --me
 ```
 
-You should also check SLURM output files. See [Description of the log files](#description-of-the-log-files).
+You should also check SLURM output files. See [Description of the log files](extra_help.md#description-of-the-log-files).
 
 
 ## Trimming
