@@ -5,7 +5,7 @@ There are **2 files that you have to modify** before running your analysis, `met
 To modify the text files from the terminal you can use **vi** or **nano** on iPOP-UP cluster,  plus **emacs** and **gedit** (the last one being easier to use) on IFB. 
 
 !!! warning 
-    In order to use **gedit**, be sure that you included `-X` when connecting to the IFB cluster (`-X` option is necessary to run graphical applications remotely). See [common errors](extra_help.md).
+    In order to use **gedit**, be sure that you included `-X` when connecting to the IFB cluster (`-X` option is necessary to run graphical applications remotely). See [common errors](extra_help.md#Common errors).
 
 
 !!! tip 
