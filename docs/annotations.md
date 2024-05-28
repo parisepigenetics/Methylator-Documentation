@@ -27,29 +27,36 @@ Utilise la fonction genes de Genomicfeatures
 GenomicFeatures::genes(txdb)
 ```
 
-
-**Intergenic**   
-Intersection de l'ensemble des annotations avec les annotations génomiques.
-Tous ce qui n'est pas annoté comme étant un gène est automatiquement annoté comme étant intergenetic. 
-
-**Introns**    
+**Intergenic** 
+Intersection of all annotations with genomic annotations. Anything not annotated as a gene is automatically annotated as intergenetic. 
 
 
 **Exons**    
 Utilise la fonction exonsBy de genomicFeatures
 ```R
 GenomicFeatures::exonsBy(txdb, by = 'gene')
-```   
+```
+
+**Introns**    
+Ce base sur les exons construit précedemment. Considère les gap entre les exons comme étant des introns. 
 
 **Promoters**
 -2000 paires de bases en amonts du Start et + 2000 paires de bases en aval du Start.    
 
 **TSS**
+
+Create the transcription start sites annotation 
+
 ```R
 tss_gr = IRanges::promoters(genic_gr, upstream = 0, downstream = 1)
 GenomicRanges::mcols(tss_gr)$type = sprintf('%s_tss', ORG)
-``` 
+```
+
 **Near TSS**
+
+Create the near transcription start sites annotation
+5000 paire de base en amont du tss et 500 paires de bases en aval
+
 ```R
 near_tss_gr = IRanges::promoters(genic_gr, upstream = 5000, downstream = 500)
 GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
@@ -60,8 +67,10 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 
 **Cpg islands**    
 
+
 **CpG Shores**    
 + 2kb en amont et en aval des  CpG Islands
+
 
 **CpG Shelves**    
 + 4kb en amont et en aval des CpG Islands
@@ -70,10 +79,11 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 ![cpg](img/cpg_annot.jpeg)
 
 
-L'un des avantages de cette approche elle qu'elle permet à un utilisateur avertie et à l'aise avec le language de programmation R de modifier ou d'ajouter des annotations à sa convenance. 
+One advantage of this approach is that it allows users who are familiar with the R programming language to modify or add annotations as they see fit.
 
 !!! warning
     When annotating CpGs, DMCs, DMTs, or DMRs, whenever one of these elements overlaps with an annotation, it is associated with that annotation. As a result, the same CpG can be annotated as being located in a gene, a CpG island, and an intron simultaneously. This explains why in the annotation count figures, some categories have more elements than others (e.g., genes). That's why it's also interesting to look at the figures in relative count.
+
 
 ### Methylation status in absolut count
 ![meth_stat_abs](img/methylation_status_absolut.png)
@@ -105,7 +115,8 @@ CUSTOM_ANNOT_PATH: my_bank/
 MERGE_WITH_BASICS_ANNOT: yes # yes or no
 ```
 Additionally, you need to specify the path to the folder containing the annotation files and the path to the metadata
-Vous pouvez également choisir de merger les annotations customs aux annotations standards pour avoir un unique plot à chaque fois.
+You can also choose to merge custom annotations with standard annotations to have a single plot each time.
+
 
 !!! warning
     The expected file format for creating custom annotations is as follows : 
