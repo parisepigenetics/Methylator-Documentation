@@ -6,7 +6,6 @@
 
 
 ``` yaml
-
 # ===================== Configuration for Nanopore data ==================== #
 # ========================================================================== #
 DATATYPE: NANOPORE # do not touch!
@@ -19,11 +18,7 @@ RRMS: yes
 BED_RRMS: TestDataset/my_bank/rrms_mm39_mini.bed
 # if you have basecalled FAST5 files including 5hmC detection, you can explore this mark
 5HMC: yes
-
 ```
-
-
-
 
 
 ##  Process BAM to BED 
