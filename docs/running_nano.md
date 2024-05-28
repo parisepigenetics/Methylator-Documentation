@@ -1,5 +1,5 @@
 
-# Running your nanopore pre-processing steps by steps 
+# Running your nanopore pre-processing step by step
 
 ##  Process BAM to BED 
 
