@@ -121,7 +121,7 @@ A compressed archive named `20210727T1030_report.tar.bz2` is also generated and 
 ```
 
 !!! tip "Tip for Windows users"
-    Unlike Linux and Mac, the `tar.bz2` format is not natively supported by Windows, but you can use the free [PeaZip](https://peazip.github.io/) or [7-zip](https://www.7-zip.org/) softwares to decompress the `xxx_report.tar.bz2` archive.
+    Unlike Linux and Mac, the `tar.bz2` format is not natively supported by Windows, but you can use the free [PeaZip](https://peazip.github.io/) or [7-zip](https://www.7-zip.org/) softwares to decompress the `final_report_{project}.tar.bz2` archive.
     
 The final report look like this : 
 
@@ -260,7 +260,7 @@ In this example, green sample correpond to the WT condition, blue sample to the 
 - coverage per chromosome    
 - insert size histogram    
 
-Once again **MultiQC** aggregates the results of all the samples and you can have a quick overview by looking at `Results/EXAMPLE/mapping_BOWTIE2/multiqc/report_mapping_bismark.html` or in the final report (ie `????_report.html`). 
+Once again **MultiQC** aggregates the results of all the samples and you can have a quick overview by looking at `Results/EXAMPLE/mapping_BOWTIE2/multiqc/report_mapping_bismark.html` or in the final report (ie `final_report_{project}.html`). 
 
 # Statisical analysis results 
 
