@@ -341,7 +341,8 @@ And for each comparaison :
 ![Dotplot example](img/ora_example.png){ width = 400 heigth = 400 }
 
 !!! note
-    All this HTML files are included in the [final report](final_report/final_report_Test_WGBS.html). 
+    All this HTML files are included in the final report.
+    An example of this report, generate with the test dataset, is avaible [here](final_report/final_report_Test_WGBS.html).
 
 
 
