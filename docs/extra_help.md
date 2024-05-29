@@ -118,17 +118,186 @@ Job finished 2024-05-06T14:56:12+0200
 
 If not, you'll see a summary of the errors: 
 ```
+-------------------------
+Workflow summary
+Is FASTQ quality control required ?  no
+Is trimming required ?  yes
+Is mapping required ?  yes
+Do you want to do the globale exploration ?  yes
+Do you need to do differentially methylation analysis ?  yes
+-------------------------
+Workflow running....
+Starting Trimming...
+Trimming is done! (0:00:51)
+
+Starting Mapping...
+Error during mapping; exit code:  1
+Exiting...
+########################################
+---- Errors ----
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        cd - 
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        bismark_genome_preparation         --bowtie2         --verbose Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-Submitted job 5 with external jobid 'Submitted batch job 37740876'.
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-[Wed May 29 13:28:48 2024]
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	:Error in rule chromsizes:
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    jobid: 6
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    output: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    shell:
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        samtools faidx --fai-idx - /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa | cut -f1,2 > Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    cluster_jobid: Submitted batch job 37740875
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	:Error executing rule chromsizes on cluster (jobid: 6, external: Submitted batch job 37740875, jobscript: /shared/projects/wgbs_flow/Elouan/WGBSflow/.snakemake/tmp.4q9c7ilv/snakejob.chromsizes.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-[Wed May 29 13:28:49 2024]
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	:Error in rule genomePrep:
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    jobid: 5
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    output: Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome/Bisulfite_Genome
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    shell:
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        cd Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+--
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        bismark_genome_preparation         --bowtie2         --verbose Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-    cluster_jobid: Submitted batch job 37740876
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	:Error executing rule genomePrep on cluster (jobid: 5, external: Submitted batch job 37740876, jobscript: /shared/projects/wgbs_flow/Elouan/WGBSflow/.snakemake/tmp.4q9c7ilv/snakejob.genomePrep.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	:Exiting because a job execution failed. Look above for error message
+Results/Test_WGBS/logs/20240529T1327_mapping.txt	-Complete log: .snakemake/log/2024-05-29T132836.854501.snakemake.log
+
+```
+Ici on constate qu'il y a un problème au moment du mapping avec la règle chromesize.
+And you can check the problem looking as the specific log file, here `20240529T1327_mapping.txt` 
+
+```
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+BamIndex           6              1              1
+BedtoBig           6              1              1
+GetCoverage        6              1              1
+MethExtract        6              1              1
+ReadCov            6              1              1
+Report             6              1              1
+Summary            1              1              1
+ToBw               6              1              1
+alignmentQC        6              1              1
+chromsizes         1              1              1
+deduplicate        6              1              1
+end                1              1              1
+genomePrep         1              1              1
+mapping            6              1              1
+multiQC            1              1              1
+sortBam            6              1              1
+total             71              1              1
+
+Select jobs to execute...
+
+[Wed May 29 13:28:38 2024]
+rule chromsizes:
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    jobid: 6
+    reason: Missing output files: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    resources: mem_mb=500, mem_mib=477, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=1, partition=ipop-up
+
+
+        samtools faidx --fai-idx - /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa | cut -f1,2 > Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+        
+Submitted job 6 with external jobid 'Submitted batch job 37740875'.
+
+[Wed May 29 13:28:38 2024]
+rule genomePrep:
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome/Bisulfite_Genome
+    jobid: 5
+    reason: Missing output files: Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome/Bisulfite_Genome
+    resources: mem_mb=12000, mem_mib=11445, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, cpus=4, partition=ipop-up
+
+
+        cd Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+        ln -s /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa genome.fa
+        cd - 
+        bismark_genome_preparation         --bowtie2         --verbose Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+        
+Submitted job 5 with external jobid 'Submitted batch job 37740876'.
+[Wed May 29 13:28:48 2024]
+Error in rule chromsizes:
+    jobid: 6
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    shell:
+        
+        samtools faidx --fai-idx - /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa | cut -f1,2 > Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 37740875
+
+Error executing rule chromsizes on cluster (jobid: 6, external: Submitted batch job 37740875, jobscript: /shared/projects/wgbs_flow/Elouan/WGBSflow/.snakemake/tmp.4q9c7ilv/snakejob.chromsizes.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 29 13:28:49 2024]
+Error in rule genomePrep:
+    jobid: 5
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome/Bisulfite_Genome
+    shell:
+        
+        cd Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+        ln -s /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa genome.fa
+        cd - 
+        bismark_genome_preparation         --bowtie2         --verbose Big_Data/Test_WGBS/mapping_BOWTIE2/bismark_genome
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 37740876
+
+Error executing rule genomePrep on cluster (jobid: 5, external: Submitted batch job 37740876, jobscript: /shared/projects/wgbs_flow/Elouan/WGBSflow/.snakemake/tmp.4q9c7ilv/snakejob.genomePrep.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-29T132836.854501.snakemake.log
+
 ```
 
-And you can check the problem looking as the specific log file, here `logs/20231104T0921_mapping.txt` 
-```
-???
-```
-You can have the description of the error in the SLURM output corresponding to the external jobid, here 13605307: 
+You can have the description of the error in the SLURM output corresponding to the external jobid, here 37740875: 
 
 ```
-[username @ clust-slurm-client Methylator]$ cat slurm_output/slurm-13605307.out
+[username @ clust-slurm-client Methylator]$ cat slurm_output/chromsizes--37740875.out
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=500, mem_mib=477, disk_mb=1000, disk_mib=954, cpus=1
+Select jobs to execute...
+
+[Wed May 29 13:28:43 2024]
+rule chromsizes:
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    jobid: 0
+    reason: Missing output files: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    resources: mem_mb=500, mem_mib=477, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cpus=1, partition=ipop-up
+
+
+        samtools faidx --fai-idx - /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa | cut -f1,2 > Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+        
+Activating singularity image wgbsflow.simg
+[E::fai_build3_core] Failed to open the file /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa
+[faidx] Could not build fai index -
+[Wed May 29 13:28:43 2024]
+Error in rule chromsizes:
+    jobid: 0
+    output: Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+    shell:
+        
+        samtools faidx --fai-idx - /shared/projects/wgbs_flow/Elouan/WGBSflow/TestDataset/my_bank/mm39_chr19_mini.fa | cut -f1,2 > Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job chromsizes since they might be corrupted:
+Big_Data/Test_WGBS/mapping_BOWTIE2/chrom.sizes
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
 ```
+Le problème vient du génome de référence au format fasta, mm39_chr19_mini.fa, qui n'est pas présent. 
 
 ## Common errors
 
