@@ -32,7 +32,14 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
-  
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/parisepigenetics/WGBSflow
+
+copyright: Copyright &copy; 2024 Methylator, Epigenetics and Cell Fate 
+
 theme:
   logo: img/methylator_logo.png
   features:
