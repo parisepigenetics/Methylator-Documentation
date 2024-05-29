@@ -215,7 +215,9 @@ Memory Efficiency: 1.12% of 117.19 GB
 ```
 
 If the rule that failed is not listed here, you can add it respecting the format. And restart your workflow. 
-Pour les qui règles qui peuvent demander beaucoup de ressources, si la règle échoue elle est automatiquement relancé en augmentant la mémoire. Ceci permet d'éviter de relancer le workflow. Dans ce cas les fichiers logs affiche des messages d'erreurs à chaque fois que la règle échoue, même s'il est réussi avec la mémoire suffisante. 
+
+!!! note 
+	For resource-intensive worklfow steps, if the associated snakemake rules fail, they are automatically restarted, increasing memory by a factor of 2. In all, each rule can be restarted three times consecutively. This prevents the workflow from stopping for resource reasons. Please note, however, that in this case the log files will display error messages every time the rule fails, even if it succeeds with sufficient memory. 
 
 ### Folder locked
 
