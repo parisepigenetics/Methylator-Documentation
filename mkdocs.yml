@@ -67,5 +67,10 @@ theme:
 
   plugins:
   - search
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: timeago
+      timezone: Europe/France
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
       
