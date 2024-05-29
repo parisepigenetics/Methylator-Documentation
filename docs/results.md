@@ -259,7 +259,6 @@ In this example, green sample correpond to the WT condition, blue sample to the 
 - number of indels and mismatches    
 - coverage per chromosome    
 - insert size histogram    
-- ...  
 
 Once again **MultiQC** aggregates the results of all the samples and you can have a quick overview by looking at `Results/EXAMPLE/mapping_BOWTIE2/multiqc/report_mapping_bismark.html` or in the final report (ie `????_report.html`). 
 
