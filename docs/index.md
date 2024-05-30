@@ -25,6 +25,22 @@ Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Me
 -  Understand the fundamental steps of DNA methylation analysis and the associated file formats. The [biological context](biological_context.md) section can be used for this.
 -  Have general knowledge in statistics/biostatistics.
 
+## Avantages et limitations
+
+
+
+*Insérer un tableau de benchmarling d'autres workflow*
+
+Methylator ne dispose d'une interface graphique, son utilisation nécessite donc des connaissances minimales avec le système d'exploitation Linux. 
+
+L'utilisateur est libre de choisir les seuils et paramètres qui lui semblent les plus appropriés à ses analyses,pour des valeurs en dehors des plages recommandés Methylator ne peut garantir l'interprétabilités des résultats. 
+
+
+## Futurs développements    
+
+Actuellement Methylator ne prend pas en charge les analyses de puces de méthylation (voir section biological contexte). Mais une intégration prochaine est en cours de réflexion. Methylator a été pensé pour être modulable et évolutif, l'intégration de nouveaux outils/fonctionalités par des utilisateurs avancés est tout à fait possible. 
+
+
 ## Table of contents    
 - [Biological context](biological_context.md)
 - [Before starting](before_start.md)
