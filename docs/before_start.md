@@ -2,7 +2,7 @@
 
 ## Cluster account 
 
-Create an account and a project on your favorite cluster, please follow instructions using the links below :
+Create an account and a project on your favorite cluster, please follow instructions using the links below :    
 - [IFB core cluster](https://parisepigenetics.github.io/bibs/cluster/ifb/#/cluster/)  
 - [iPOP-UP cluster](https://parisepigenetics.github.io/bibs/cluster/ipopup/#/cluster/)
 
@@ -11,7 +11,7 @@ Should works on every HPC administré par [slurm](https://slurm.schedmd.com/quic
 
 ## Storage 
 
-Depending on your analyses, the disk space required to run the workflow can vary significantly. or RRBS data, we recommend having at least 500 GB available. For WGBS data, we recommend having at least 1.5 TB available.
+Depending on your analyses, the disk space required to run the workflow can vary significantly. For RRBS data, we recommend having at least 500 GB available. For WGBS data, we recommend having at least 1.5 TB available.
 
 !!! warning
     For whole genome datasets with many samples, several terabytes may be necessary.
