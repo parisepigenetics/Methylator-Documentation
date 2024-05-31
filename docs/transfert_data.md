@@ -32,7 +32,8 @@ In this example the FASTQ files are copied from `PathTo/MethylProject/Fastq/` on
 You@YourComputer:~/PathTo/MethylProject$ rsync -avP  Fastq/ username@ipop-up.rpbs.univ-paris-diderot.fr:/shared/projects/YourProjectName/Raw_fastq
 ```
 
-Feel free to name your folders as you want! 
+**Feel free to name your folders as you want!**  
+
 You will be asked to enter your password, and then the transfer will begin. If it stops before the end, rerun the last command, it will only add the incomplete/missing files. 
 
 ## Check md5sum
