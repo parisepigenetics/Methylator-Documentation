@@ -11,7 +11,7 @@ If your files are not fitting this format, please see [how to correct the names 
 
 ## Generate md5sum
 
-It is highly recommended to check the [md5sum](https://en.wikipedia.org/wiki/Md5sum) for big files. If your raw FASTQ files are on your computer in `PathTo/MethylProject/Fastq/`, you type in a terminal: 
+For large files, it is highly recommended to check their integrity. This can be done using the tool [md5sum](https://en.wikipedia.org/wiki/Md5sum). If your raw FASTQ files are on your computer in `PathTo/MethylProject/Fastq/`, you type in a terminal: 
 
 ```
 You@YourComputer:~$ cd PathTo/MethylProject
