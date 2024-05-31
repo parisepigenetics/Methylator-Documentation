@@ -18,4 +18,15 @@ Pour des données WGBS nous conseillons d'avoir à disposition un minimum de 1.5
 !!! warning
   Pour des jeux de données Whole Genome avec beaucoup d'échantillons, plusieurs To peuvent être nécessaire. 
 
-Le tableau suivant est fournit à titre indicatif pour avoir une idée de l'espace nécessaire en fonction du volume du jeu de données initiale.  
+Le tableau suivant est fournit à titre indicatif pour avoir une idée de l'espace nécessaire en fonction du volume du jeu de données initiale. 
+
+
+## Required Knowledge for Quick Start
+
+!!! warning
+    Methylator was designed to be as user-friendly as possible; however, it is a tool dedicated to complex biological analyses and requires certain prerequisites to ensure a quick start and understanding of the analyses performed.
+
+- Be comfortable with the UNIX/Linux operating system, particularly the file structure and main commands.
+- Know how to use a computing cluster (HPC) with the SLURM scheduler.
+-  Understand the fundamental steps of DNA methylation analysis and the associated file formats. The [biological context](biological_context.md) section can be used for this.
+-  Have general knowledge in statistics/biostatistics.
