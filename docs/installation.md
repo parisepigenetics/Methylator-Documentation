@@ -1,7 +1,6 @@
-# Installation
+# Setup 
 
-In order to install Methylator, you  have to clone the Methylator GitHub repository to your cluster project. 
-If you're using the Jupyter Hub on IFB, you can open a **Terminal** by clicking on the corresponding icon. 
+Biologists and bioinformaticians often struggle with software installation. To avoid this issue, we have containerized all the software environments in an Apptainer/Singularity image. This image, along with all the required scripts, can be cloned from our Methylator GitHub repository, available [here](https://github.com/parisepigenetics/WGBSflow). If you're using the Jupyter Hub on IFB, you can open a **Terminal** by clicking on the corresponding icon. 
 
 ![jupyterHub](img/JupyterHub.png)
 
