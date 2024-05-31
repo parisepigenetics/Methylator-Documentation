@@ -6,8 +6,7 @@ Create an account and a project on your favorite cluster, please follow instruct
 - [IFB core cluster](https://parisepigenetics.github.io/bibs/cluster/ifb/#/cluster/)  
 - [iPOP-UP cluster](https://parisepigenetics.github.io/bibs/cluster/ipopup/#/cluster/)
 
-Methylator has been developed on the the IPOP-UP cluster and tester on IFB cluster.
-Should works on every HPC administré par [slurm](https://slurm.schedmd.com/quickstart.html) et sur lequel est installé [Apptainer](https://apptainer.org/). 
+Methylator has been developed on the IPOP-UP cluster and tested on the IFB cluster. It should work on any HPC managed by [slurm](https://slurm.schedmd.com/quickstart.html) and with [Apptainer](https://apptainer.org/) installed. 
 
 ## Storage 
 
