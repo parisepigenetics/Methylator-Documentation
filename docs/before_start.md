@@ -11,14 +11,12 @@ Should works on every HPC administré par [slurm](https://slurm.schedmd.com/quic
 
 ## Storage 
 
-En fonction de vos analyses l'espace disque nécessaire à l'exécution du workflow peut fortement changer. 
-Pour des données RRBS nous conseillons d'avoir à disposition un minimum de 500 Go. 
-Pour des données WGBS nous conseillons d'avoir à disposition un minimum de 1.5 To. 
+Depending on your analyses, the disk space required to run the workflow can vary significantly. or RRBS data, we recommend having at least 500 GB available. For WGBS data, we recommend having at least 1.5 TB available.
 
 !!! warning
-  Pour des jeux de données Whole Genome avec beaucoup d'échantillons, plusieurs To peuvent être nécessaire. 
+    For whole genome datasets with many samples, several terabytes may be necessary.
 
-Le tableau suivant est fournit à titre indicatif pour avoir une idée de l'espace nécessaire en fonction du volume du jeu de données initiale. 
+**The following table is provided as a guideline to estimate the required disk space based on the volume of the initial dataset:**
 
 
 ## Required Knowledge for Quick Start
