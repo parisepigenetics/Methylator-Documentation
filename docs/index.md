@@ -15,19 +15,9 @@ Methylator is a complete Snakemake workﬂow to analyse DNA methylation data. Me
     **For EDC people :** We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for bioinformatics support.   
     **For External users :** We thank the Bioinformatics and Biostatistics Core Facility, Paris Epigenetics and Cell Fate Center for sharing their analysis workflows.
 
-## Required Knowledge for Quick Start
 
-!!! warning
-    Methylator was designed to be as user-friendly as possible; however, it is a tool dedicated to complex biological analyses and requires certain prerequisites to ensure a quick start and understanding of the analyses performed.
-
-- Be comfortable with the UNIX/Linux operating system, particularly the file structure and main commands.
-- Know how to use a computing cluster (HPC) with the SLURM scheduler.
--  Understand the fundamental steps of DNA methylation analysis and the associated file formats. The [biological context](biological_context.md) section can be used for this.
--  Have general knowledge in statistics/biostatistics.
 
 ## Avantages et limitations
-
-
 
 *Insérer un tableau de benchmarling d'autres workflow*
 
