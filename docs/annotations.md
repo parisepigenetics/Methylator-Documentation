@@ -1,9 +1,14 @@
 
 ## Annotations
 
-During the analysis of methylation by Methylator, many figures rely on genome annotation. To create these figures, Methylator builds its own annotations using two files:    
-- a file in GTF format for classical genomic annotations (genes, intergenic regions, TSS, etc.)    
-- a .txt file containing information about CpG islands.
+Methylator generates many figures to describe Methylation levels among the differents genomic features. Two files a required:    
+- A GTF corresponding to genome version used for the mapping
+- A texte file with CpG island coordinates
+
+!!! warning 
+    The genome version of this two files must be the same 
+
+Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes inorder to perform multiomic integration analysis
 
 
 **Scheme of the workflow section responsible for building annotations**
