@@ -16,7 +16,7 @@ You can also work on your computer and copy the files to the cluster using the `
 !!! danger 
     Never use word processor (like Microsoft Word or LibreOffice Writer) to modify your code and never copy/past code to/from those softwares. Use only **text editors** and **UTF-8 encoding**.
 
-You can find useful help to manage your data on [IFB core documentation](https://ifb-elixirfr.gitlab.io/cluster/doc/data/). 
+You can find useful help to manage your data on [IFB core documentation](https://ifb-elixirfr.gitlab.io/cluster/doc/quick-start/). 
 
 If you're using the IFB Jupyter Hub, it's **easier** as text and table editors are included, you just have to double click on the file you want to edit, modify and save it using the menu File/Save or Ctrl+S. 
 
