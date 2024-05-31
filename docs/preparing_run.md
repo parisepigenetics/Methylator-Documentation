@@ -44,22 +44,27 @@ On Jupyter Hub:
 
 <img src="Tuto_pictures/metadata.png" alt="drawing" width="700"/>
 
-The first column contains the **sample** names that have to **correspond to the FASTQ names** (for instance here D197-D192T27_R1.fastq.gz). The second column describes the **group** the sample belongs to and will be used for differential expression analysis. You can rename or move that file, as long as you adapt the `METAFILE` entry in `config_main.yaml` (see below).  
+The first column contains the **sample** names that have to **correspond to the FASTQ names** that have to correspond to the FASTQ names without the suffix_R1/2.fastq.gz . The second column describes the **group** the sample belongs to and will be used for differential methylation analysis. You can rename or move that file, as long as you adapt the `METAFILE` entry in `config_main.yaml` (see below).  
 
 !!! tip 
     It is also possible to download and use directly SRA data! That's easy, just enter the SRRxxxx IDs in the first column instead of the sample names! 
 
 ## config_wgbs.yaml
  
-The configuration of the workflow for BSseq (WGBS or RRBS) data (see [step by step description](running.md) below) is done in `config/config_wgbs.yaml`.
+For WGBS or RRBS (Bisulfite conversion + short read sequencing) users must edit the `config/config_wgbs.yaml` file. 
 
 !!! warning
     The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
 
 
-This configuration file contains 3 parts:  
+This configuration file contains 3 parts:    
+- Global environment parameters (files and folder path)
+- Workflow steps to run and tools parameters
+- Specific tools parameters configuration
 
-### 1) Define a project name, paths and shared parameters
+### 1) Global environment parameters
+
+**Define a project name, paths and shared parameters**
 
 ```yaml
 [username@clust-slurm-client Methylator]$ cat configs/config_main.yaml
@@ -189,5 +194,4 @@ With nanopore data, the initial steps of the workflow are not necessary. Only th
 ### 3) Configuration of the specific tools 
 
 Here you precise parameters that are specific to one of the steps of the workflow. See detailed description in [step by step analysis](running.md).
-
 
