@@ -43,7 +43,7 @@ Actuellement Methylator ne prend pas en charge les analyses de puces de méthyla
 
 ## Table of contents    
 - [Biological context](biological_context.md)
-- [Before starting](before_start.md)
+- [Requirements](before_start.md)
 - [Installation](installation.md)
 - [Description](description.md)
 - [Adapt the workflow to cluster](adapt_cluster.md)
