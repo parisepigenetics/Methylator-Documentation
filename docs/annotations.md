@@ -8,7 +8,7 @@ Methylator generates many figures to describe Methylation levels among the diffe
 !!! warning 
     The genome version of this two files must be the same 
 
-Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes inorder to perform multiomic integration analysis
+**Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes in order to perform multiomics integration analysis**
 
 
 **Scheme of the workflow section responsible for building annotations**
