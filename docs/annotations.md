@@ -70,8 +70,7 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 
 
 **Cpg islands**    
-Utilise un fichier d'annotation au format .BED fournit par l'utilisateur. 
-
+Based on a .BED annotation file 
 
 **CpG Shores**    
 +/- 2kb upstream and downstream of CpG Islands
