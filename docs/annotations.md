@@ -96,7 +96,7 @@ One advantage of this approach is that it allows users who are familiar with the
 
 
 
-## Metadata for custom annotation 
+## Metadata for user annotation 
 
 |    annotation_tracks   |  group |      name     | 
 | ---------------------- | ------ | ------------- | 
@@ -134,7 +134,7 @@ You can also choose to merge custom annotations with standard annotations to hav
 With chromosomal coordinates (chromosomes | start | end) along with any potential supplementary columns.    
 
 
-There is a script called search_bank.sh which, when executed, automatically downloads (when possible) all the necessary annotation files for launching the workflow from UCSC Golden Path. It takes as an argument the name of the reference genome of the species in question. For example:
+There is a script called `search_bank.sh`, in the `scripts` folder, which, when executed, automatically downloads (when possible) all the necessary annotation files for launching the workflow from UCSC Golden Path. It takes as an argument the name of the reference genome of the species in question. For example:
 
 ``` sh
 srun scripts/search_bank.sh mm39 
