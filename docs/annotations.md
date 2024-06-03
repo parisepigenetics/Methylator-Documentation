@@ -24,7 +24,7 @@ To construct these annotations, Methylator relies on several packages:
 
 We have chosen to reconstruct the annotations rather than using annotation databases to avoid dependency on them and to ensure that the annotations are consistently built.    
 
-### Building annotations
+### Annotations description
 
 **Genes**    
 Use Genomicfeatures genes function
@@ -37,7 +37,7 @@ Intersection of all annotations with genomic annotations. Anything not annotated
 
 
 **Exons**    
-Uses genomicFeatures exonsBy function
+Uses genomicFeatures `exonsBy` function
 ```R
 GenomicFeatures::exonsBy(txdb, by = 'gene')
 ```
