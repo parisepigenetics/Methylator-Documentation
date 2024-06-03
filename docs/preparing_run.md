@@ -67,7 +67,7 @@ This configuration file contains 3 parts:
 **Define a project name, paths and shared parameters**
 
 ```yaml
-[username@clust-slurm-client Methylator]$ cat configs/config_main.yaml
+[username@clust-slurm-client Methylator]$ cat configs/config_wgbs.yaml
 
 # Project name
 PROJECT: Awesome_experience
@@ -78,7 +78,7 @@ RESULTPATH: Results
 
 # ===================== Configuration for BS-seq data =================== #
 # ===================================================================== #
-DATATYPE: "WGBS" # "WGBS" (Whole genome) or "RRBS" (Reduced representation) 
+DATATYPE: WGBS  # WGBS (Whole genome) or "RRBS" (Reduced representation) 
 METAFILE: /shared/projects/YourProjectName/configs/metadata_wgbs.tsv   # the meta file describing the experiment settings
 READSPATH: /shared/projects/YourProjectName/fastq # the path to fastq files
 COMPARISON: [["WT","1KO"], ["WT","DKO"], ["1KO","DKO"]]
