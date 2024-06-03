@@ -86,7 +86,9 @@ COMPARISON: [["WT","1KO"], ["WT","DKO"], ["1KO","DKO"]]
 
 Here you define where the FASTQ files are stored, where is the file describing the experimental set up, the name and localization of the folders where the results will be saved. The results (detailed in [results](results.md)) are separated into two folders:    
 - the **big files**: trimmed FASTQ, bam files are in an specific folder defined at `BIGDATAPATH`    
-- the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`    
+- the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`
+
+The **small files** folder allows for easy retrieval and sharing of results.
 Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis.    
 
 !!! warning    
@@ -121,6 +123,8 @@ DIFFERENTIAL: yes # "yes" or "no"
 ## Do you need a final report ?
 REPORT: no # "yes" or "no"
 ```
+
+Some default parameters are already chosen. Please read attentively each line and change the value if needed.  Please respect the proposed values Dont type `YES` or `Yes` or `Y` but `yes` for example. 
 
 !!! warning 
     If `QC` or `SRA` is set to `yes`, the workflow will stop after the QC to let you decide whether you want to trim your raw data or not. In order to run the rest of the workflow, you have to set both `QC` and `SRA` to `no`.
