@@ -75,7 +75,7 @@ GenomicRanges::mcols(tss_gr)$type = sprintf('%s_tss', ORG)
 
 **Near TSS**    
 Create the near transcription start sites annotation
-5000 paire de base en amont du tss et 500 paires de bases en aval
+5000 base pairs upstream of the TSS and 500 base pairs downstream.
 
 ```R
 near_tss_gr = IRanges::promoters(genic_gr, upstream = 5000, downstream = 500)
