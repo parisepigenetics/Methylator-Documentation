@@ -24,6 +24,23 @@ To construct these annotations, Methylator relies on several packages:
 
 We have chosen to reconstruct the annotations rather than using annotation databases to avoid dependency on them and to ensure that the annotations are consistently built.    
 
+Five gene features are represented:    
+- Genes    
+- Intergenic    
+- Introns    
+- Exons    
+- Promoters
+  
+![genes](img/gene.jpeg)
+
+And three types of regions around CGI are represented:    
+- CpG Islands    
+- CpG Shores    
+- CpG Shelves    
+
+![cpg](img/cpg_annot.jpeg)
+
+
 ### Annotations description
 
 **Genes**    
@@ -34,7 +51,6 @@ GenomicFeatures::genes(txdb)
 
 **Intergenic**        
 Intersection of all annotations with genomic annotations. Anything not annotated as a gene is automatically annotated as intergenetic. 
-
 
 **Exons**    
 Uses genomicFeatures `exonsBy` function
@@ -64,10 +80,7 @@ Create the near transcription start sites annotation
 ```R
 near_tss_gr = IRanges::promoters(genic_gr, upstream = 5000, downstream = 500)
 GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
-``` 
-
-![genes](img/gene.jpeg)
-
+```
 
 **Cpg islands**    
 Based on a .BED annotation file 
@@ -78,7 +91,6 @@ Based on a .BED annotation file
 **CpG Shelves**    
 +/- 4kb upstream and downstream of CpG Islands
 
-![cpg](img/cpg_annot.jpeg)
 
 
 The advantage of this approach is that it allows users familiar with the R programming language to modify or add annotations according to their needs.
