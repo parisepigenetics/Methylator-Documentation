@@ -11,7 +11,7 @@ Methylation analyses can be laborious and time-consuming. They require numerous 
 In line with FAIR principles, Methylator uses Apptainer and Conda tools to containerize and standardize the entire environment necessary for its operation. This ensures the reproducibility and sustainability of the results.Implemented by [BiBs-EDC](https://parisepigenetics.github.io/bibs/), this pipeline runs effectively on both IFB and iPOP-UP clusters.
 
 ## Pipeline scheme 
-![Methylator Schema](img/methylator_sheme_2.png){: width=800px }
+![Methylator Schema](img/poster_methylator.svg){: width=800px }
 
 !!! warning "Disclaimer" 
     This is a BETA version of the workflow, and of this documentation !     There is no guarantee ! If you encounter troubles or need additional tools or features, you can create an issue on the [GitHub repository](https://github.com/parisepigenetics/WGBSflow/issues) or email directly [BiBs](mailto:bibsATparisepigenetics.com).
