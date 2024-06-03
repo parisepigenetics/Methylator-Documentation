@@ -4,7 +4,7 @@ Before running your analyses you can use the the Tutorial Data Set to make and c
 First copy the configuration file corresponding to the test.
 
 ```sh
-[username@clust-slurm-client Methylator]$ cp TestDataset/configs/config_main.yaml configs/
+[username@clust-slurm-client Methylator]$ cp TestDataset/configs/config_wgbs.yaml configs/
 ```
 Then start the workflow. 
 
