@@ -81,7 +81,7 @@ Based on a .BED annotation file
 ![cpg](img/cpg_annot.jpeg)
 
 
-One advantage of this approach is that it allows users who are familiar with the R programming language to modify or add annotations as they see fit.
+The advantage of this approach is that it allows users familiar with the R programming language to modify or add annotations according to their needs.
 
 !!! warning
     When annotating CpGs, DMCs, DMTs, or DMRs, whenever one of these elements overlaps with an annotation, it is associated with that annotation. As a result, the same CpG can be annotated as being located in a gene, a CpG island, and an intron simultaneously. This explains why in the annotation count figures, some categories have more elements than others (e.g., genes). That's why it's also interesting to look at the figures in relative count.
