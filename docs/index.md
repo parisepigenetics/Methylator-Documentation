@@ -55,7 +55,7 @@ Currently, Methylator does not support methylation array analyses (see the [Biol
 
 **Methylato was implemented by BiBs-EDC facility, the Bioinformatics and Biostatisics platform of the Epigenetics and Cell Fate unit, a multidisciplinary research centre located on the Grands Moulins campus of Université Paris Cité** 
 
-![logos](img/logos)
+![logos](img/logos.png)
 
 
 
