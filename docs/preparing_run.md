@@ -89,8 +89,8 @@ Here you define where the FASTQ files are stored, where is the file describing t
 - the **small files**: QC reports, count tables, BigWig, etc. are in the final result folder defined at `RESULTPATH`    
 Examples are given in the configuration file, but you're free to name and organise them as you want. **Be sure to include the full path** (starting from `/`). Here you also precise if your data are paired-end or single-end and the number of CPUs you want to use for your analysis.    
 
-!!! warning
-    For differentially methylation analysis, you need to give the comparison(s) you want to do. If multiple comparisons, specify each pair (CONTROL & TREAT) in order respectively.
+!!! warning    
+    Methylator allows you to performperfom multiple comparisons for experimental design with more than 2 conditions.  The reference condition MUST always be in first position eg: KO vs WT differential analysis will be set up as   ["WT","KO"]  
 
 
 ### 2) Steps of the workflow you want to run
