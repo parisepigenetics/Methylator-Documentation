@@ -42,7 +42,7 @@ SRR11806589	DKO
 
 On Jupyter Hub:  
 
-![src](metadata_jup.png)
+![src](img/metadata_jup.png)
 
 The first column contains the **sample** names that have to **correspond to the FASTQ names** that have to correspond to the FASTQ names without the suffix_R1/2.fastq.gz . The second column describes the **group** the sample belongs to and will be used for differential methylation analysis. You can rename or move that file, as long as you adapt the `METAFILE` entry in `config_main.yaml` (see below).  
 
