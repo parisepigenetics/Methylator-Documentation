@@ -6,7 +6,7 @@ Methylator generates many figures to describe Methylation levels among the diffe
 - A texte file with CpG island coordinates
 
 !!! warning 
-    The genome version of this two files must be the same 
+    The genome version specified in the configuration file, in the GTF file, and in the file for CpG island coordinates must be identical.
 
 !!! Tip    
     Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes in order to perform multiomics integration analysis
