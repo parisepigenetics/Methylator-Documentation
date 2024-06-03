@@ -12,7 +12,7 @@ Before clonning Methylator, go to your project using the `cd` command.
 Now you can clone the repository (use `-b v0.1` to specify the version). 
 
 ```bash
-[username@clust-slurm-client YourProjectName]$ git clone https://github.com/parisepigenetics/Methylator
+[username@clust-slurm-client YourProjectName]$ git clone git@github.com:parisepigenetics/Methylator.git
 Cloning into 'Methylator'...
 remote: Enumerating objects: 670, done.
 remote: Counting objects: 100% (42/42), done.
