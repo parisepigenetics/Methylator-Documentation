@@ -38,7 +38,7 @@ Currently, Methylator does not support methylation array analyses (see the [Biol
 ## Table of contents    
 - [Biological context](biological_context.md)
 - [Requirements](before_start.md)
-- [Installation](installation.md)
+- [Setup](installation.md)
 - [Description](description.md)
 - [Adapt the workflow to cluster](adapt_cluster.md)
 - [Transfert your data](transfert_data.md)
