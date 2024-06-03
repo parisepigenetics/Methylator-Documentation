@@ -130,7 +130,7 @@ Some default parameters are already chosen. Please read attentively each line an
     If `QC` or `SRA` is set to `yes`, the workflow will stop after the QC to let you decide whether you want to trim your raw data or not. In order to run the rest of the workflow, you have to set both `QC` and `SRA` to `no`.
 
 !!! Tip
-    We recommend conducting global exploration before launching the differential analysis. Exploration ensures that the samples are sufficiently distinct for a differential analysis to be useful. Additionally, it allows for refining the selection of certain parameters appropriate for your data (minimum coverage, normalization, etc.).
+   One might think that a workflow can perform a complete analysis from A to Z in one step (like a pipeline). We don’t think so, at least if you are working with new data. We highly recommend going step by step, carefully checking outputs, QC, and reports in order to select the best parameters for the next steps. The workflow, with its easy setup config file, allows you to explore and dig into your data in an easy and reproducible way. **The exploration analysis will provide you with a wide range of stats and graphs to address your experiment.**                                 We encourage users to read the original tools documentation to fully understand and control their analysis.
 
 
 ### 3) Configuration of the specific tools  
