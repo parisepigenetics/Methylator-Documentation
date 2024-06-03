@@ -2,18 +2,18 @@
 ## Annotations
 
 Methylator generates many figures to describe Methylation levels among the differents genomic features. Two files a required:    
-- A GTF corresponding to genome version used for the mapping
+- A GTF corresponding to genome version used for the mapping    
 - A texte file with CpG island coordinates
 
 !!! warning 
     The genome version of this two files must be the same 
 
-**Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes in order to perform multiomics integration analysis**
+!!! Tip    
+    Users can also give their own annotation file with coordinates of  ChIP-Seq or ATAC-Seq peaks or differentially expressed genes in order to perform multiomics integration analysis
 
 
 **Scheme of the workflow section responsible for building annotations**
 ![annotations_scheme](img/part_annotation_workflow.png)
-
 
 
 The R script Annotatr.R is responsible for building the annotations.    
