@@ -1,6 +1,6 @@
 # Methylator, a DNA methylation analysis workflow
 
-<small>Maintained by [BiBs](mailto:bibsATparisepigenetics.com). Last update : 25/04/2024. Methylator v0.1. </small>  
+<small>Maintained by [BiBs](mailto:bibsATparisepigenetics.com). Last update : {git-revision-date} . Methylator v0.1. </small>  
 
 Methylator is a pipeline for analyzing DNA methylation, an epigenetic mark. It enables the study of **Cytosine methylation** (5mC) in a mammalian context. The workflow is compatible with short read sequenced Sodium Bisulfite-treated samples (BS-seq) for detection of 5mC, whether whole genome or reduced representation and long reads sequencing with Nanopore for direct detection of 5mC and 5hmC.    
 
