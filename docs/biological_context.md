@@ -5,7 +5,7 @@ essential for normal development and is associated with a number of key processe
 transposable elements, aging, and carcinogenesis. At the molecular level, DNA methylation has been identified as directly repressing transcription by inhibiting the binding of specific transcription factors, and/or indirectly, by recruiting methyl-CpG binding proteins, which themselves interact with corepressors. Thus, in gene promoter regions, demethylated CpG islands are generally associated with transcriptional activity, while methylated CpG islands silence gene expression. DNA methylation has also been associated with genome stability by repressing the activity of transposable elements.  
 
 ##  DNA Methylation 
-DNA methylation is a reversible epigenetic modification involving the addition of a methyl group to the fifth carbon of cytosine, forming 5-methylcytosine (5mC). In mammals, methylation is primarily observed in a CpG dinucleotide context. Non-CG methylation (CHG or CHH) is more commonly observed among plants and fungi.  
+In mammals genomes, DNA methylation is a reversible epigenetic modification involving the addition of a methyl group to the fifth carbon of cytosine, forming 5-methylcytosine (5mC), methylation is primarily observed in a CpG dinucleotide context. Non-CG methylation (CHG or CHH) is more commonly observed among plants and fungi.  
   
 ![5mc](img/dmt_illustration.jpg)  
 
