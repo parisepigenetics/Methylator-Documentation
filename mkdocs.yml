@@ -64,9 +64,4 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-
-plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: false
       
