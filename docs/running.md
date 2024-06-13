@@ -150,9 +150,28 @@ Be sure you give the right path to those files and adjust the other settings to 
 
 
 ```yaml
-# ================== Control of the workflow ==================
-??????????
+# ================== Configuration for alignment to genome ================== # 
 
+## aligner
+ALIGNER: BOWTIE2 # "BOWTIE2"
+
+## genome files
+GENOMEPATH: my_bank/mm39.fa #path to the reference genome's folder 
+
+## genome
+ASSEMBLY: mm39 # short name of the assembly used for the analysis
+
+## Library type
+LIBRARY_TYPE_OPT: non_directional   # "directional", "non_directional" or "pbat" sequencing library 
+
+## params in Bismark alignment (--score_min {function},{val1},{val2}). 
+# More information about Bismark options: https://felixkrueger.github.io/Bismark/options/alignment/
+
+TYPEFUNC: L # 'L' or 'G' for linear or logarithmic fonction
+VARFUNCT1: 0 # first value for the function 0 is default
+VARFUNCT2: -0.6 # second value for the function -0.2 is default
+MISMATCH: 0 # nomber of mismatch wanted
+ADVANCE_OPT:    # for advanced bismark user (mapping only), IMPLEMENTED IN THE CODE BUT NOT TESTED
 ```
 
 For an easy visualisation on a genome browser, BigWig files are generated. 
