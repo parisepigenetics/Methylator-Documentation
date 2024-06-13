@@ -23,4 +23,5 @@ Tools implemented
 * [Bismark](https://www.bioinformatics.babraham.ac.uk/projects/bismark/)
 * [Modbam2bed](https://github.com/epi2me-labs/modbam2bed)
 * [Methylkit](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html)
-* [dmrseq](https://bioconductor.org/packages/devel/bioc/vignettes/dmrseq/inst/doc/dmrseq.html)   
+* [dmrseq](https://bioconductor.org/packages/devel/bioc/vignettes/dmrseq/inst/doc/dmrseq.html)
+* [GSEAPY](https://gseapy.readthedocs.io/en/latest/)
