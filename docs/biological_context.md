@@ -8,6 +8,7 @@ transposable elements, aging, and carcinogenesis. At the molecular level, DNA me
 In mammals genomes, DNA methylation is a reversible epigenetic modification involving the addition of a methyl group to the fifth carbon of cytosine, forming 5-methylcytosine (5mC), methylation is primarily observed in a CpG dinucleotide context. Non-CG methylation (CHG or CHH) is more commonly observed among plants and fungi.  
   
 ![5mc](img/dmt_illustration.jpg)  
+[source](https://doi.org/10.1016/j.jmb.2017.02.008)
 
 
 ## Enzymatic actors
