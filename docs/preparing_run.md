@@ -38,7 +38,7 @@ SRR11806589	DKO
 
 !!! danger
     The columns have to be **tab-separated** and the header to remain unchanged.
-    Please, don't name groups and samples with and underscore
+    Please, don't name groups and samples with an underscore
 
 On Jupyter Hub:  
 
