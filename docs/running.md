@@ -130,11 +130,10 @@ At this step you have to provide the path to your genome index as well as to a G
 If you don't find what you need, you can ask for it on [IFB](https://community.france-bioinformatique.fr/) or [iPOP-UP](https://discourse.rpbs.univ-paris-diderot.fr/c/ipop-up) community support. In case you don't have a quick answer, you can download (for instance [here](http://refgenomes.databio.org/)) or produce the indexes you need in your folder (and remove it when it's available in the common banks). Copy the path to the file you need and then paste the link to `wget`. When downloading is over, you might have to decompress the file. 
 
 ```
-[username@clust-slurm-client Methylator]$ wget ???????
-[username@clust-slurm-client index]$ tar -zxvf ???? 
+[username@clust-slurm-client Methylator]$ wget -O - http://hgdownload.soe.ucsc.edu/goldenPath/mm39/bigZips/mm39.fa.gz | gunzip -c > my_bank/mm39.fa
 ```
 
-- **GTF** files can be downloaded from [GenCode](https://www.gencodegenes.org/) (mouse and human), [ENSEMBL](https://www.ensembl.org/info/data/ftp/index.html), [NCBI](https://www.ncbi.nlm.nih.gov/assembly/) (RefSeq, help [here](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)), ...
+- **GTF** files can be downloaded from [GenCode](https://www.gencodegenes.org/) (mouse and human), UCSC, [ENSEMBL](https://www.ensembl.org/info/data/ftp/index.html), [NCBI](https://www.ncbi.nlm.nih.gov/assembly/) (RefSeq, help [here](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)), ...
 Similarly you can download them to the server using `wget`. 
 
 - **CpG Islands** files can be downloaded from [UCSC goldenPath](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/). For obtain the bed file, you can use this command (example with hg38): 
