@@ -15,7 +15,13 @@ Depending on your analyses, the disk space required to run the workflow can vary
 !!! warning
     For whole genome datasets with many samples, several terabytes may be necessary.
 
-**The following table is provided as a guideline to estimate the required disk space based on the volume of the initial dataset:**
+**The following table is provided as a guideline to estimate the required disk space based on the volume of the initial dataset (fastq.gz):**
+
+| fastq.gz | Big data | Disk space requirment |
+| -------- | -------- | --------------------- |
+| 120 Go   | 530 Go   |                       |
+| 178 Go   |          |                       |
+| 676 Go   |          |                       | 
 
 
 ## Required Knowledge for Quick Start
