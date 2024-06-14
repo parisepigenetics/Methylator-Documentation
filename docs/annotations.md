@@ -32,6 +32,7 @@ Five gene features are represented:
 - Promoters
   
 ![genes](img/gene.jpeg)
+Schematic of knownGene annotations ([source](https://bioconductor.org/packages/release/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html))
 
 And three types of regions around CGI are represented:    
 - CpG Islands    
@@ -39,6 +40,7 @@ And three types of regions around CGI are represented:
 - CpG Shelves    
 
 ![cpg](img/cpg_annot.jpeg)
+Schematic of CpG annotations ([source](https://bioconductor.org/packages/release/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html))
 
 
 ### Annotations description
