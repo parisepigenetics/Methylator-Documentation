@@ -17,11 +17,11 @@ Depending on your analyses, the disk space required to run the workflow can vary
 
 **The following table is provided as a guideline to estimate the required disk space based on the volume of the initial dataset (fastq.gz):**
 
-| fastq.gz | Big data | Result data | Disk space requirement |
-| -------- | -------- | ----------- | ---------------------- |
-| 120 Go   | 530 Go   |             |                        |
-| 178 Go   |          |             |                        |
-| 676 Go   |          |             |          2 To ?        | 
+| fastq.gz | Big data | Result data | Disk space requirement | Data type |
+| -------- | -------- | ----------- | ---------------------- | --------- |
+| 120 Go   | 530 Go   |             |                        |    WGBS   |
+| 178 Go   |          |             |                        |    WGBS   |
+| 676 Go   |          |             |          2 To ?        |    WGBS   | 
 
 Note: The disk space required is greater than the data volume written at the end of the workflow execution. This is because the mapping step (Bismark) requires writing a large volume of temporary data files, which are deleted at the end of this step.
 
