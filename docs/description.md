@@ -123,8 +123,3 @@ The `my_bank` folder is an empty directory. It is used to store reference genome
 
 After launching the workflow, new folders are created. One folder for easily usable results, which you can name as you wish in the configuration file. One folder for 'heavy' results, also nameable as you wish. A log folder, and a slurm_output folder.
 
-
-## Main scripts 
-
-In the cluster, the main python script is launched via the shell script `Workflow.sh`,
-which basically contains only one command `python main_cluster.py` (+ loading of basic modules and information about the run).
