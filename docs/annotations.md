@@ -83,14 +83,13 @@ GenomicRanges::mcols(near_tss_gr)$type = sprintf('%s_near_tss', ORG)
 ```
 
 **Cpg islands**    
-Based on a .BED annotation file 
+Based on a .BED or .txt annotation file (available on UCSC GoldenPath) 
 
 **CpG Shores**    
 +/- 2kb upstream and downstream of CpG Islands
 
 **CpG Shelves**    
 +/- 4kb upstream and downstream of CpG Islands
-
 
 
 The advantage of this approach is that it allows users familiar with the R programming language to modify or add annotations according to their needs.
