@@ -24,7 +24,7 @@ To construct these annotations, Methylator relies on several packages:
 
 We have chosen to reconstruct the annotations rather than using annotation databases to avoid dependency on them and to ensure that the annotations are consistently built.    
 
-Five gene features are represented:    
+**Five gene features are represented:**    
 - Genes    
 - Intergenic    
 - Introns    
@@ -34,7 +34,7 @@ Five gene features are represented:
 ![genes](img/gene.jpeg)
 Schematic of knownGene annotations ([source](https://bioconductor.org/packages/release/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html))
 
-And three types of regions around CGI are represented:    
+**And three types of regions around CGI are represented:**        
 - CpG Islands    
 - CpG Shores    
 - CpG Shelves    
