@@ -22,6 +22,7 @@ DNA methylation is a genome-wide phenomenon, except for certain regions that are
 DNA methylation dysregulation, meaning hyper- or hypomethylation of CpG sites, is observed in various pathologies and cancers. In the case of cancers, this disruption of methylation manifests as global hypomethylation, which can lead to genomic instability by reactivating transposons, observed in early stages of the disease and followed by more targeted hypomethylation of certain genes, enabling tumor cells to adapt to their environment and form metastases, and hypermethylation of CpG islands, resulting in gene inactivation. Specifically, those involved in cell cycle regulation, DNA repair, chromatin remodeling, cell signaling, transcription, and apoptosis. This marked change in methylation in specific genomic regions between physiological and pathological conditions is a key element that biologists and clinicians seek to identify, which can be termed DMRs (differentially methylated regions), defined as a collection of DMCs (differentially methylated cytosines. **In cancer cells, global hypomethylation at repetitive sequences might cause genetic instability, whereas site-speciﬁc CpG island promoter hypermethylation could lead to silencing of TSGs.**  
 
 ![meth_cancer](img/meth_cancer.jpg)      
+Schematic diagram of major DNA methylation changes in human cancer. [ https://doi.org/10.3389/fonc.2020.549850 ](https://doi.org/10.3389/fonc.2020.549850)
 
 
     
