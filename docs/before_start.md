@@ -23,6 +23,7 @@ Depending on your analyses, the disk space required to run the workflow can vary
 | 178 Go   |          |                       |
 | 676 Go   |          |                       | 
 
+Nb : l'espace disque nécessaire est supérieur aux volume de données écrit à la fin de l'exécution du workflow. Car l'étape de mapping (Bismark) nécessite l'écriture d'important volume de données (fichiers temporaire) qui sont supprimer à la fin de cette étape. 
 
 ## Required Knowledge for Quick Start
 
