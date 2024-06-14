@@ -33,7 +33,8 @@ Schematic diagram of major DNA methylation changes in human cancer ([https://doi
 **Whole Genome Bisulfite Sequencing**
 Whole-genome bisulfite sequencing (WGBS) requires, prior to high-throughput sequencing (such as Illumina sequencing), the treatment of the studied samples with sodium bisulfite. This treatment converts unmethylated cytosines into uracil, which is subsequently converted to thymine during PCR amplification. This base modification enables the discrimination between methylated and unmethylated cytosines after alignment to the reference genome. However, the alignment process is complex and computationally intensive, and the chemical treatment with sodium bisulfite severely degrades DNA.  
 
-![wgbs](img/wgbs.png)
+![wgbs](img/wgbs.png)  
+Created in [Biorender.com](https://app.biorender.com)
 
 **Reduced-Representation Bisulfite Sequencing**
 The Reduced Representation Bisulfite Sequencing (RRBS) method is similar to WGBS, with the key distinction that only CpG-rich regions are sequenced, as selected by restriction enzymes. This method reduces sequencing costs but does not explore the methylation of the entire genome.  
@@ -46,7 +47,8 @@ Nanopore sequencing relies on a set of pores, typically a few nanometers in diam
 The RRMS method relies on nanopore sequencing coupled with another Oxford Nanopore Technology (ONT) method called "Adaptive Sampling," which enriches regions of interest by eliminating non-targeted regions directly during sequencing.  
 
 
-![nanopore](img/nanopore_sequencing.png)    
+![nanopore](img/nanopore_sequencing.png)  
+Created in [Biorender.com](https://app.biorender.com)
 
 
 ## References
