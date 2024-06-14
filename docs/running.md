@@ -266,7 +266,8 @@ If **DMR** is turn to "YES", you perform a DMR analysis with the same comparison
 The default parameters are optimized to focus on local DMRs (**regions**), typically in the range of hundreds to thousands of base pairs. If you choose **blocks**, the range increases to hundreds of thousands to millions of base pairs. In this case, it's advisable to decrease the cutoff.
 
 !!! warning 
-    The DMR analysis relies on the DMC analysis. It is not possible to perform the DMR analysis without first running the workflow with the "CpG" LEVEL. In the case where you choose to perform an analysis in "Tiles" and in DMR, this will not generate an error message, but only the DMT analysis will be performed.. 
+    The DMR analysis relies on the DMC analysis. It is not possible to perform the DMR analysis without first running the workflow with the "CpG" LEVEL. In the case where you choose to perform an analysis in "Tiles" and in DMR, this will not generate an error message, but only the DMT analysis will be performed.
+    The DMR analysis cannot be conducted if you have fewer than two replicates per biological condition.
 
 #### BedGraphe 
 
