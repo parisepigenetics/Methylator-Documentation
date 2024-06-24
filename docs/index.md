@@ -31,7 +31,7 @@ Methylator does not have a graphical interface, so its use requires basic knowle
 The user is free to choose the thresholds and parameters they deem most appropriate for their analyses. However, for values outside the recommended ranges, Methylator cannot guarantee the interpretability of the results.
 
 
-## Futurs développements    
+## Further developments   
 
 Currently, Methylator does not support methylation array analyses (see the [Biological Context section](biological_context.md). However, integration is under consideration for a future update.
 
