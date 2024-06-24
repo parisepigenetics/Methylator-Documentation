@@ -48,6 +48,8 @@ The first column contains the **sample** names that have to **correspond to the 
 
 !!! tip 
     It is also possible to download and use directly SRA data! That's easy, just enter the SRRxxxx IDs in the first column instead of the sample names! 
+    If there is more than one run for your samples, you can also choose to download the SRX directly. The workflow will download all the SSRs associated with each SRX and merge them. 
+    Please note that it is not possible to mix SRR and SRX in the metadata !
 
 ## config_wgbs.yaml
  
