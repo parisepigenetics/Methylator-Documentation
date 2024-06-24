@@ -116,11 +116,11 @@ The advantage of this approach is that it allows users familiar with the R progr
 | hg19.nestedRepeats.txt | repeat | nested_repeat |
 | hg19.atacseq.txt       |  atac  |      atac     |
 
-This is necessary only if you select the 'customs annotations' feature in the configuration file. 
+This is necessary only if you select the **customs annotations** feature in the configuration file. 
 In this case, the workflow will produce, in addition to the figures linked to default annotations, 
 the same figures but for user-provided personal annotations. 'Annotation_tracks' corresponds to 
-the names of the files containing the annotations, 'group' to the different annotation categories, 
-and 'name' to the names that will be given to the annotations in the reports.
+the names of the files containing the annotations, **group** to the different annotation categories, 
+and **name** to the names that will be given to the annotations in the reports.
 
 ``` yaml 
 # ===== Customs Annotations ===== #
