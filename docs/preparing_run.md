@@ -59,10 +59,10 @@ For WGBS or RRBS (Bisulfite conversion + short read sequencing) users must edit 
     The [yaml format](https://yaml.org/) is `key:[space]value`. The space is mandatory.
 
 
-This configuration file contains 3 parts:    
-- Global environment parameters (files and folder path)
-- Workflow steps to run and tools parameters
-- Specific tools parameters configuration
+This configuration file contains 3 parts:        
+- Global environment parameters (files and folder path)        
+- Workflow steps to run and tools parameters        
+- Specific tools parameters configuration        
 
 ### 1) Global environment parameters
 
