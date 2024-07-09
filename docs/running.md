@@ -303,6 +303,20 @@ ORA: yes # if yes, perform a Over-representation analysis with genes who overlap
 GENE_SET: DisGeNET # gene set library (Enrichr)
 ENSEMBL_DATASET: hsapiens_gene_ensembl # dataset fo convert ensembl gene ID
 ```
+!!! warning     
+    Le nom du ENSEMBL_DATASET n'est pas toujours le même que celui du génome de référence, You can obtained the list of all ENSEMBL_DATASET with this code in R
+    
+```r
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("biomaRt")
+
+library(biomaRt)
+ensembl=useMart("ENSEMBL_MART_ENSEMBL")
+listDatasets(ensembl)[1]
+```
+
+
 
 ## Start the workflow
 
@@ -311,3 +325,11 @@ When the configuration files are fully adapted to your experimental set up and n
 ```
 [username@clust-slurm-client Methylator]$ sbatch Workflow.sh wgbs
 ```
+
+
+
+
+
+
+
+
