@@ -123,18 +123,17 @@ The `my_bank` folder is an empty directory. It is used to store reference genome
 
 ## Folders organisation after run 
 
-After launching the workflow, new folders are created. One folder for easily usable results, which you can name as you wish in the configuration file. One folder
-for 'heavy' results, also nameable as you wish. A log folder, and a slurm_output folder.
+After launching the workflow, new folders are created. One folder for easily usable results (name by default `Results`, which you can name as you wish in the configuration file. One folder for 'heavy' results (name by default `Big_Data`) , also nameable as you wish. A `log folder` , and a `slurm_output folder`  .
 
 ### Exemple of folders organisation after launching 
 ![folders_organisation_results](img/folder_organisation_worklfow_results.png)
 
-Le dossier Results contient les résultas de chaque projet. Dans chaque dossiers projets, les résultats sotn organisées dand des dossiers distincts corrspondants aux différentes étapes du workflow : fastq download + QC, trimming + QC, mapping + QC et analyse de la methylation.
+Le dossier `Results` contient les résultas de chaque projet. Dans chaque dossiers projets, les résultats sotn organisées dand des dossiers distincts corrspondants aux différentes étapes du workflow : fastq download + QC, trimming + QC, mapping + QC et analyse de la methylation.
 
 ### Exemple de l'organisation des résultats 
 ![results_folders](img/results_folders.png)
 
-De plus, à la fin de l'exécution du workflow, si vous avez choisie de générer un rapport, un dossier zippé et horodaté (unique, permet de versionner vos analyses) est généré afin de partager facilement vos résultats, ce dossier contient l'ensemble des fichiers HTML (QC + analyses statistiques). Ce dossier est accompagné d'un fichier HMTL (final report), également horodaté, contenant des liens redirigeant vers les différents rapports HTML afin de facilité la navigation dans les résultats. 
+De plus, à la fin de l'exécution du workflow, si vous avez choisie de générer un rapport, un dossier zippé et horodaté  (ex : `final_report_Test_WGBS_20240828T1023.tar.gz`) est généré afin de partager facilement vos résultats, ce dossier contient l'ensemble des fichiers HTML (QC + analyses statistiques). Ce dossier est accompagné d'un fichier HMTL ( exp : `final_report_Test_WGBS_20240828T1023.html` ), également horodaté, contenant des liens redirigeant vers les différents rapports HTML. 
 
 ### Exemple liste des fichiers contenue dans final_report_(project)_(horodatage).tar.gz
 ![final_report_Test_WGBS_20240828T1023.tar.gz](img/final_report_Test_WGBS_20240828T1023.tar.gz.png)
@@ -142,8 +141,12 @@ De plus, à la fin de l'exécution du workflow, si vous avez choisie de génére
 ### Exemple de fichier final_report_(projet)_(horodatage).html
 ![final_report_Test_WGBS_20240828T1023.html](img/final_report_Test_WGBS_20240828T1023.png)
 
+!!! tip 
+    Le dossier final report, grâce à son horodatage est unique, il permet de versionner plus facilement vos analyses.     
+    Le fichier final report vous permet de naviguer plus facilement dans vos résultats. 
 
-Dans la partie Methylation_analysis des résultats, afin de faciliter la possibilité de tester de nombreuses paramétrisations sur un même jeu de données, si vous relancé le workflow (pour le même project) après avoir modifié un paramètre dans la partie Methylation Analysis du fichier de configuration, une nouvelle analyse de la méthylation est réalisé. Cette analyse est stocké dans le dossier last_analysis. A chaque nouvelle analyse un dossier last_analys est généré et les anciens dossiers sont renommé analysis_(numero).
+
+Dans la partie `Methylation_analysis` des résultats, afin de faciliter la possibilité de tester de nombreuses paramétrisations sur un même jeu de données, si vous relancé le workflow (pour le même project) après avoir modifié un paramètre dans la partie Methylation Analysis du fichier de configuration, une nouvelle analyse de la méthylation est réalisé. Cette analyse est stocké dans le dossier last_analysis. A chaque nouvelle analyse un dossier `last_analys`  est généré et les anciens dossiers sont renommé `analysis_(numero)`.
 
 ![Methylation_analysis](img/Methylation_analysis.png)
 
