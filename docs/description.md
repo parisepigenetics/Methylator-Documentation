@@ -125,33 +125,33 @@ The `my_bank` folder is an empty directory. It is used to store reference genome
 
 After launching the workflow, new folders are created. One folder for easily usable results (name by default `Results`, which you can name as you wish in the configuration file. One folder for 'heavy' results (name by default `Big_Data`) , also nameable as you wish. A `log folder` , and a `slurm_output folder`  .
 
-### Exemple of folders organisation after launching 
+Exemple of folders organisation after launching 
 ![folders_organisation_results](img/folder_organisation_worklfow_results.png)
 
-Le dossier `Results` contient les résultas de chaque projet. Dans chaque dossiers projets, les résultats sotn organisées dand des dossiers distincts corrspondants aux différentes étapes du workflow : fastq download + QC, trimming + QC, mapping + QC et analyse de la methylation.
+The `Results` folder contains the results of each project. Within each project folder, the results are organized into separate folders corresponding to the different stages of the workflow: fastq download + QC, trimming + QC, mapping + QC, and methylation analysis.
 
-### Exemple de l'organisation des résultats 
+Example of the organization of the results 
 ![results_folders](img/results_folders.png)
 
-De plus, à la fin de l'exécution du workflow, si vous avez choisie de générer un rapport, un dossier zippé et horodaté  (ex : `final_report_Test_WGBS_20240828T1023.tar.gz`) est généré afin de partager facilement vos résultats, ce dossier contient l'ensemble des fichiers HTML (QC + analyses statistiques). Ce dossier est accompagné d'un fichier HMTL ( exp : `final_report_Test_WGBS_20240828T1023.html` ), également horodaté, contenant des liens redirigeant vers les différents rapports HTML. 
+Additionally, at the end of the workflow execution, if you have chosen to generate a report, a zipped and timestamped folder (e.g., `final_report_Test_WGBS_20240828T1023.tar.gz`) is created to easily share your results. This folder contains all the HTML files (QC + statistical analyses). This folder is accompanied by a timestamped HTML file (e.g., `final_report_Test_WGBS_20240828T1023.html`), which contains links to the various HTML reports.
 
-### Exemple liste des fichiers contenue dans final_report_(project)_(horodatage).tar.gz
+Example list of files contained in final_report_(project)_(timestamp).tar.gz
 ![final_report_Test_WGBS_20240828T1023.tar.gz](img/final_report_Test_WGBS_20240828T1023.tar.gz.png)
 
-### Exemple de fichier final_report_(projet)_(horodatage).html
+
+Example of a file: final_report_(project)_(timestamp).html
 ![final_report_Test_WGBS_20240828T1023.html](img/final_report_Test_WGBS_20240828T1023.png)
 
 !!! tip 
-    Le dossier final report, grâce à son horodatage est unique, il permet de versionner plus facilement vos analyses.     
-    Le fichier final report vous permet de naviguer plus facilement dans vos résultats. 
+   The final report folder is unique due to its timestamp, making it easier to version your analyses.    
+   The final report file allows you to navigate more easily through your results.
 
 
-Dans la partie `Methylation_analysis` des résultats, afin de faciliter la possibilité de tester de nombreuses paramétrisations sur un même jeu de données, si vous relancé le workflow (pour le même project) après avoir modifié un paramètre dans la partie Methylation Analysis du fichier de configuration, une nouvelle analyse de la méthylation est réalisé. Cette analyse est stocké dans le dossier last_analysis. A chaque nouvelle analyse un dossier `last_analys`  est généré et les anciens dossiers sont renommé `analysis_(numero)`.
+In the `Methylation_analysis` section of the results, to facilitate the ability to test numerous parameterizations on the same dataset, if you rerun the workflow (for the same project) after modifying a parameter in the Methylation Analysis section of the configuration file, a new methylation analysis is performed. This analysis is stored in the `last_analysis` folder. For each new analysis, a `last_analysis` folder is created, and the previous folders are renamed `analysis_(number)`.
 
 ![Methylation_analysis](img/Methylation_analysis.png)
 
-
-Pour conserver les informations sur la parmétrisation de vos analyse, chaque dossier last_analys ou analysis_(numero) contient un clone du fichier de configuration ayant servie à généer les résultats. Ainsi, il est possible de réaliser un nombre d'analyse de la méthylation sans se perdre. Les analyses de Methylation sont organisées selon les différentes étapes des analyses à savoir : exploration, analyse diféfrentielle en CpG et Tiles (Differential) , analyse différentielle en régions (DMR) et analys ed'enrichissement (ORA). Ainsi qu'un fichier BigWig contenant des bigwig de la différence de méthylation (en CpG) pour chaque comparaison. 
+To retain information about the parameterization of your analyses, each `last_analysis` or `analysis_(number)` folder contains a clone of the configuration file that was used to generate the results. This way, it is possible to conduct multiple methylation analyses without losing track. The methylation analyses are organized according to the different stages of the analyses, namely: exploration `Exploration`, differential analysis in CpG and Tiles `Differential` , differential analysis in regions `DMR `, and enrichment analysis `ORA`. Additionally, there is a `BigWig` folder containing bigwig data of the methylation difference (in CpG) for each comparison.
 
 ![Last_analysis](img/Last_analysis.png)
 
