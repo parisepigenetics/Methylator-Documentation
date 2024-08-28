@@ -121,5 +121,38 @@ The  ` TestDataset `  folder contains all the files necessary to test the workfl
 
 The `my_bank` folder is an empty directory. It is used to store reference genomes and annotation files (FASTA, GTF, BED, etc.) for different species when the required files are not available in the banks present on your cluster (refer to [annotation](annotations.md) ).  
 
-After launching the workflow, new folders are created. One folder for easily usable results, which you can name as you wish in the configuration file. One folder for 'heavy' results, also nameable as you wish. A log folder, and a slurm_output folder.
+After launching the workflow, new folders are created. One folder for easily usable results, which you can name as you wish in the configuration file. One folder
+for 'heavy' results, also nameable as you wish. A log folder, and a slurm_output folder.
+
+![folders_organisation_results](img/folder_organisation_worklfow_results.png)
+
+Le dossier Results contient les résultas de chaque projet. Dans chaque dossiers projets , les résultats sotn organisées dand des dossiers distincts corrspondants aux différentes étapes du workflow : fastq download + QC, trimming + QC, mapping + QC et analyse de la methylation.
+
+De plus, à la fin de l'exécution du workflow, si vous aavez choisie de générer un rapport, un dossier zippé et horoaté (unique, permet de versionner vos analyses) est généré afin de partager facilement vos résultats, ce dossier contient l'ensemble des fichiers HTML (QC + analyses statistiques). Ce dossier est accompagné d'un fichier HMTL (final report), également horodaté, contenant des liens redirigeant vers les différents rapports HTML afin de facilité la navigation dans les résultats. packagesdans l'image singularity
+
+Exemple de l'organisation des résultats avec rapport final :
+![results_folders](img/results_folders.png)
+
+Exemple liste des fichiers contenue dans final_report_(project)_(horodatage).tar.gz
+![final_report_Test_WGBS_20240828T1023.tar.gz](img/final_report_Test_WGBS_20240828T1023.tar.gz.png)
+
+Exemple de fichier final_report_(projet)_(horodatage).html
+![final_report_Test_WGBS_20240828T1023.html](img/final_report_Test_WGBS_20240828T1023.png)
+
+Dans la partie Methylation_analysis des résultats 
+![Methylation_analysis](img/Methylation_analysis.png)
+
+Afin de faciliter la possibilité de tester de nombreuses paramétrisations sur un même jeu de données, si vous relancé le workflow (pour le mêmeproject) après avoir modifié un paramètre dans la partie Methylation Analysis du fichier de configuration, une nouvelle analyse de la méthylation est réalisé. Cette analyse est stocké dans le dossier last_analysis. A chaque nouvelle analyse un dossier last_analys est généré et les anciens dossiers sont renommé analysis_(numero). Pour conserver les informations sur la parmétrisation de vos analyse, chaque dossier last_analys ou analysis_(numero) contient un clone du fichier de configuration ayant servie à généer les résultats. Ainsi, il est possible de réaliser un nombre d'analyse de la méthylation sans se perdre. 
+
+![Last_analysis](img/Last_analysis.png)
+
+
+
+
+
+
+
+
+
+
 
