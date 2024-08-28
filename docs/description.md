@@ -142,9 +142,9 @@ Example list of files contained in final_report_(project)_(timestamp).tar.gz
 Example of a file: final_report_(project)_(timestamp).html
 ![final_report_Test_WGBS_20240828T1023.html](img/final_report_Test_WGBS_20240828T1023.png)
 
-!!! tip 
-   The final report folder is unique due to its timestamp, making it easier to version your analyses.    
-   The final report file allows you to navigate more easily through your results.
+!!! tip
+        The final report folder is unique due to its timestamp, making it easier to version your analyses.
+        The final report file allows you to navigate more easily through your results.
 
 
 In the `Methylation_analysis` section of the results, to facilitate the ability to test numerous parameterizations on the same dataset, if you rerun the workflow (for the same project) after modifying a parameter in the Methylation Analysis section of the configuration file, a new methylation analysis is performed. This analysis is stored in the `last_analysis` folder. For each new analysis, a `last_analysis` folder is created, and the previous folders are renamed `analysis_(number)`.
