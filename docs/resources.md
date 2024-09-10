@@ -11,7 +11,7 @@ IFB
 * Create and manage your [account](https://my.cluster.france-bioinformatique.fr/manager2/login)
 * Community [support](https://community.cluster.france-bioinformatique.fr)
 * [Documentation](https://ifb-elixirfr.gitlab.io/cluster/doc/)
-* [Jupyter Hub](https://jupyterhub.cluster.france-bioinformatique.fr)
+* [Open OnDemand access point](https://ondemand.cluster.france-bioinformatique.fr)
 * [BiBs practical guide](https://parisepigenetics.github.io/bibs/cluster/ifb/#/cluster)      
 
 Tools implemented
@@ -27,3 +27,4 @@ Tools implemented
 * [Annotatr](https://bioconductor.org/packages/release/bioc/vignettes/annotatr/inst/doc/annotatr-vignette.html)
 * [dmrseq](https://bioconductor.org/packages/devel/bioc/vignettes/dmrseq/inst/doc/dmrseq.html)
 * [GSEAPY](https://gseapy.readthedocs.io/en/latest/)
+* [EPI2ME Labs](https://github.com/epi2me-labs)
